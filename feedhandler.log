@@ -1,0 +1,14 @@
+2020-10-15 04:18:56,620 : ERROR : Unhandled exception
+Traceback (most recent call last):
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/feedhandler.py", line 146, in run
+    loop = asyncio.get_event_loop()
+  File "/usr/lib/python3.7/asyncio/events.py", line 644, in get_event_loop
+    % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'Thread-1'.
+2020-10-15 04:21:54,225 : ERROR : Unhandled exception
+Traceback (most recent call last):
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/feedhandler.py", line 146, in run
+    loop = asyncio.get_event_loop()
+  File "/usr/lib/python3.7/asyncio/events.py", line 644, in get_event_loop
+    % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'Thread-1'.
