@@ -29,6 +29,6 @@ setup(
 
     keywords='deribit marketmaker bot',
     py_modules=["market_maker"],
-    install_requires=['ccxt'],
+    install_requires=['ccxt','sqlalchemy'],
 
 )
