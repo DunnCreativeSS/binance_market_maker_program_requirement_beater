@@ -9,7 +9,7 @@ from autobahn.twisted.websocket import WebSocketClientFactory, \
 from twisted.internet import reactor, ssl
 from twisted.internet.protocol import ReconnectingClientFactory
 from twisted.internet.error import ReactorAlreadyRunning
-
+from binance.protonvpn_cli.cli import proto2
 from binance.client import Client
 
 
@@ -41,7 +41,7 @@ class BinanceReconnectingClientFactory(ReconnectingClientFactory):
 
     maxRetries = 35
 
-
+from time import sleep
 class BinanceClientFactory(WebSocketClientFactory, BinanceReconnectingClientFactory):
 
     protocol = BinanceClientProtocol
@@ -56,14 +56,20 @@ class BinanceClientFactory(WebSocketClientFactory, BinanceReconnectingClientFact
             self.callback(self._reconnect_error_payload)
 
     def clientConnectionLost(self, connector, reason):
+        
         print('connection lost... ' + str(reason))
+        if n == "dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d":
+            proton = proto2()
+            proton.connect()
+            
+            sleep(15)
         self.retry(connector)
         if self.retries > self.maxRetries:
             self.callback(self._reconnect_error_payload)
 
-
+n = "dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d"
 class BinanceSocketManager(threading.Thread):
-
+    global n
     STREAM_URL = 'wss://fstream.binance.com/'
 
     WEBSOCKET_DEPTH_5 = '5'
@@ -72,7 +78,8 @@ class BinanceSocketManager(threading.Thread):
 
     DEFAULT_USER_TIMEOUT = 30 * 60  # 30 minutes
 
-    def __init__(self, client, user_timeout=DEFAULT_USER_TIMEOUT):
+    
+    def __init__(self, client, n, user_timeout=DEFAULT_USER_TIMEOUT):
         """Initialise the BinanceSocketManager
 
         :param client: Binance API client
@@ -81,8 +88,14 @@ class BinanceSocketManager(threading.Thread):
         :type user_timeout: int
 
         """
+        
         threading.Thread.__init__(self)
+        n = n
+        self.n = n
         self._conns = {}
+        
+        #if n == 'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':
+            #self.proton.connect()
         self._client = client
         self._user_timeout = user_timeout
         self._timers = {'user': None, 'margin': None}
