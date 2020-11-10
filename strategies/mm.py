@@ -1,7 +1,7 @@
 
 
 class Place_Orders( object ):
-	def __init__( self, firstkey, client, multiprocessing, brokerKey, qty_div, orderRateLimit, max_skew_mult, get_precision, math, TP, SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs, fifteens, tens, fives, threes, con_size, get_spot, equity_btc, positions, get_ticksize, vols, get_bbo, openorders, equity_usd, randomword, logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP ):
+	def __init__( self, firstkey, bm, client, multiprocessing, brokerKey, qty_div, orderRateLimit, max_skew_mult, get_precision, math, TP, SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs, fifteens, tens, fives, threes, con_size, get_spot, equity_btc, positions, get_ticksize, vols, get_bbo, openorders, equity_usd, randomword, logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP ):
 		self.BP = BP
 		self.TP = TP
 		self.SL = SL
@@ -55,10 +55,53 @@ class Place_Orders( object ):
 		self.equity_btc = equity_btc
 		self.equity_usd = equity_usd
 		self.positions = positions
+		
+		#conn_key = bm.start_multiplex_socket(['!ticker@arr'], self.process_m_message)
+		self.bm = bm
 
+		
+		# then start the socket manager
+		#self.bm.start()
+	
+		
+	def start_user_thread(self):
+		while True:
+			try:
+				self.bm.start_user_socket(self.process_message)
+			except:
+				self.PrintException()
+				self.sleep(5)
+
+	def process_message(self, msg):
+		try: 
+			try:
+				if 'data' in msg:
+					data = msg['data']
+				else:
+					data = msg
+			except:
+				data = msg
+			if data['e'] == 'ORDER_TRADE_UPDATE':
+				side = float(data['o']["S"])
+				qty = float(data['o']["q"])
+				if side == 'SELL':
+					qty = qty * -1
+				type = data['o']['x']
+				print(type)
+				price = float(data['o']["p"])
+
+				self.trades[data['o']['s'].replace('USDT', '/USDT')] = {'price': price, 'qty': qty, 'side': side}
+			else:
+				print(data['e'])
+		except:
+			self.PrintException()
 	def run( self ):
 		while  True:
 			try:
+				t = self.threading.Thread(target=self.start_user_thread, args=())
+				t.daemon = True
+				self.num_threads = self.num_threads + 1
+				t.start()
 				t = self.threading.Thread(target=self.failSafeReset, args=())
 				t.daemon = True
 				self.num_threads = self.num_threads + 1
@@ -70,7 +113,7 @@ class Place_Orders( object ):
 				try:
 					self.start_threads = self.threading.active_count() 
 					if self.client.apiKey == self.firstkey:
-						abc=123#print('start thread place_orders: ' + str(self.start_threads))
+						print('start thread place_orders: ' + str(self.start_threads))
 					for fut in self.pairs:
 						try:
 							t = self.threading.Thread(target=self.place_orders, args=(fut,))

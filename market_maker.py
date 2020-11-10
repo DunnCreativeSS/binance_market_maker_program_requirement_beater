@@ -122,7 +122,7 @@ async def ticker(feed, pair, bid, ask, timestamp, ex):
 
 
    # print(feed + '-' + name + '-' + dt +': ' + str( 0.5 * ( float(bid) + float(ask))))
-	mids[name] = {'ask': float(ask), 'bid':  float(bid)}
+	#mids[name] = {'ask': float(ask), 'bid':  float(bid)}
 
 pairs2 = requests.get('https://fapi.binance.com/fapi/v1/exchangeInfo').json()
 bcontracts = []
@@ -132,20 +132,22 @@ for symbol in pairs2['symbols']:
 	#print(normalized)
 	bcontracts.append(normalized)
 config = {TICKER: bcontracts}
+from binance.client import Client
 
+
+from binance.websockets import BinanceSocketManager
 fh.add_feed(BinanceFutures(config=config, callbacks={TICKER: TickerCallback(ticker)}))
+
 def loop_in_thread():
 	while True:
 		try:
-			t = fh.run()
-			done = False
-			while done == False:
-				if t.is_alive():
-					sleep(5)
-				else:
-					dome = True
-					sleep(1)
+			
+			abc=123
+			#t = fh.run()
+			#print('after fh run')
+			
 		except:
+			PrintException()
 			sleep(5)
 	proc = threading.Thread(target=loop_in_thread, args=())
 	abc=123#print('1 proc')
@@ -343,7 +345,7 @@ class MarketMaker( object ):
 			st = start_time
 			days	= ( datetime.utcnow() - self.start_time ).total_seconds() / SECONDS_IN_DAY
 		oldTime = 9999999999999999999999999999999999999
-		sleep(self.orderRateLimit / 1000)
+		sleep((self.orderRateLimit / 2 ) / 1000)
 		if endTime == 0:
 			trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st })
 		else:
@@ -387,7 +389,7 @@ class MarketMaker( object ):
 	def get_futures( self, client ): # Get all current futures instruments
 		try:
 			self.futures_prv	= cp.deepcopy( self.futures )
-			sleep(self.orderRateLimit / 1000)
+			sleep((self.orderRateLimit / 2 ) / 1000)
 			insts			   = client.fetchMarkets()
 			#print(insts)
 			#print(insts[0])
@@ -395,7 +397,7 @@ class MarketMaker( object ):
 				i[ 'symbol' ]: i for i in insts if i['type'] == 'future' and i['active'] == True or i['type'] == 'delivery' and i['active'] == True
 			} )
 			#print(len(self.futures))
-			sleep(self.orderRateLimit / 1000)
+			sleep((self.orderRateLimit / 2 ) / 1000)
 			account = client.fapiPrivateGetAccount()
 			feeTier = account['feeTier']
 			if self.feeRate == None:
@@ -404,9 +406,10 @@ class MarketMaker( object ):
 			exchange_info = client.fapiPublicGetExchangeInfo()
 			for rl in exchange_info['rateLimits']:
 				if rl['rateLimitType'] == 'ORDERS':
-					if rl['interval'] == 'MINUTE' and rl['intervalNum'] == 1:
-						self.orderRateLimit = 1.1 * (1000 * (60 / rl['limit']))
+					if rl['interval'] == 'MINUTE' and rl['intervalNum'] == 1 and client.rateLimit != 1.01 * (1000 * (60 / rl['limit'])):
+						self.orderRateLimit = 1.01 * (1000 * (60 / rl['limit']))
 						client.rateLimit = self.orderRateLimit
+						print (client.rateLimit)
 						if self.Place_Orders[client.apiKey] is not None:
 							self.Place_Orders[client.apiKey].orderRateLimit = self.orderRateLimit
 			#sleep(100)
@@ -479,7 +482,7 @@ class MarketMaker( object ):
 					oid = order ['info'] ['orderId']
 				   # print(order)
 					try:
-						sleep(self.orderRateLimit / 1000)
+						sleep((self.orderRateLimit / 2 ) / 1000)
 						client.cancelOrder( oid , pair )
 					except Exception as e:
 						PrintException()
@@ -727,7 +730,15 @@ class MarketMaker( object ):
 				#	time.sleep( sleep_time )
 				if self.monitor:
 					time.sleep( WAVELEN_OUT )
-	
+	def process_m_message(self, msg):
+	    try:
+	    	data = msg['data']
+	    	if 'USDT' in data['s']:
+	    		symbol = data['s'].replace('USDT', '/USDT')
+	    		mids[symbol] = {"bid": float(data['b']), "ask": float(data['a'])}
+	    		#print(mids[symbol] )
+	    except:
+	    	PrintException()
 	def run_first( self, client ):
 		
 		t = threading.Thread(target=self.updateOrders, args=(client,))
@@ -773,8 +784,16 @@ class MarketMaker( object ):
 		self.vols   = OrderedDict( { s: VOL_PRIOR for s in self.symbols } )
 		#sleep(10)
 		
-
-		self.Place_Orders[client.apiKey] = Place_Orders(firstkey, client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
+		bin_client = Client(client.apiKey, client.secret)
+		bm = BinanceSocketManager(bin_client)
+		# start any sockets here, i.e a trade socket
+		#
+		
+		if client.apiKey == firstkey:
+			conn_key = bm.start_multiplex_socket(['!bookTicker'], self.process_m_message)
+			# then start the socket manager
+			bm.start()
+		self.Place_Orders[client.apiKey] = Place_Orders(firstkey, bm, client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
 			
 		
 		try:
@@ -784,7 +803,7 @@ class MarketMaker( object ):
 				'indexPrice':   None,
 				'markPrice':	None
 			} for f in pairs[client.apiKey] } )
-			sleep(self.orderRateLimit / 1000)
+			sleep((self.orderRateLimit / 2 ) / 1000)
 			positions	   = client.fapiPrivateGetPositionRisk()
 
 			#print('lala')
@@ -815,11 +834,11 @@ class MarketMaker( object ):
 		except Exception as e:
 			PrintException()	
 		for pair in pairs[client.apiKey]:
-			sleep(self.orderRateLimit / 1000)
+			sleep((self.orderRateLimit / 2 ) / 1000)
 			try:
 				client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': self.lev})
 			except:
-				sleep(self.orderRateLimit / 1000)
+				sleep((self.orderRateLimit / 2 ) / 1000)
 				direction = 'sell'
 				if self.positions[client.apiKey][fut]['positionAmt'] < 0:
 					direction = 'buy'
@@ -852,12 +871,12 @@ class MarketMaker( object ):
 					try:
 						#print(pair)
 						try:
-							sleep(self.orderRateLimit / 1000)
+							sleep((self.orderRateLimit / 2 ) / 1000)
 							self.openorders[client.apiKey][pair] = client.fetchOpenOrders( pair )
 						except Exception as e:
 							if 'does not have market symbol' in str(e):
 								try:
-									sleep(self.orderRateLimit / 1000)
+									sleep((self.orderRateLimit / 2 ) / 1000)
 									self.openorders[client.apiKey][pair] = client.fetchOpenOrders( pair.replace('/', '') )
 								except Exception as e:
 									#if 'does not have market symbol' in str(e):
@@ -880,7 +899,7 @@ class MarketMaker( object ):
 					'indexPrice':   None,
 					'markPrice':	None
 				} for f in pairs[client.apiKey] } )
-				sleep(self.orderRateLimit / 1000)
+				sleep((self.orderRateLimit / 2 ) / 1000)
 				positions	   = client.fapiPrivateGetPositionRisk()
 
 				#print('lala')
