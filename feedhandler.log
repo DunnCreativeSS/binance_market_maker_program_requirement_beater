@@ -12,3 +12,20 @@ Traceback (most recent call last):
   File "/usr/lib/python3.7/asyncio/events.py", line 644, in get_event_loop
     % threading.current_thread().name)
 RuntimeError: There is no current event loop in thread 'Thread-1'.
+2020-11-10 07:00:41,768 : ERROR : BINANCE_FUTURES: encountered an exception, reconnecting
+Traceback (most recent call last):
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/feedhandler.py", line 218, in _connect
+    await self._handler(websocket, feed.message_handler, feed.uuid)
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/feedhandler.py", line 247, in _handler
+    await handler(message, self.last_msg[feed_id])
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/exchange/binance_futures.py", line 73, in message_handler
+    await self._ticker(msg, timestamp)
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/exchange/binance.py", line 117, in _ticker
+    receipt_timestamp=timestamp)
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/feed.py", line 130, in callback
+    await cb(**kwargs)
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/callback.py", line 34, in __call__
+    await super().__call__(feed, pair, bid, ask, timestamp, receipt_timestamp)
+  File "/home/jare/.local/lib/python3.7/site-packages/cryptofeed/callback.py", line 21, in __call__
+    await self.callback(*args, **kwargs)
+TypeError: ticker() takes 6 positional arguments but 7 were given

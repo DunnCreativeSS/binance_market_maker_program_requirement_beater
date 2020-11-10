@@ -1,10 +1,11 @@
 
 
 class Place_Orders( object ):
-	def __init__( self, client, multiprocessing, brokerKey, qty_div, orderRateLimit, max_skew_mult, get_precision, math, TP, SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs, fifteens, tens, fives, threes, con_size, get_spot, equity_btc, positions, get_ticksize, vols, get_bbo, openorders, equity_usd, randomword, logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP ):
+	def __init__( self, firstkey, client, multiprocessing, brokerKey, qty_div, orderRateLimit, max_skew_mult, get_precision, math, TP, SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs, fifteens, tens, fives, threes, con_size, get_spot, equity_btc, positions, get_ticksize, vols, get_bbo, openorders, equity_usd, randomword, logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP ):
 		self.BP = BP
 		self.TP = TP
 		self.SL = SL
+		self.firstkey = firstkey
 		self.multiprocessing = multiprocessing
 		self.brokerKey = brokerKey
 		self.qty_div = qty_div
@@ -19,6 +20,7 @@ class Place_Orders( object ):
 			self.creates[fut] = False
 			self.edits[fut] = False
 		self.sleep = sleep
+		self.trades = []
 		self.asyncio = asyncio
 		self.threading = threading
 		self.start_threads = None
@@ -67,7 +69,8 @@ class Place_Orders( object ):
 			while True:
 				try:
 					self.start_threads = self.threading.active_count() 
-					print('start thread place_orders: ' + str(self.start_threads))
+					if self.client.apiKey == self.firstkey:
+						abc=123#print('start thread place_orders: ' + str(self.start_threads))
 					for fut in self.pairs:
 						try:
 							t = self.threading.Thread(target=self.place_orders, args=(fut,))
@@ -79,10 +82,11 @@ class Place_Orders( object ):
 					done = False
 					while done == False:
 						num_threads = self.threading.active_count()  - self.num_threads
-						print('num thread place_orders: ' + str(num_threads) + ' / ' + str(self.start_threads + len(self.pairs) / 3) + ' and self.num_threads: ' + str(self.num_threads))
+						if self.client.apiKey == self.firstkey:
+							abc=123#print('num thread place_orders: ' + str(num_threads) + ' and self.num_threads: ' + str(self.num_threads))
 						if num_threads < self.start_threads + len(self.pairs) / 3:
 							done = True
-							print('restart threads...')
+							abc=123#print('restart threads...')
 							self.sleep(5)
 						else:
 							self.sleep(5)
@@ -100,7 +104,7 @@ class Place_Orders( object ):
 				self.PrintException()
 				self.sleep(5)
 		proc = self.threading.Thread(target=self.failSafeReset, args=())
-		print('4 proc')
+		abc=123#print('4 proc')
 		proc.start()
 		proc.terminate() 
 		sleep(5)		
@@ -113,7 +117,7 @@ class Place_Orders( object ):
 			return
 		except:
 			proc = self.threading.Thread(target=self.resetGoforit, args=())
-			print('6 proc')
+			abc=123#print('6 proc')
 			proc.start()
 			proc.terminate() 
 			sleep(5)
@@ -131,24 +135,28 @@ class Place_Orders( object ):
 				try:
 					#print(fut + ': ' + str(self.positions[fut]['ROE']))
 					if self.positions[fut]['ROE'] > self.TP and self.positions[fut]['ROE'] != 0:
-						print(fut + ' takeprofit! ' + str(self.positions[fut]['ROE']))
+						if self.client.apiKey == self.firstkey:
+							abc=123#print(fut + ' takeprofit! ' + str(self.positions[fut]['ROE']))
 						#sleep(10)
 						direction = 'sell'
 						if self.positions[fut]['positionAmt'] < 0:
 							direction = 'buy'
 						qty = self.math.fabs(self.positions[fut]['positionAmt'])
 						self.creates[fut] = True
-						print(str(qty) + ' ' + fut)
+						if self.client.apiKey == self.firstkey:
+							abc=123#print(str(qty) + ' ' + fut)
 						self.create_order(  fut, "Market", direction, qty, None, {"newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)})
 						self.positions[fut]['ROE'] = 0
 					if self.positions[fut]['ROE'] < self.SL and self.positions[fut]['ROE'] != 0:
-						print(fut + ' stoploss! ' + str(self.positions[fut]['ROE']))
+						if self.client.apiKey == self.firstkey:
+							abc=123#print(fut + ' stoploss! ' + str(self.positions[fut]['ROE']))
 						direction = 'sell'
 						if self.positions[fut]['positionAmt'] < 0:
 							direction = 'buy'
 						qty = self.math.fabs(self.positions[fut]['positionAmt'])
 						self.creates[fut] = True
-						print(str(qty) + ' ' + fut)
+						if self.client.apiKey == self.firstkey:
+							abc=123#print(str(qty) + ' ' + fut)
 						self.create_order(  fut, "Market", direction, qty, None, {"newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)})
 					
 						self.positions[fut]['ROE'] = 0
@@ -181,7 +189,7 @@ class Place_Orders( object ):
 				place_asks = nasks > 0
 				
 				if not place_bids and not place_asks:
-					print( 'No bid no offer for %s' % fut, min_order_size_btc )
+					abc=123#print( 'No bid no offer for %s' % fut, min_order_size_btc )
 					continue
 					
 				
@@ -204,8 +212,8 @@ class Place_Orders( object ):
 					bbo	 = self.get_bbo( fut )
 					bid_mkt = bbo[ 'bid' ]
 					ask_mkt = bbo[ 'ask' ]
-					if 'XLM' in fut:
-						print(bbo)
+					if 'XLM' in fut and self.client.apiKey == self.firstkey:
+						abc=123#print(bbo)
 					if bid_mkt is None and ask_mkt is None:
 						bid_mkt = ask_mkt = spot
 					elif bid_mkt is None:
@@ -348,7 +356,7 @@ class Place_Orders( object ):
 			except:
 				self.PrintException()
 		proc = self.threading.Thread(target=self.place_orders, args=(fut,))
-		print('5 proc')
+		abc=123#print('5 proc')
 		proc.start()
 		proc.terminate() 
 		sleep(5)
@@ -365,8 +373,8 @@ class Place_Orders( object ):
 					t.start()
 					#await self.asyncio.sleep(self.orderRateLimit / 1000)
 					self.client.editOrder( oid, fut, type, dir, qty, prc, params  )
-					if 'XLM' in fut:
-						print(fut + ' edited!')
+					if 'XLM' in fut  and self.client.apiKey == self.firstkey:
+						abc=123#print(fut + ' edited!')
 					done = True
 					self.edits[fut] = False
 				else:
@@ -377,8 +385,8 @@ class Place_Orders( object ):
 				if 'Unknown order sent' not in str(e):
 					self.PrintException()
 
-				if 'XLM' in fut:
-					print(fut + ' edit exception!')
+				if 'XLM' in fut  and self.client.apiKey == self.firstkey:
+					abc=123#print(fut + ' edit exception!')
 				self.edits[fut] = False
 				done = True
 				self.sleep(self.orderRateLimit / 1000)
@@ -396,8 +404,8 @@ class Place_Orders( object ):
 					#await self.asyncio.sleep(self.orderRateLimit / 1000)
 
 					self.client.createOrder(fut, type, dir, qty, prc, params )
-					if 'XLM' in fut:
-						print(fut + ' ordered!')
+					if 'XLM' in fut and self.client.apiKey == self.firstkey:
+						abc=123#print(fut + ' ordered!')
 					done = True
 					
 					self.creates[fut] = False
@@ -407,8 +415,8 @@ class Place_Orders( object ):
 					self.sleep(self.orderRateLimit / 1000 * len(self.pairs) / 2)
 							
 			except:
-				if 'XLM' in fut:
-					print(fut + ' order exception!')
+				if 'XLM' in fut and self.client.apiKey == self.firstkey:
+					abc=123#print(fut + ' order exception!')
 				done = True
 				self.PrintException()
 				self.creates[fut] = False
@@ -431,9 +439,14 @@ class Place_Orders( object ):
 
 					self.sleep(self.orderRateLimit / 1000* len(self.pairs) / 2)
 					
-			except:
-				self.PrintException()
+			except Exception as e:
 				done = True
-				print(fut + ' cancel exception!')
+				if 'Unknown order sent' not in str(e):
+					self.PrintException()
+					
+					if self.client.apiKey == self.firstkey:
+						abc=123#print(fut + ' cancel exception!')
+
+				#self.PrintException()
 				self.sleep(self.orderRateLimit / 1000)
 				#self.logger.warn( 'Order cancellations failed: %s' % oid )x
