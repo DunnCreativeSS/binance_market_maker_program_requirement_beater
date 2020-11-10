@@ -281,9 +281,7 @@ class Place_Orders( object ):
 						else:
 							#print(qty * prc)
 							try:
-								precision = self.get_precision(fut)
 								
-								precision = 1 / (10 ** precision)
 								
 								if self.positions[fut]['positionAmt'] <= qty * self.max_skew_mult and self.creates[fut] == False:
 									
@@ -327,12 +325,7 @@ class Place_Orders( object ):
 
 						else:
 							try: #-5 > -2
-								precision = self.get_precision(fut)
-								#print(fut + ' precision ' + str(precision))
-								precision = 1 / (10 ** precision)
-								#print(fut + ' precision ' + str(precision))
-								#print(qty)
-								#print(qty > precision)
+								
 								if self.positions[fut]['positionAmt'] >= qty * self.max_skew_mult * -1 and self.creates[fut] == False:
 									
 									self.creates[fut] = True

@@ -177,7 +177,7 @@ from ccxtpro.hitbtc import hitbtc                                         # noqa
 from ccxtpro.huobijp import huobijp                                       # noqa: F401
 from ccxtpro.huobipro import huobipro                                     # noqa: F401
 from ccxtpro.huobiru import huobiru                                       # noqa: F401
-from ccxtpro.idex2 import idex2                                           # noqa: F401
+#from ccxtpro.idex2 import idex2                                           # noqa: F401
 from ccxtpro.kraken import kraken                                         # noqa: F401
 from ccxtpro.kucoin import kucoin                                         # noqa: F401
 from ccxtpro.okcoin import okcoin                                         # noqa: F401

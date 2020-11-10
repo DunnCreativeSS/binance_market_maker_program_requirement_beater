@@ -1,0 +1,2 @@
+ccxt==1.36.29
+cryptofeed[all]

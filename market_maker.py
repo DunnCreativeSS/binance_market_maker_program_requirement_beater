@@ -3,7 +3,13 @@
 pairs = {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d': ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
 		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
 		}#'key':['array', 'of', 'usdt-margin', 'to', 'trade']}#'BTC/USDT'
-
+#for key in pairs:
+#	toreplace = []
+#	for p in pairs[key]:
+#		p = p.replace('/','')
+#		toreplace.append(p)
+#	pairs[key] = toreplace
+#print(pairs)
 binApi2 =  {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':'Xw4A5VcHB3ZDJZuLGhxh8Lq9ouLWIxMERj1p4jeorKvvhzkDxXj3Qx1eiVonMcPs',
                '7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': '2Wqi6TL1L1JAQyuaEWAJisiAEmh4SsCSpopEZrQ04NIRv49gA1Yh3hBuXOsxlGOB',
          }#      'key': 'secret'}
@@ -96,7 +102,6 @@ import os
 import traceback
 from os.path		import getmtime
 import ccxtpro
-import asyncio
 import requests
 
 from cryptofeed import FeedHandler
@@ -163,6 +168,7 @@ except ImportError:
 	abc=123#print("	pip3 install deribit_api", file=sys.stderr)
 	exit(1)
 t = threading.Thread(target=loop_in_thread, args=())
+t.daemon = True
 t.start()
 #t = threading.Thread(target=loop_in_thread, args=())
 #t.start()
@@ -302,6 +308,7 @@ class MarketMaker( object ):
 	def create_client( self, key ):
 		#self.client = RestClient( KEY, SECRET, URL )
 		#print(binApi)
+		print(key)
 		binance_futures = ccxt.binance(
 			{"apiKey": key,
 			"secret": binApi2[key],
@@ -313,12 +320,14 @@ class MarketMaker( object ):
 		#binance_futures.set_sandbox_mode(True)
 			
 		self.client2[key] = (ccxt.binance({	"apiKey": key,
+			 'options': {'defaultType': 'spot'},
 	"secret": binApi2[key],
 	'enableRateLimit': True}))
 		self.client[key] = (binance_futures)
+		#print(self.client[key].options)
 		#print(dir(self.client))		   
 		m = binance_futures.fetchMarkets()
-		
+		#print(m)
 	
 
 	def randomword(self, length):
@@ -376,36 +385,38 @@ class MarketMaker( object ):
 	
 		
 	def get_futures( self, client ): # Get all current futures instruments
-		
-		self.futures_prv	= cp.deepcopy( self.futures )
-		sleep(self.orderRateLimit / 1000)
-		insts			   = client.fetchMarkets()
+		try:
+			self.futures_prv	= cp.deepcopy( self.futures )
+			sleep(self.orderRateLimit / 1000)
+			insts			   = client.fetchMarkets()
+			#print(insts)
+			#print(insts[0])
+			self.futures		= sort_by_key( { 
+				i[ 'symbol' ]: i for i in insts if i['type'] == 'future' and i['active'] == True or i['type'] == 'delivery' and i['active'] == True
+			} )
+			#print(len(self.futures))
+			sleep(self.orderRateLimit / 1000)
+			account = client.fapiPrivateGetAccount()
+			feeTier = account['feeTier']
+			if self.feeRate == None:
+				self.feeRate = feeTiers[feeTier]['maker']
 
-		#print(insts[0])
-		self.futures		= sort_by_key( { 
-			i[ 'symbol' ]: i for i in insts if i['type'] == 'future' and i['active'] == True
-		} )
-		sleep(self.orderRateLimit / 1000)
-		account = client.fapiPrivateGetAccount()
-		feeTier = account['feeTier']
-		if self.feeRate == None:
-			self.feeRate = feeTiers[feeTier]['maker']
-
-		exchange_info = client.fapiPublicGetExchangeInfo()
-		for rl in exchange_info['rateLimits']:
-			if rl['rateLimitType'] == 'ORDERS':
-				if rl['interval'] == 'MINUTE' and rl['intervalNum'] == 1:
-					self.orderRateLimit = 1.1 * (1000 * (60 / rl['limit']))
-					client.rateLimit = self.orderRateLimit
-					if self.Place_Orders[client.apiKey] is not None:
-						self.Place_Orders[client.apiKey].orderRateLimit = self.orderRateLimit
-		#sleep(100)
-		#print(self.futures)
-		#for k, v in self.futures.items():
-			#self.futures[ k ][ 'expi_dt' ] = datetime.strptime( 
-			#								   v[ 'expiration' ][ : -4 ], 
-			#								   '%Y-%m-%d %H:%M:%S' )
-						
+			exchange_info = client.fapiPublicGetExchangeInfo()
+			for rl in exchange_info['rateLimits']:
+				if rl['rateLimitType'] == 'ORDERS':
+					if rl['interval'] == 'MINUTE' and rl['intervalNum'] == 1:
+						self.orderRateLimit = 1.1 * (1000 * (60 / rl['limit']))
+						client.rateLimit = self.orderRateLimit
+						if self.Place_Orders[client.apiKey] is not None:
+							self.Place_Orders[client.apiKey].orderRateLimit = self.orderRateLimit
+			#sleep(100)
+			#print(self.futures)
+			#for k, v in self.futures.items():
+				#self.futures[ k ][ 'expi_dt' ] = datetime.strptime( 
+				#								   v[ 'expiration' ][ : -4 ], 
+				#								   '%Y-%m-%d %H:%M:%S' )
+		except:
+			PrintException()					
 		
 	def get_pct_delta( self ):		 
 		self.update_status()
@@ -430,12 +441,14 @@ class MarketMaker( object ):
 
 	
 	def get_precision( self, contract ):
+
 		return self.futures[ contract ] ['info'] [ 'pricePrecision' ]
 
 	
 	def get_ticksize( self, contract ):
+		
 		return self.futures[ contract ] ['info'] ['filters'] [ 0 ] [ 'tickSize' ]
-	
+		
 	
 	
 
@@ -458,6 +471,7 @@ class MarketMaker( object ):
 				
 		
 		for pair in pairs[client.apiKey]:
+
 			try:
 				ords		= self.openorders[client.apiKey][pair]
 				for order in ords:
@@ -645,6 +659,7 @@ class MarketMaker( object ):
 			self.qty_div = settings[key]['qty_div']
 			self.lev = settings[key]['lev']
 			self.create_client(key)
+
 			self.openorders[key] = {}
 			self.positions[key] = {}
 			
@@ -656,6 +671,7 @@ class MarketMaker( object ):
 			
 		for key in binApi2.keys():
 			client = self.client[key]
+			self.get_futures(client)
 			t = threading.Thread(target=self.run_first, args=(client,))
 			t.daemon = True
 			t.start()
@@ -714,7 +730,17 @@ class MarketMaker( object ):
 	
 	def run_first( self, client ):
 		
+		t = threading.Thread(target=self.updateOrders, args=(client,))
+		t.daemon = True
+		t.start()	
 		
+		t = threading.Thread(target=self.updateBids, args=())
+		t.daemon = True
+		t.start()	
+		
+		t = threading.Thread(target=self.updatePositions, args=(client,))
+		t.daemon = True
+		t.start()	
 		
 		#self.cancelall()
 		self.logger = get_logger( 'root', LOG_LEVEL )
@@ -750,17 +776,7 @@ class MarketMaker( object ):
 
 		self.Place_Orders[client.apiKey] = Place_Orders(firstkey, client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
 			
-		t = threading.Thread(target=self.updateOrders, args=(client,))
-		t.daemon = True
-		t.start()	
 		
-		t = threading.Thread(target=self.updateBids, args=())
-		t.daemon = True
-		t.start()	
-		
-		t = threading.Thread(target=self.updatePositions, args=(client,))
-		t.daemon = True
-		t.start()	
 		try:
 			self.positions[client.apiKey]  = OrderedDict( { f: {
 				'size':		 0,
@@ -839,7 +855,15 @@ class MarketMaker( object ):
 							sleep(self.orderRateLimit / 1000)
 							self.openorders[client.apiKey][pair] = client.fetchOpenOrders( pair )
 						except Exception as e:
-							PrintException()
+							if 'does not have market symbol' in str(e):
+								try:
+									sleep(self.orderRateLimit / 1000)
+									self.openorders[client.apiKey][pair] = client.fetchOpenOrders( pair.replace('/', '') )
+								except Exception as e:
+									#if 'does not have market symbol' in str(e):
+										
+									PrintException()
+							#PrintException()
 					except:
 						sleep(5)
 				if self.Place_Orders[client.apiKey] is not None:
@@ -1022,7 +1046,7 @@ if __name__ == '__main__':
 		mmbot.cancelall(None)
 		sys.exit()
 	except:
-		abc=123#print( traceback.format_exc())
+		print( traceback.format_exc())
 		if args.restart:
 			mmbot.cancelall(None)
 			mmbot.restart()
