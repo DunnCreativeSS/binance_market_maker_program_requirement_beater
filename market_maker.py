@@ -1,16 +1,47 @@
-# This code is for sample purposes only, comes as is and with no warranty or guarantee of performance
-# ADA, XTZ, XLM
-pairs = ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT']#'BTC/USDT'
+# These vars load from database :)"
+
+pairs = {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d': ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
+		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
+		}#'key':['array', 'of', 'usdt-margin', 'to', 'trade']}#'BTC/USDT'
+
+binApi2 =  {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':'Xw4A5VcHB3ZDJZuLGhxh8Lq9ouLWIxMERj1p4jeorKvvhzkDxXj3Qx1eiVonMcPs',
+               '7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': '2Wqi6TL1L1JAQyuaEWAJisiAEmh4SsCSpopEZrQ04NIRv49gA1Yh3hBuXOsxlGOB',
+         }#      'key': 'secret'}
+
+
+settings = {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':{'TP': 40, 'SL': -20, 'max_skew_mult': 10, 'qty_div': 15, 'lev': 25},
+			'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U':{'TP': 40, 'SL': -20, 'max_skew_mult': 10, 'qty_div': 15, 'lev': 25}}
+
+
+#done of vars in db
+
+
 print(len(pairs))
 fifteens = ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT']
 tens = ['OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'XMR/USDT', 'ZIL/USDT', 'KNC/USDT', 'XTZ/USDT', 'IOTA/USDT', 'BAT/USDT', 'IOST/USDT', 'THETA/USDT']
 fives = ['DOGE/USDT']
 threes = ['RLC/USDT']
-binApi2 = 'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d'
-binSecret2 = 'Xw4A5VcHB3ZDJZuLGhxh8Lq9ouLWIxMERj1p4jeorKvvhzkDxXj3Qx1eiVonMcPs'
+
 #jarettrsdunn+alimm@gmail.com
 #binApi = "8799eb6011f07a7dbba434907f71adc5f7e76af1fd12be26bb4e3294904e9852"
 #binSecret = "e487c0edb6ec0f6fd839919858dce4a3f936d7d67fe0e6a4773b579173fe1355"
+
+feeTiers = {0:{'maker': 0.02/100, 'bnbmaker': 0.018/100},
+			1:{'maker': 0.016/100, 'bnbmaker': 0.0144/100},
+			2:{'maker': 0.014/100, 'bnbmaker': 0.0128/100},
+			3:{'maker': 0.012/100, 'bnbmaker': 0.0108/100},
+			4:{'maker': 0.01/100, 'bnbmaker': 0.009/100},
+			5:{'maker': 0.008/100, 'bnbmaker': 0.0072/100},
+			6:{'maker': 0.006/100, 'bnbmaker': 0.0054/100},
+			7:{'maker': 0.004/100, 'bnbmaker': 0.0036/100},
+			8:{'maker': 0.002/100, 'bnbmaker': 0.0018/100},
+			9:{'maker': 0, 'bnbmaker': 0}
+			}
+import multiprocessing
+
+
+from strategies.mm import Place_Orders
+
 from collections	import OrderedDict
 from datetime	   import datetime
 import asyncio
@@ -33,30 +64,47 @@ from cryptofeed.exchanges import BinanceFutures
 fh = FeedHandler()
 mids = {}
 async def ticker(feed, pair, bid, ask, timestamp, ex):
-    global mids
-    #print(f'Ex?: {ex} Timestamp: {timestamp} Feed: {feed} Pair: {pair} Bid: {bid} Ask: {ask}')
-    
-    if 'BINANCE' in feed:
-        #ETH-USD_200925
-        name = pair.replace('-', '/')
-        #print(dt)
+	global mids
+	#print(f'Ex?: {ex} Timestamp: {timestamp} Feed: {feed} Pair: {pair} Bid: {bid} Ask: {ask}')
+	
+	if 'BINANCE' in feed:
+		#ETH-USD_200925
+		name = pair.replace('-', '/')
+		#print(dt)
 
 
    # print(feed + '-' + name + '-' + dt +': ' + str( 0.5 * ( float(bid) + float(ask))))
-    mids[name] = {'ask': float(ask), 'bid':  float(bid)}
+	mids[name] = {'ask': float(ask), 'bid':  float(bid)}
 
 pairs2 = requests.get('https://fapi.binance.com/fapi/v1/exchangeInfo').json()
 bcontracts = []
 for symbol in pairs2['symbols']:
-    split = len(symbol['baseAsset'])
-    normalized = symbol['symbol'][:split] + '-' + symbol['symbol'][split:]
-    #print(normalized)
-    bcontracts.append(normalized)
+	split = len(symbol['baseAsset'])
+	normalized = symbol['symbol'][:split] + '-' + symbol['symbol'][split:]
+	#print(normalized)
+	bcontracts.append(normalized)
 config = {TICKER: bcontracts}
 
 fh.add_feed(BinanceFutures(config=config, callbacks={TICKER: TickerCallback(ticker)}))
 def loop_in_thread():
-    fh.run()
+	while True:
+		try:
+			t = fh.run()
+			done = False
+			while done == False:
+				if t.is_alive():
+					sleep(5)
+				else:
+					dome = True
+					sleep(1)
+		except:
+			sleep(5)
+	proc = threading.Thread(target=loop_in_thread, args=())
+	print('1 proc')
+	proc.start()
+	proc.terminate() 
+	sleep(5)
+
 from time		   import sleep
 from utils		  import ( get_logger, lag, print_dict, print_dict_of_dicts, sort_by_key,
 							 ticksize_ceil, ticksize_floor, ticksize_round )
@@ -73,6 +121,8 @@ except ImportError:
 	exit(1)
 t = threading.Thread(target=loop_in_thread, args=())
 t.start()
+#t = threading.Thread(target=loop_in_thread, args=())
+#t.start()
 # Add command line switches
 parser  = argparse.ArgumentParser( description = 'Bot' )
 d		 = datetime.utcnow()  - timedelta(hours = 0)
@@ -81,14 +131,15 @@ start_time = int((d - epoch).total_seconds()) * 1000
 print(start_time)
 
 def PrintException():
-    exc_type, exc_obj, tb = sys.exc_info()
-    f = tb.tb_frame
-    lineno = tb.tb_lineno
-    filename = f.f_code.co_filename
-    linecache.checkcache(filename)
-    line = linecache.getline(filename, lineno, f.f_globals)
-    string = 'EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj)
-    print(string)
+	exc_type, exc_obj, tb = sys.exc_info()
+	f = tb.tb_frame
+	lineno = tb.tb_lineno
+	filename = f.f_code.co_filename
+	linecache.checkcache(filename)
+	line = linecache.getline(filename, lineno, f.f_globals)
+	string = 'EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj)
+	#if 'Quantity less than zero' not in string and 'Unknown order sent' not in string:
+	print(string)
 
 # Use production platform/account
 parser.add_argument( '-p',
@@ -162,13 +213,32 @@ VOL_PRIOR		   *= PCT
 class MarketMaker( object ):
 	
 	def __init__( self, monitor = True, output = True ):
-		self.equity_usd		 = None
-		self.equity_btc		 = None
-		self.equity_usd_init	= None
-		self.equity_btc_init	= None
+		# TP and SL are by position, and are calculated by unrealized % * leverage (and are close to the ROE % presented by the binance web interface)
+		self.TP = 40
+		self.SL = 20
+
+		#max_skew_mult is how many times the desired order size it'll accept being in position long or short before it stops orderng in that direction. For example, if we have max_skew_mult=5 and the desired order size is $20 while we have $80 in position in that direction, it'll enter as $80<$20x5. However, if we had $120 in position in that same direction it wouldn't enter that order
+		self.max_skew_mult = 10
+
+		#this is the size of the order the algo will enter. if you have $30 in your account and the qty_div is 15, it will enter orders that are $30/15= $2 large. This calculation ignores leverage
+		self.qty_div = 15
+
+		#the leverage multiplier to use - if the script refuses to enter orders after changing this, you'll need to manually close your positions and re-run
+		self.lev = 25
+
+		#binance broker apikey to use
+		self.brokerKey = 'v0tiKJjj'
+
+		self.threethousandmin = None
+		self.Place_Orders = {}
+		self.equity_usd		 = {}
+		self.equity_btc	 = {}
+		self.equity_usd_init	= {}
+		self.equity_btc_init	= {}
 		self.con_size		   = float( CONTRACT_SIZE )
-		self.client			 = None
-		self.client2 = None
+		self.client			 = {}
+		self.feeRate = None
+		self.client2 = {}
 		self.openorders = {}
 		self.orderbooks = {}
 		self.bids = {}
@@ -179,27 +249,29 @@ class MarketMaker( object ):
 		self.mean_looptime	  = 1
 		self.monitor			= monitor
 		self.output			 = output or monitor
-		self.positions		  = OrderedDict()
+		self.positions		  = {}
 		self.spread_data		= None
 		self.this_mtime		 = None
 		self.ts				 = None
 		self.vols			   = OrderedDict()
-	
-	def create_client( self ):
+		self.orderRateLimit = 100
+	def create_client( self, key ):
 		#self.client = RestClient( KEY, SECRET, URL )
 		#print(binApi)
 		binance_futures = ccxt.binance(
-			{"apiKey": binApi2,
-			"secret": binSecret2,
+			{"apiKey": key,
+			"secret": binApi2[key],
 			 'options': {'defaultType': 'future'},
+
 	'enableRateLimit': True,
 })
 
 		#binance_futures.set_sandbox_mode(True)
 			
-		self.client2 = ccxt.binance({	"apiKey": binApi2,
-	"secret": binSecret2})
-		self.client = binance_futures
+		self.client2[key] = (ccxt.binance({	"apiKey": key,
+	"secret": binApi2[key],
+	'enableRateLimit': True}))
+		self.client[key] = (binance_futures)
 		#print(dir(self.client))		   
 		m = binance_futures.fetchMarkets()
 		
@@ -209,7 +281,7 @@ class MarketMaker( object ):
 	   letters = string.ascii_lowercase
 	   return ''.join(random.choice(letters) for i in range(length))
 
-	def getTrades( self, pair, endTime, quoteTotal, commissionTotal ):
+	def getTrades( self, client, pair, endTime, quoteTotal, commissionTotal ):
 		d		 = datetime.utcnow()  - timedelta(hours = 4)
 		epoch = datetime(1970,1,1)
 		st = int((d - epoch).total_seconds()) * 1000
@@ -218,10 +290,12 @@ class MarketMaker( object ):
 			st = start_time
 			days	= ( datetime.utcnow() - self.start_time ).total_seconds() / SECONDS_IN_DAY
 		oldTime = 9999999999999999999999999999999999999
+		sleep(self.orderRateLimit / 1000)
 		if endTime == 0:
-			trades = self.client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st})
+			trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st })
 		else:
-			trades = self.client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st, 'endTime': endTime})
+			trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})
+		#print(len(trades))
 		for t in trades:
 			if t['time'] < oldTime:
 				oldTime = t['time']
@@ -230,30 +304,56 @@ class MarketMaker( object ):
 				quoteTotal = quoteTotal + float(t['quoteQty'])
 			else:
 				quoteTotal = quoteTotal - float(t['quoteQty'])
+			self.feeRate = float(t['commission']) / float(t['quoteQty'])
 		if len(trades) < 999:
 			
 			return([quoteTotal, commissionTotal, days])
 		else:
-			return(getTrades(pair, oldTime, quoteTotal, commissionTotal))
+			return(getTrades(client, pair, oldTime, quoteTotal, commissionTotal))
 
 	def get_bbo( self, contract ): # Get best b/o excluding own orders
 		
 		# Get orderbook
-		best_bid	= mids[contract]['bid']
-		best_ask	= mids[contract]['ask']
-		
+		try:
+			best_bid	= mids[contract]['bid']
+			best_ask	= mids[contract]['ask']
+		except:
+			keys = []
+			for key in binApi2:
+				keys.append(key)
+			ran = keys[random.randint(0, len(keys)-1)]
+			ticker = client2[ran].fetchTicker( contract )
+			best_bid = ticker['bid']
+			best_ask = ticker['ask']
+
 		return { 'bid': best_bid, 'ask': best_ask }
 	
 		
-	def get_futures( self ): # Get all current futures instruments
+	def get_futures( self, client ): # Get all current futures instruments
 		
 		self.futures_prv	= cp.deepcopy( self.futures )
-		insts			   = self.client.fetchMarkets()
+		sleep(self.orderRateLimit / 1000)
+		insts			   = client.fetchMarkets()
 
 		#print(insts[0])
 		self.futures		= sort_by_key( { 
 			i[ 'symbol' ]: i for i in insts if i['type'] == 'future' and i['active'] == True
 		} )
+		sleep(self.orderRateLimit / 1000)
+		account = client.fapiPrivateGetAccount()
+		feeTier = account['feeTier']
+		if self.feeRate == None:
+			self.feeRate = feeTiers[feeTier]['maker']
+
+		exchange_info = client.fapiPublicGetExchangeInfo()
+		for rl in exchange_info['rateLimits']:
+			if rl['rateLimitType'] == 'ORDERS':
+				if rl['interval'] == 'MINUTE' and rl['intervalNum'] == 1:
+					self.orderRateLimit = 1.1 * (1000 * (60 / rl['limit']))
+					client.rateLimit = self.orderRateLimit
+					if self.Place_Orders[client.apiKey] is not None:
+						self.Place_Orders[client.apiKey].orderRateLimit = self.orderRateLimit
+		#sleep(100)
 		#print(self.futures)
 		#for k, v in self.futures.items():
 			#self.futures[ k ][ 'expi_dt' ] = datetime.strptime( 
@@ -263,14 +363,17 @@ class MarketMaker( object ):
 		
 	def get_pct_delta( self ):		 
 		self.update_status()
-		return sum( self.deltas.values()) / float(self.equity_btc)
+		return sum( self.deltas.values()) / float(self.equity_btc[client.apiKey])
 
 	def get_spot_old( self, pair ):
 		print('getspotold!')
 		sleep(1)
 		#print(self.client2.fetchTicker( pair )['bid'])
-		
-		return self.client2.fetchTicker( pair )['bid']
+		keys = []
+		for key in binApi2:
+			keys.append(key)
+		ran = keys[random.randint(0, len(keys)-1)]
+		return self.client2[ran].fetchTicker( pair )['bid']
 	def get_spot( self, pair ):
 		#print(self.client2.fetchTicker( pair )['bid'])
 		try:
@@ -291,205 +394,44 @@ class MarketMaker( object ):
 	
 
 		
-	def place_orders( self ):
+								
+	def cancelall(self, client):
+		if client == None:
+			for key in binApi2.keys():	
+				client = ccxt.binance(
+					{"apiKey": key,
+					"secret": binApi2[key],
+					 'options': {'defaultType': 'future'},
 
-		if self.monitor:
-			return None
-		
-		con_sz  = self.con_size		
-		
-		for fut in pairs:
-			
-			
-			spot			= self.get_spot(fut)
-			bal_btc		 = self.equity_btc
-			pos			 = float(self.positions[ fut ][ 'positionAmt' ])
-			pos_lim_long	= bal_btc * PCT_LIM_LONG * 20 #/ len(self.futures)
-			pos_lim_short   = bal_btc * PCT_LIM_SHORT * 20 #/ len(self.futures)
-			#print(pos_lim_long)
-			#expi			= self.futures[ fut ][ 'expi_dt' ]
-			#tte			 = max( 0, ( expi - datetime.utcnow()).total_seconds() / SECONDS_IN_DAY )
-			pos_decay	   = 1.0 - math.exp( -DECAY_POS_LIM * 8035200 )
-			pos_lim_long   *= pos_decay
-			pos_lim_short  *= pos_decay
-			pos_lim_long   -= pos
-			pos_lim_short  += pos
-			pos_lim_long	= max( 0, pos_lim_long  )
-			pos_lim_short   = max( 0, pos_lim_short )
-			
-			min_order_size_btc = (MIN_ORDER_SIZE * CONTRACT_SIZE) / spot
-			#print(min_order_size_btc) #0.0006833471711135484 0.08546200188472201
-			qtybtc  = 1 / spot #(bal_btc * 20 / 500) / len(pairs)
+			'enableRateLimit': True,
+		})
 
-			nbids   = min( math.trunc( pos_lim_long  / qtybtc ), MAX_LAYERS )
-			nasks   = min( math.trunc( pos_lim_short / qtybtc ), MAX_LAYERS )
-			
-			place_bids = nbids > 0
-			place_asks = nasks > 0
-			
-			if not place_bids and not place_asks:
-				print( 'No bid no offer for %s' % fut, min_order_size_btc )
-				continue
-				
-			tsz = float(self.get_ticksize( fut ))			
-			# Perform pricing
-			vol = max( self.vols[ BTC_SYMBOL ], self.vols[ fut ] )
-
-			eps		 = BP * vol * RISK_CHARGE_VOL
-			riskfac	 = math.exp( eps )
-
-			bbo	 = self.get_bbo( fut )
-			bid_mkt = bbo[ 'bid' ]
-			ask_mkt = bbo[ 'ask' ]
-			
-			if bid_mkt is None and ask_mkt is None:
-				bid_mkt = ask_mkt = spot
-			elif bid_mkt is None:
-				bid_mkt = min( spot, ask_mkt )
-			elif ask_mkt is None:
-				ask_mkt = max( spot, bid_mkt )
-			mid_mkt = 0.5 * ( bid_mkt + ask_mkt )
-			
-			ords		= self.openorders[fut]
-			cancel_oids = []
-			bid_ords	= ask_ords = []
-			
-			if place_bids:
-				
-				bid_ords		= [ o for o in ords if o['info']['side'] == 'BUY'  ]
-				#print(len(bid_ords))
-				len_bid_ords	= ( len( bid_ords ))
-				bid0			= bid_mkt#mid_mkt * math.exp( -MKT_IMPACT )
-				
-				bids	= [ bid0 * 1 + (.0001 * -i) for i in range( 0, nbids + 0 ) ]
-
-				bids[ 0 ]   = ticksize_floor( bids[ 0 ], tsz )
-				
-			if place_asks:
-				
-				ask_ords		= [ o for o in ords if o['info']['side'] == 'SELL' ]	
-				#print(len(ask_ords))
-				len_ask_ords	= ( len( ask_ords ) )
-				ask0			= ask_mkt#mid_mkt * math.exp(  MKT_IMPACT )
-				
-				asks	= [ ask0 * 1 + (.0001 * i) for i in range( 0, nasks + 0 ) ]
-				
-				asks[ 0 ]   = ticksize_ceil( asks[ 0 ], tsz  )
-			bprices = []
-			aprices = []
-			for bid in bid_ords:
-				bprices.append(float(bid['info']['price']))
-			for ask in ask_ords:
-				aprices.append(float(ask['info']['price']))
-			#print(fut)
-			#print('asks')
-			#print(ask_mkt)
-			#print(asks)
-			#print('bids')
-			#print(bid_mkt)
-			#print(bids)
-			for i in range( max( nbids, nasks )):
-				# BIDS
-				if place_bids and i < nbids:
-
-					if i > 0:
-						prc = ticksize_floor( min( bids[ i ], bids[ i - 1 ] - tsz ), tsz )
-					else:
-						prc = bids[ 0 ]
-
-					qty = (self.equity_usd / 15) / prc#round( prc * qtybtc )   / spot					 
-					max_skew = qty * 1.1
-					if i < len_bid_ords:	
-
-						oid = bid_ords[ i ]['info']['orderId']
-						#print(oid)
-						try:
-							if prc not in bprices:
-								self.client.editOrder( oid, fut, "Limit", "buy", qty, prc )
-							#else:
-								#print(str(prc) + ' in bprices!')
-						except (SystemExit, KeyboardInterrupt):
-							raise
-						except Exception as e:
-							PrintException()	 
-					else:
-						#print(qty * prc)
-						try:
-							if self.positions[fut]['positionAmt'] <= qty * 2.1: 
-								self.client.createOrder(  fut, "Limit", 'buy', qty, prc, {"newClientOrderId": "x-GYswxDoF-" + self.randomword(20)})
-							#else:
-								#print('not buying maxskew, pos: ' + str(self.positions[fut]['positionAmt']) + ' mod: ' + str(qty * 2.1))
-						except (SystemExit, KeyboardInterrupt):
-							raise
-						except Exception as e:
-							PrintException()
-							self.logger.warn( 'Bid order failed: %s bid for %s'
-												% ( prc, qty ))
-
-				# OFFERS
-
-				if place_asks and i < nasks:
-
-					if i > 0:
-						prc = ticksize_ceil( max( asks[ i ], asks[ i - 1 ] + tsz ), tsz )
-					else:
-						prc = asks[ 0 ]
-						
-					qty = (self.equity_usd / 15) / prc#round( prc * qtybtc ) / spot
+				#binance_futures.set_sandbox_mode(True)
 					
-					if i < len_ask_ords:
-						oid = ask_ords[ i ]['info']['orderId']
-						#print(oid)
-						try:
-							if prc not in aprices:
-								self.client.editOrder( oid, fut, "Limit", "sell", qty, prc )
-							#else:
-								#print(str(prc) + ' in aprices!')
-						except (SystemExit, KeyboardInterrupt):
-							raise
-						except Exception as e:
-							PrintException()
 
-					else:
-						try: #-5 > -2
-							if self.positions[fut]['positionAmt'] >= qty * 2.1 * -1: 
-								self.client.createOrder(  fut, "Limit", 'sell', qty, prc, {"newClientOrderId": "x-GYswxDoF-" + self.randomword(20)})
-							#else:
-								#print('not selling maxskew, pos: ' + str(self.positions[fut]['positionAmt']) + ' mod: ' + str(qty * 2.1 * -1))
-
-						except (SystemExit, KeyboardInterrupt):
-							raise
-						except Exception as e:
-							self.logger.warn( 'Offer order failed: %s at %s'
-												% ( qty, prc ))
-
-
-			if nbids < len( bid_ords ):
-				cancel_oids += [ o['info']['orderId'] for o in bid_ords[ nbids : ]]
-			if nasks < len( ask_ords ):
-				cancel_oids += [ o['info']['orderId'] for o in ask_ords[ nasks : ]]
-			for oid in cancel_oids:
-				try:
-					self.client.cancelOrder( oid , fut )
-				except:
-					self.logger.warn( 'Order cancellations failed: %s' % oid )
-										
-	def cancelall(self):
-		for pair in pairs:
-			ords		= self.openorders[pair]
-			for order in ords:
-				#print(order)
-				oid = order ['info'] ['orderId']
-			   # print(order)
-				try:
-					self.client.cancelOrder( oid , pair )
-				except Exception as e:
-					PrintException()
+				
+		
+		for pair in pairs[client.apiKey]:
+			try:
+				ords		= self.openorders[client.apiKey][pair]
+				for order in ords:
+					#print(order)
+					oid = order ['info'] ['orderId']
+				   # print(order)
+					try:
+						sleep(self.orderRateLimit / 1000)
+						client.cancelOrder( oid , pair )
+					except Exception as e:
+						PrintException()
+			except KeyError as e:
+				pass
+			except Exception as e:
+				PrintException()
 	def restart( self ):		
 		try:
 			strMsg = 'RESTARTING'
 			print( strMsg )
-			self.cancelall()
+			#self.cancelall(None)
 			strMsg += ' '
 			for i in range( 0, 5 ):
 				strMsg += '.'
@@ -500,188 +442,26 @@ class MarketMaker( object ):
 		finally:
 			os.execv( sys.executable, [ sys.executable ] + sys.argv )		
 			
-
-	def run( self ):
-		
-		self.run_first()
-
-		t_ts = t_out = t_loop = t_mtime = datetime.utcnow()
-
-		while True:
-
-			self.get_futures()
-			
-			# Restart if a new contract is listed
-			#if len( self.futures ) != len( self.futures_prv ):
-			#	self.restart()
-			
-			
-			t_now   = datetime.utcnow()
-			
-			# Update time series and vols
-			if ( t_now - t_ts ).total_seconds() >= WAVELEN_TS:
-				t_ts = t_now
-				
-				self.update_timeseries()
-				self.update_vols()
-	
-			self.place_orders()
-			
-			# Display status to terminal
-			if self.output:	
-				t_now   = datetime.utcnow()
-			
-			# Restart if file change detected
-			t_now   = datetime.utcnow()
-			if ( t_now - t_mtime ).total_seconds() > WAVELEN_MTIME_CHK:
-				t_mtime = t_now
-				#if getmtime( __file__ ) > self.this_mtime:
-				#	self.restart()
-			
-			t_now	   = datetime.utcnow()
-			looptime	= ( t_now - t_loop ).total_seconds()
-			
-			# Estimate mean looptime
-			w1  = EWMA_WGT_LOOPTIME
-			w2  = 1.0 - w1
-			t1  = looptime
-			t2  = self.mean_looptime
-			
-			self.mean_looptime = w1 * t1 + w2 * t2
-			
-			t_loop	  = t_now
-			sleep_time  = MIN_LOOP_TIME - looptime
-			#if sleep_time > 0:
-			#	time.sleep( sleep_time )
-			if self.monitor:
-				time.sleep( WAVELEN_OUT )
-	def loop_in_thread(self):
-		while True:
-			loop = asyncio.new_event_loop()
-			
-			loop.run_until_complete(self.looptiloop(loop))
-			
-	def run_first( self ):
-		
-		self.create_client()
-		#self.cancelall()
-		self.logger = get_logger( 'root', LOG_LEVEL )
-		# Get all futures contracts
-		self.get_futures()
-		sleep(10)
-		"""
-		pairs = []
-		for fut in self.futures.keys():
-			try:
-				self.get_spot_old(fut)
-				pairs.append(fut)
-			except:
-				print(fut)
-		"""
-		self.start_time		 = datetime.utcnow()- timedelta(hours = 0)
-		t = threading.Thread(target=self.loop_in_thread, args=())
-		t.start()
-		self.this_mtime = getmtime( __file__ )
-		self.symbols	= [ BTC_SYMBOL ] + list( pairs); self.symbols.sort()
-		self.deltas	 = OrderedDict( { s: None for s in self.symbols } )
-		
-		# Create historical time series data for estimating vol
-		ts_keys = self.symbols + [ 'timestamp' ]; ts_keys.sort()
-		
-		self.ts = [
-			OrderedDict( { f: None for f in ts_keys } ) for i in range( NLAGS + 1 )
-		]
-		
-		self.vols   = OrderedDict( { s: VOL_PRIOR for s in self.symbols } )
-		sleep(10)
-		self.update_status()
-
-		
-		
-		for pair in pairs:
-			
-			self.client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': 25})
-			
-		sleep(3)
-	
-	async def looptiloop(self, loop):
+	def output_status ( self, client ):
 		while True:
 			try:
-				exchange = ccxtpro.binance(
-				{"apiKey": binApi2,
-    'enableRateLimit': True,
-				"secret": binSecret2,
-				 'options': {'defaultType': 'future', 'watchBalance': 'future',"fetchBalance": "future",},'asyncio_loop': loop})
-				await exchange.load_markets()
-				#exchange.verbose = True
-				try:
-					balance = await exchange.fetch_balance()
-					self.equity_usd = balance['USDT']['total']
-					self.equity_btc = self.equity_usd * self.get_spot('BTC/USDT')
-					if self.equity_usd_init == None:
-						self.equity_usd_init	= self.equity_usd
-						self.equity_btc_init	= self.equity_btc 
-				except Exception as e:
-					PrintException()
-				try:
-					self.positions  = OrderedDict( { f: {
-						'size':		 0,
-						'positionAmt':	  0,
-						'indexPrice':   None,
-						'markPrice':	None
-					} for f in pairs } )
-					positions	   = self.client.fapiPrivateGetPositionRisk()
-					#print('lala')
-					#print(positions)
-					
-					for pos in positions:
-						if pos['symbol'].split('USDT')[0] + '/USDT' in pairs:
-							pos['positionAmt'] = float(pos['positionAmt'])
-
-							self.positions[ pos['symbol'].split('USDT')[0] + '/USDT'] = pos
-				except Exception as e:
-					PrintException()
-				for pair in pairs:
-					#print(pair)
-					try:
-						self.openorders[pair] = self.client.fetchOpenOrders( pair )
-					except Exception as e:
-						PrintException()
-				
-				
-				for pair in pairs:
-					self.bids[pair] = mids[pair]['bid']
-					"""
-					try:
-						orderbook = await exchange.watch_order_book(pair)
-						self.orderbooks[pair] = orderbook
-						self.bids[pair] = orderbook['bids'][0][0]
-					except Exception as e:
-						PrintException()
-					"""
-				if not self.output:
-					return None
-				
-				self.update_status()
-				
 				now	 = datetime.utcnow()
 				days	= ( now - self.start_time ).total_seconds() / SECONDS_IN_DAY
-				print( '********************************************************************' )
-				print( 'Start Time:		%s' % self.start_time.strftime( '%Y-%m-%d %H:%M:%S' ))
-				print( 'Current Time:	  %s' % now.strftime( '%Y-%m-%d %H:%M:%S' ))
-				print( 'Days:			  %s' % round( days, 1 ))
-				print( 'Hours:			 %s' % round( days * 24, 1 ))
-				print( 'Spot Price:		%s' % self.get_spot('BTC/USDT'))
+				print( client.apiKey + ' ********************************************************************' )
+				print( client.apiKey + ' Start Time:		%s' % self.start_time.strftime( '%Y-%m-%d %H:%M:%S' ))
+				print( client.apiKey + ' Current Time:	  %s' % now.strftime( '%Y-%m-%d %H:%M:%S' ))
+				print( client.apiKey + ' Days:			  %s' % round( days, 1 ))
+				print( client.apiKey + ' Hours:			 %s' % round( days * 24, 1 ))
+				print( client.apiKey + ' Spot Price:		%s' % self.get_spot('BTC/USDT'))
 				
-				equity_usd = self.equity_usd
-				equity_btc = self.equity_btc
-				pnl_usd = equity_usd - self.equity_usd_init
-				pnl_btc = equity_btc - self.equity_btc_init
+				equity_usd = self.equity_usd[client.apiKey]
+				equity_btc = self.equity_btc[client.apiKey]
+				print(equity_usd)
+				print(self.equity_usd_init[client.apiKey])
+				pnl_usd = equity_usd - self.equity_usd_init[client.apiKey]
+				pnl_btc = equity_btc - self.equity_btc_init[client.apiKey]
 				
-				print( 'Equity ($):		%7.2f'   % equity_usd)
-				print( 'P&L ($)			%7.2f'   % pnl_usd)
-				print( 'Equity (BTC):	  %7.4f'   % equity_btc)
-				print( 'P&L (BTC)		  %7.4f'   % pnl_btc)
+				
 				#print( '%% Delta:		   %s%%'% round( self.get_pct_delta() / PCT, 1 ))
 				#print( 'Total Delta (BTC): %s'   % round( sum( self.deltas.values()), 2 ))		
 				#print_dict_of_dicts( {
@@ -692,14 +472,20 @@ class MarketMaker( object ):
 				#	roundto = 2, title = 'Deltas' )
 				
 				#print(self.positions)
-				print_dict_of_dicts( {
-					k: {
-						'Contracts $ Value': round(self.positions[ k ][ 'positionAmt' ] * self.bids[k] * 100) / 100
-					} for k in self.positions.keys()
-					}, 
+				if len(self.positions[client.apiKey]) > 1:
+					for k in self.positions[client.apiKey].keys():
+						try: 
+							abc = self.bids[k]
+						except:
+							self.bids[k] = self.get_bbo(k)['bid']
+					print_dict_of_dicts( {
+						k: {
+							'Contracts $ Value': round(self.positions[client.apiKey][ k ][ 'positionAmt' ] * self.bids[k] * 100) / 100
+						} for k in self.positions[client.apiKey].keys()
+						}, 
 
-					title = 'Positions' )
-				
+						title = client.apiKey + ' Positions' )
+					
 					
 				if not self.monitor:
 					print_dict_of_dicts( {
@@ -707,26 +493,32 @@ class MarketMaker( object ):
 							'%': self.vols[ k ]
 						} for k in self.vols.keys()
 						}, 
-						multiple = 100, title = 'Vols' )
-					print( '\nMean Loop Time: %s' % round( self.mean_looptime, 2 ))
+						multiple = 100, title = client.apiKey + ' Vols' )
+					#print( '\nMean Loop Time: %s' % round( self.mean_looptime, 2 ))
 					#self.cancelall()
 				print( '' )	
 				print(' ')
 				days	= ( datetime.utcnow() - self.start_time ).total_seconds() / SECONDS_IN_DAY
-				print('Volumes Traded Projected Daily of Required (' + str(days) + ' days passed thus far...)')
-				print('Equity: $' + str(round(self.equity_usd*100)/100))
+				print(client.apiKey + ' Volumes Traded Projected Daily of Required (' + str(days) + ' days passed thus far...)')
+				print(client.apiKey + ' Equity: $' + str(round(self.equity_usd[client.apiKey]*100)/100))
 				btc = self.get_spot('BTC/USDT')
-				print('btc')
-				percent = self.equity_usd / btc
+				print(client.apiKey + ' btc')
+				percent = self.equity_usd[client.apiKey] / btc
+				print('')
+				print(client.apiKey + ' Equity ($):		%7.2f'   % equity_usd)
+				print(client.apiKey + ' P&L ($)			%7.2f'   % pnl_usd)
+				print(client.apiKey + ' Equity (BTC):	  %7.4f'   % equity_btc)
+				print(client.apiKey + ' P&L (BTC)		  %7.4f'   % pnl_btc)
+				print('')
 				volumes = []
 				tradet = 0
 				feest = 0
-				for pair in pairs:
-					gettrades = self.getTrades(pair, 0, 0, 0)
+				for pair in pairs[client.apiKey]:
+					gettrades = self.getTrades(client, pair, 0, 0, 0)
 
 					#print(gettrades)
 					volume = (gettrades[0] / (gettrades[2]))
-					feest = feest + gettrades[0] * 0.0002
+					feest = feest + gettrades[0] * self.feeRate
 					tradet = tradet + volume * 30
 					printprint = True
 					if pair in fifteens:
@@ -743,9 +535,14 @@ class MarketMaker( object ):
 					volumes.append(volume)
 					#print(volume)
 					if printprint == True:
-						print(pair + ': ' + str(round(volume*1000)/10) + '%' + ', (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
+						if volume > 0:
+							if self.threethousandmin == None:
+								print(client.apiKey + ' ' + pair + ': ' + str(round(volume*1000)/10) + '%' + ', (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
+							else:
+								print(client.apiKey + ' ' + pair + ': ' + str(round(volume*1000)/10) + '%' + ', w/ ' + str(self.threethousandmin * self.equity_usd[client.apiKey]) + '$ minimum for sustainable strategy, ' + str(round((volume * self.threethousandmin)*1000)/10) + '%'  + ' (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
 					else:
-						print('(Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
+						if gettrades[0] > 0:
+							print(client.apiKey + ' (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
 				volumes.sort()
 				h = 100
 				for i in range(0,5):
@@ -758,32 +555,341 @@ class MarketMaker( object ):
 				except:
 					h = 1
 				mult = h
-				h = h * self.equity_usd
-
-				print('Approx. traded volumes over 30 days: ' + str(tradet) + ', in BTC: ' + str(round(tradet/btc*1000)/1000))
-				print('Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $' + str(round(h * 100)/100))
-				diff = h / self.equity_usd
-				print('That\'s ' + str(round(diff*100)/100) + 'x the balance now, bringing projected USD/month to: ' + str(round(tradet * diff * 100)/100) + ', and BTC: ' + str(round((tradet * diff / btc)* 100)/100))
-				apy = 365 / (gettrades[2])
-				pnl = (((self.equity_usd + feest) / self.equity_usd) -1) * 100
-				pnl2 = pnl * apy
-				print('Now, if we were running in a trial mode of Binance Market Maker Program\'s Rebates, or if we had achieved these rates already, we would have earned $' + str(round(feest * 100)/100) + ' by now, or rather earning ' + str(round(pnl*1000)/1000) + '% PnL so far, or ' + str(round(pnl2*1000)/1000) + ' % Annual Percentage Yield!')
+				h = h * self.equity_usd[client.apiKey]
+				print('')
+				print(client.apiKey + ' Approx. traded volumes over 30 days: ' + str(tradet) + ', in BTC: ' + str(round(tradet/btc*1000)/1000))
+				print(client.apiKey + ' Approx. Min Equity at ' + str(self.lev) + 'x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $' + str(round(h * 100)/100))
+				diff = h / self.equity_usd[client.apiKey]
 				btcneed = (((tradet * diff / btc) / 3000) )
+				print(client.apiKey + ' That\'s ' + str(round(diff*100)/100) + 'x the balance now, bringing projected USD/month to: ' + str(round(tradet * diff * 100)/100) + ', and BTC: ' + str(round((tradet * diff / btc)* 100)/100))
+				if self.threethousandmin is not None:
+					diff = self.threethousandmin
+					print(client.apiKey + ' With ' + str(self.threethousandmin) + 'x the balance now that we\'d need for the 3000 btc/month minimum, though, projected USD/month to: ' + str(round(tradet * diff * 100)/100) + ', and BTC: ' + str(round((tradet * diff / btc)* 100)/100))
+
+				apy = 365 / (gettrades[2])
+				pnl = (((self.equity_usd[client.apiKey] + feest) / self.equity_usd[client.apiKey]) -1) * 100
+				pnl2 = pnl * apy
+				print(client.apiKey + ' Now, if we were running in a trial mode of Binance Market Maker Program\'s Rebates, or if we had achieved these rates already, we would have earned $' + str(round(feest * 100)/100) + ' by now (on our actual equity), or rather earning ' + str(round(pnl*1000)/1000) + '% PnL so far, or ' + str(round(pnl2*1000)/1000) + ' % Annual Percentage Yield!')
+				
 				if btcneed < 1 and btcneed != 0:
 					h = h / btcneed
-					print('For 3000 btc/month volumes, would make the equity minimum approx. $' + str(round(h * 100)/100))
-				
-				await exchange.close()	
+					self.threethousandmin = (round(h * 100)/100) / self.equity_usd[client.apiKey]
+
+					print(client.apiKey + ' For 3000 btc/month volumes, would make the equity minimum approx. $' + str(round(h * 100)/100))
+				sleep(30)
+				print('')
 			except Exception as e:
-			 	PrintException()
+				#PrintException()	
+				PrintException()
+				sleep(10)
+		proc = threading.Thread(target=self.output_status, args=())
+		print('3 proc')
+		proc.start()
+		proc.terminate() 	
+		sleep(5)	
+	def run( self ):
+		for key in binApi2.keys():
+			self.TP = settings[key]['TP']
+			self.SL = settings[key]['SL']
+			self.max_skew_mult = settings[key]['max_skew_mult']
+			self.qty_div = settings[key]['qty_div']
+			self.lev = settings[key]['lev']
+			self.create_client(key)
+			self.openorders[key] = {}
+			self.positions[key] = {}
+			
+			self.equity_btc[key] = None
+			self.equity_usd[key] = None
+			self.equity_btc_init[key] = None
+			self.equity_usd_init[key] = None
+			self.Place_Orders[key] = None
+		
+		for key in binApi2.keys():
+			t = multiprocessing.Process(target=self.run_first, args=(key,))
+			t.start()
+			
+
+			t_ts = t_out = t_loop = t_mtime = datetime.utcnow()
+			
+			while True:
+				client = self.client[key]
+				self.get_futures(client)
+				
+				# Restart if a new contract is listed
+				#if len( self.futures ) != len( self.futures_prv ):
+				#	self.restart()
+				
+				
+				t_now   = datetime.utcnow()
+				
+				# Update time series and vols
+				if ( t_now - t_ts ).total_seconds() >= WAVELEN_TS:
+					t_ts = t_now
+					
+					self.update_timeseries()
+					self.update_vols()
+				
+				# ()
+				
+				# Display status to terminal
+				if self.output:	
+					t_now   = datetime.utcnow()
+				
+				# Restart if file change detected
+				t_now   = datetime.utcnow()
+				if ( t_now - t_mtime ).total_seconds() > WAVELEN_MTIME_CHK:
+					t_mtime = t_now
+					#if getmtime( __file__ ) > self.this_mtime:
+					#	self.restart()
+				
+				t_now	   = datetime.utcnow()
+				looptime	= ( t_now - t_loop ).total_seconds()
+				
+				# Estimate mean looptime
+				w1  = EWMA_WGT_LOOPTIME
+				w2  = 1.0 - w1
+				t1  = looptime
+				t2  = self.mean_looptime
+				
+				self.mean_looptime = w1 * t1 + w2 * t2
+				
+				t_loop	  = t_now
+				sleep_time  = MIN_LOOP_TIME - looptime
+				#if sleep_time > 0:
+				#	time.sleep( sleep_time )
+				if self.monitor:
+					time.sleep( WAVELEN_OUT )
+	
+	def run_first( self, key ):
+		
+		
+		
+		#self.cancelall()
+		self.logger = get_logger( 'root', LOG_LEVEL )
+		# Get all futures contracts
+		for client in self.client.values():
+			self.get_futures(client)
+			#sleep(10)
+			"""
+			pairs = []
+			for fut in self.futures.keys():
+				try:
+					self.get_spot_old(fut)
+					pairs.append(fut)
+				except:
+					print(fut)
+			"""
+			self.start_time		 = datetime.utcnow()- timedelta(hours = 0)
+			t = threading.Thread(target=self.looptiloop, args=(client,))
+			t.start()
+			
+			self.this_mtime = getmtime( __file__ )
+			self.symbols	= [ BTC_SYMBOL ] + list( pairs[client.apiKey]); self.symbols.sort()
+			self.deltas	 = OrderedDict( { s: None for s in self.symbols } )
+			
+			# Create historical time series data for estimating vol
+			ts_keys = self.symbols + [ 'timestamp' ]; ts_keys.sort()
+			
+			self.ts = [
+				OrderedDict( { f: None for f in ts_keys } ) for i in range( NLAGS + 1 )
+			]
+			
+			self.vols   = OrderedDict( { s: VOL_PRIOR for s in self.symbols } )
+			#sleep(10)
+			
+
+			self.Place_Orders[client.apiKey] = Place_Orders(client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
+				
+			t = threading.Thread(target=self.updateOrders, args=(client,))
+			t.daemon = True
+			t.start()	
+			
+			t = threading.Thread(target=self.updateBids, args=())
+			t.daemon = True
+			t.start()	
+			
+			t = threading.Thread(target=self.updatePositions, args=(client,))
+			t.daemon = True
+			t.start()	
+			try:
+				self.positions[client.apiKey]  = OrderedDict( { f: {
+					'size':		 0,
+					'positionAmt':	  0,
+					'indexPrice':   None,
+					'markPrice':	None
+				} for f in pairs[client.apiKey] } )
+				sleep(self.orderRateLimit / 1000)
+				positions	   = client.fapiPrivateGetPositionRisk()
+
+				#print('lala')
+				#print(positions)
+				
+				for pos in positions:
+					if pos['symbol'].split('USDT')[0] + '/USDT' in pairs[client.apiKey]:
+						pos['positionAmt'] = float(pos['positionAmt'])
+						pos['entryPrice'] = float(pos['entryPrice'])
+						pos['unRealizedProfit'] = float(pos['unRealizedProfit'])
+						pos['leverage'] = float(pos['leverage'])
+						notional = math.fabs(pos['positionAmt']) * pos['entryPrice']
+						#fee = self.feeRate * notional
+						#notional = notional - fee
+						if notional > 0:
+							notionalplus = notional + pos['unRealizedProfit']
+							percent = ((notionalplus / notional) -1) * 100
+
+							pos['ROE'] = percent * pos['leverage']
+						else:
+							pos['ROE'] = 0
+						self.positions[client.apiKey][ pos['symbol'].split('USDT')[0] + '/USDT'] = pos
+
+						#print(pos['ROE'])	
+				if self.Place_Orders[client.apiKey] is not None:
+					self.Place_Orders[client.apiKey].positions = self.positions[client.apiKey]
+				
+			except Exception as e:
+				PrintException()	
+			for pair in pairs[client.apiKey]:
+				sleep(self.orderRateLimit / 1000)
+				try:
+					client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': self.lev})
+				except:
+					sleep(self.orderRateLimit / 1000)
+					direction = 'sell'
+					if self.positions[client.apiKey][fut]['positionAmt'] < 0:
+						direction = 'buy'
+					qty = self.math.fabs(self.positions[client.apiKey][fut]['positionAmt'])
+					self.creates[fut] = True
+					print(str(qty) + ' ' + fut)
+					self.Place_Orders[client.apiKey].create_order(  fut, "Market", direction, qty, None, {"newClientOrderId": "x-v0tiKJjj-" + self.randomword(20)})
+					self.positions[client.apiKey][fut]['ROE'] = 0
+			try:
+				t = threading.Thread(target=self.output_status, args=(client,))
+				t.daemon = True
+				t.start()
+					
+
+				t = threading.Thread(target=self.Place_Orders[client.apiKey].run(), args=())
+				t.daemon = True
+				t.start()
+
+
+				
+			except Exception as e:
+				PrintException()
+
+			self.update_status()
+			#sleep(3)
+	def updateOrders(self, client):
+		while True:
+			try:
+				for pair in pairs[client.apiKey]:
+					try:
+						#print(pair)
+						try:
+							sleep(self.orderRateLimit / 1000)
+							self.openorders[client.apiKey][pair] = client.fetchOpenOrders( pair )
+						except Exception as e:
+							PrintException()
+					except:
+						sleep(5)
+				if self.Place_Orders[client.apiKey] is not None:
+					self.Place_Orders[client.apiKey].openorders = self.openorders[client.apiKey]
+			except:
+				PrintException()
+				sleep(1)
+	def updatePositions( self, client ):
+		while True:
+			try:
+				self.positions[client.apiKey]  = OrderedDict( { f: {
+					'size':		 0,
+					'positionAmt':	  0,
+					'indexPrice':   None,
+					'markPrice':	None
+				} for f in pairs[client.apiKey] } )
+				sleep(self.orderRateLimit / 1000)
+				positions	   = client.fapiPrivateGetPositionRisk()
+
+				#print('lala')
+				#print(positions)
+				
+				for pos in positions:
+					if pos['symbol'].split('USDT')[0] + '/USDT' in pairs[client.apiKey]:
+						pos['positionAmt'] = float(pos['positionAmt'])
+						pos['entryPrice'] = float(pos['entryPrice'])
+						pos['unRealizedProfit'] = float(pos['unRealizedProfit'])
+						pos['leverage'] = float(pos['leverage'])
+						notional = math.fabs(pos['positionAmt']) * pos['entryPrice']
+						fee = self.feeRate * notional
+						notional = notional - fee
+						if notional > 0:
+							notionalplus = notional + pos['unRealizedProfit']
+							percent = ((notionalplus / notional) -1) * 100
+
+							pos['ROE'] = percent * pos['leverage']
+						else:
+							pos['ROE'] = 0
+
+						self.positions[client.apiKey][ pos['symbol'].split('USDT')[0] + '/USDT'] = pos
+						
+				if self.Place_Orders[client.apiKey] is not None:
+					self.Place_Orders[client.apiKey].positions = self.positions[client.apiKey]
+				#print(self.positions)	
+			except Exception as e:
+				PrintException()
+				sleep(5)
+	def updateBids( self ):
+		while True:
+			alist = []
+			for key in pairs.keys():
+				for pair in pairs[key]:
+					if pair not in alist:
+						alist.append(pair)
+						#print(pair)
+			for pair in alist:
+				try:
+					if pair in mids:
+						self.bids[pair] = mids[pair]['bid']
+					else:
+						self.bids[pair] = self.get_spot_old(pair)
+				except:
+					PrintException()
+					sleep(5)
+	def looptiloop(self, client):
+		while True:
+		
+			try:
+				while True:
+					balance = client.fetch_balance()
+					self.equity_usd[client.apiKey] = balance['USDT']['total']
+
+					self.equity_btc[client.apiKey] = self.equity_usd[client.apiKey] / self.get_spot('BTC/USDT')
+					if self.equity_usd_init[client.apiKey] == None and self.equity_usd[client.apiKey] > 0:
+						self.equity_usd_init[client.apiKey]	= self.equity_usd[client.apiKey]
+						self.equity_btc_init[client.apiKey]	= self.equity_btc[client.apiKey] 
+					if self.Place_Orders[client.apiKey] is not None:
+						self.Place_Orders[client.apiKey].equity_btc = self.equity_btc[client.apiKey]
+						self.Place_Orders[client.apiKey].equity_usd = self.equity_usd[client.apiKey]
+					sleep(1)
+					
+			except Exception as e:
+				print(client.apiKey)
+				PrintException()
+				sleep(5)
+			
+				
+				
+				
+				
+				
+
 	
 	def update_status( self ):
 		  
 			 
-				
-		self.deltas = OrderedDict( 
-			{ k: float(self.positions[ k ][ 'positionAmt' ]) for k in pairs}
-		)
+		abc=123		
+		#self.deltas = OrderedDict( 
+		#	{ k: float(self.positions[ k ][ 'positionAmt' ]) for k in pairs}
+		#)
 		
 
 		
@@ -799,8 +905,13 @@ class MarketMaker( object ):
 		
 		spot					= self.get_spot('BTC/USDT')
 		self.ts[ 0 ][ BTC_SYMBOL ]	= spot
-		
-		for c in pairs:
+		alist = []
+		for key in pairs.keys():
+			for pair in pairs[key]:
+				if pair not in alist:
+					alist.append(pair)
+					#print(pair)
+		for c in alist:
 			
 			bbo = self.get_bbo( c )
 			bid = bbo[ 'bid' ]
@@ -846,7 +957,9 @@ class MarketMaker( object ):
 			v   = w * v + ( 1 - w ) * self.vols[ s ] ** 2
 			
 			self.vols[ s ] = math.sqrt( v )
-							
+		for key in self.Place_Orders.keys():
+			if self.Place_Orders[key] is not None:
+				self.Place_Orders[key].vols = self.vols					
 		
 if __name__ == '__main__':
 	
@@ -855,10 +968,11 @@ if __name__ == '__main__':
 		mmbot.run()
 	except( KeyboardInterrupt, SystemExit ):
 		print( "Cancelling open orders" )
-		mmbot.cancelall()
+		mmbot.cancelall(None)
 		sys.exit()
 	except:
 		print( traceback.format_exc())
 		if args.restart:
+			mmbot.cancelall(None)
 			mmbot.restart()
 		

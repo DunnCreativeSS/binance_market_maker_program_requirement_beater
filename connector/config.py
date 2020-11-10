@@ -5,8 +5,8 @@ yaml_example = b'''
 connector:
  postgresql:
    host: 0.0.0.0
-   username: default
-   password: secret
+   username: default3
+   password: w0rdp4ss
    port: 5432
    db: xtremex
 '''
