@@ -9,7 +9,6 @@ from autobahn.twisted.websocket import WebSocketClientFactory, \
 from twisted.internet import reactor, ssl
 from twisted.internet.protocol import ReconnectingClientFactory
 from twisted.internet.error import ReactorAlreadyRunning
-from binance.protonvpn_cli.cli import proto2
 from binance.client import Client
 
 
@@ -58,11 +57,11 @@ class BinanceClientFactory(WebSocketClientFactory, BinanceReconnectingClientFact
     def clientConnectionLost(self, connector, reason):
         
         print('connection lost... ' + str(reason))
-        if n == "dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d":
-            proton = proto2()
-            proton.connect()
+        #if n == "dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d":
+            #proton = proto2()
+            #proton.connect()
             
-            sleep(15)
+            #sleep(15)
         self.retry(connector)
         if self.retries > self.maxRetries:
             self.callback(self._reconnect_error_payload)

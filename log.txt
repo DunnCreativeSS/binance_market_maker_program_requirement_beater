@@ -1,0 +1,489 @@
+2020-11-10 21:10:20, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:20, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 2
+2020-11-10 21:10:22, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 2
+2020-11-10 21:10:22, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:10:22, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:22, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 3
+2020-11-10 21:10:22, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 2
+2020-11-10 21:10:22, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 1
+2020-11-10 21:10:22, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:22, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 2
+2020-11-10 21:10:22, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZRX/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:10:23, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:23, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 3
+2020-11-10 21:10:25, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 2
+2020-11-10 21:10:25, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:10:28, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:28, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 2
+2020-11-10 21:10:29, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:30, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 3
+2020-11-10 21:10:30, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:30, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 2
+2020-11-10 21:10:30, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:30, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 1
+2020-11-10 21:10:30, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:30, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 2
+2020-11-10 21:10:31, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:31, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 1
+2020-11-10 21:10:31, line: 672: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-10 21:10:31, line: 673: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 570803.1982467576, in BTC: 37.254
+2020-11-10 21:10:31, line: 674: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $33.82
+2020-11-10 21:10:31, line: 677: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 2.6x the balance now, bringing projected USD/month to: 1481610.43, and BTC: 96.7
+2020-11-10 21:10:31, line: 685: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.013% PnL so far, or 6875.78 % Annual Percentage Yield!
+2020-11-10 21:10:31, line: 691: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: For 3000 btc/month volumes, would make the equity minimum approx. $1049.22
+2020-11-10 21:10:31, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:10:31, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):          13.19
+2020-11-10 21:10:31, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)               0.00
+2020-11-10 21:10:31, line: 696: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):       0.0009
+2020-11-10 21:10:31, line: 697: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)           0.0000
+2020-11-10 21:10:31, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:10:32, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:32, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:10:33, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 1
+2020-11-10 21:10:33, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:10:33, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 2
+2020-11-10 21:10:33, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:10:33, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:33, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:10:33, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 1
+2020-11-10 21:10:33, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:10:34, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:10:35, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:10:37, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 3
+2020-11-10 21:10:38, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:10:38, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 4
+2020-11-10 21:10:38, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:10:43, line: 672: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-10 21:10:43, line: 673: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 852000.9957227187, in BTC: 55.607
+2020-11-10 21:10:44, line: 674: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $32.63
+2020-11-10 21:10:44, line: 677: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 2.55x the balance now, bringing projected USD/month to: 2169225.66, and BTC: 141.58
+2020-11-10 21:10:44, line: 685: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.019% PnL so far, or 8503.599 % Annual Percentage Yield!
+2020-11-10 21:10:44, line: 691: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: For 3000 btc/month volumes, would make the equity minimum approx. $691.46
+2020-11-10 21:10:44, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:10:44, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):          12.79
+2020-11-10 21:10:44, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)               0.00
+2020-11-10 21:10:44, line: 696: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):       0.0008
+2020-11-10 21:10:44, line: 697: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)           0.0000
+2020-11-10 21:10:45, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:10:47, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:11:04, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 3
+2020-11-10 21:11:04, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:05, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 4
+2020-11-10 21:11:05, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:06, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 3
+2020-11-10 21:11:06, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:06, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 4
+2020-11-10 21:11:06, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:08, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 3
+2020-11-10 21:11:08, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:09, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 4
+2020-11-10 21:11:09, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:16, line: 672: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-10 21:11:16, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 2
+2020-11-10 21:11:16, line: 673: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 658411.816529248, in BTC: 42.963
+2020-11-10 21:11:16, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:16, line: 674: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $45.91
+2020-11-10 21:11:16, line: 677: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 3.53x the balance now, bringing projected USD/month to: 2321132.6, and BTC: 151.46
+2020-11-10 21:11:16, line: 680: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: With 80.52700985332106x the balance now that we'd need for the 3000 btc/month minimum, though, projected USD/month to: 53019934.84, and BTC: 3459.7
+2020-11-10 21:11:16, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:11:17, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:17, line: 685: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.032% PnL so far, or 10003.867 % Annual Percentage Yield!
+2020-11-10 21:11:17, line: 691: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: For 3000 btc/month volumes, would make the equity minimum approx. $909.3
+2020-11-10 21:11:17, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:11:17, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):          13.03
+2020-11-10 21:11:18, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)              -0.16
+2020-11-10 21:11:18, line: 696: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):       0.0009
+2020-11-10 21:11:18, line: 697: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)          -0.0000
+2020-11-10 21:11:18, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:11:19, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 2
+2020-11-10 21:11:19, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:19, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:11:19, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:20, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 2
+2020-11-10 21:11:20, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:21, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:11:21, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:26, line: 672: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-10 21:11:26, line: 673: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 1242271.1161793796, in BTC: 81.062
+2020-11-10 21:11:26, line: 674: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $34.03
+2020-11-10 21:11:26, line: 677: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 2.65x the balance now, bringing projected USD/month to: 3295595.06, and BTC: 215.05
+2020-11-10 21:11:26, line: 680: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: With 53.949816990659315x the balance now that we'd need for the 3000 btc/month minimum, though, projected USD/month to: 67020299.37, and BTC: 4373.27
+2020-11-10 21:11:26, line: 685: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.01 by now (on our actual equity), or rather earning 0.053% PnL so far, or 14864.183 % Annual Percentage Yield!
+2020-11-10 21:11:27, line: 691: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: For 3000 btc/month volumes, would make the equity minimum approx. $474.8
+2020-11-10 21:11:27, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:11:27, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):          12.82
+2020-11-10 21:11:27, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)               0.02
+2020-11-10 21:11:27, line: 696: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):       0.0008
+2020-11-10 21:11:27, line: 697: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)           0.0000
+2020-11-10 21:11:28, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:11:31, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 2
+2020-11-10 21:11:31, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:33, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:11:33, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:34, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 3
+2020-11-10 21:11:34, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:35, line: 156: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenbidorders BAT 4
+2020-11-10 21:11:35, line: 157: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenaskorders BAT 0
+2020-11-10 21:11:36, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 2
+2020-11-10 21:11:36, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:36, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:11:37, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:38, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 4
+2020-11-10 21:11:38, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:11:49, line: 156: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenbidorders BAT 3
+2020-11-10 21:11:49, line: 157: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenaskorders BAT 0
+2020-11-10 21:12:05, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:12:05, line: 236: argskey: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:12:05, line: 289: key 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:12:05, line: 1185: 0
+2020-11-10 21:12:05, line: 711: 1
+2020-11-10 21:12:05, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:12:05, line: 1185: 0
+2020-11-10 21:12:05, line: 711: 1
+2020-11-10 21:12:05, line: 340: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:12:05, line: 340: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:12:07, line: 728: 2
+2020-11-10 21:12:07, line: 728: 2
+2020-11-10 21:12:08, line: 738: 3
+2020-11-10 21:12:08, line: 738: 3
+2020-11-10 21:12:13, line: 878: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U equity starting: 12.81762892
+2020-11-10 21:12:14, line: 878: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 13.09366701
+2020-11-10 21:12:22, line: 226: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: start thread place_orders: 27
+2020-11-10 21:12:24, line: 226: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 27
+2020-11-10 21:12:25, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel XLM/USDT: from 3 bid_ords and 7 asks, cancelling: 4
+2020-11-10 21:12:25, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel RLC/USDT: from 1 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:12:25, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOTA/USDT: from 4 bid_ords and 4 asks, cancelling: 2
+2020-11-10 21:12:26, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOTA/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:12:26, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel XLM/USDT: from 3 bid_ords and 7 asks, cancelling: 4
+2020-11-10 21:12:27, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel XLM/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:12:27, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel DASH/USDT: from 5 bid_ords and 1 asks, cancelling: 2
+2020-11-10 21:12:28, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 10 bid_ords and 0 asks, cancelling: 7
+2020-11-10 21:12:28, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOTA/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:12:28, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ATOM/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:12:28, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ATOM/USDT: from 6 bid_ords and 0 asks, cancelling: 3
+2020-11-10 21:12:29, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ATOM/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:12:29, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 9 bid_ords and 0 asks, cancelling: 6
+2020-11-10 21:12:29, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 8 bid_ords and 0 asks, cancelling: 5
+2020-11-10 21:12:30, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel IOST/USDT: from 3 bid_ords and 6 asks, cancelling: 3
+2020-11-10 21:12:30, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 7 bid_ords and 0 asks, cancelling: 4
+2020-11-10 21:12:30, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 9 bid_ords and 0 asks, cancelling: 6
+2020-11-10 21:12:31, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZIL/USDT: from 4 bid_ords and 3 asks, cancelling: 1
+2020-11-10 21:12:31, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 7 bid_ords and 0 asks, cancelling: 4
+2020-11-10 21:12:31, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 6 bid_ords and 0 asks, cancelling: 3
+2020-11-10 21:12:31, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ATOM/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:12:31, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 9 bid_ords and 0 asks, cancelling: 6
+2020-11-10 21:12:31, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XLM/USDT: from 4 bid_ords and 1 asks, cancelling: 1
+2020-11-10 21:12:31, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 9 bid_ords and 0 asks, cancelling: 6
+2020-11-10 21:12:32, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 6 bid_ords and 0 asks, cancelling: 3
+2020-11-10 21:12:32, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel BAT/USDT: from 6 bid_ords and 0 asks, cancelling: 3
+2020-11-10 21:12:33, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel XTZ/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:12:33, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:34, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:12:34, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:34, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel IOST/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:12:35, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:12:35, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel BAT/USDT: from 7 bid_ords and 0 asks, cancelling: 4
+2020-11-10 21:12:35, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:36, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel XTZ/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:12:36, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:12:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZIL/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:12:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel BAT/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:12:37, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:38, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:39, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel IOST/USDT: from 4 bid_ords and 3 asks, cancelling: 1
+2020-11-10 21:12:39, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel BAT/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:12:39, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:40, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:12:41, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:41, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:42, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZIL/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:12:42, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:43, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:43, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 4 bid_ords and 1 asks, cancelling: 1
+2020-11-10 21:12:44, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:46, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:47, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 4 bid_ords and 2 asks, cancelling: 1
+2020-11-10 21:12:47, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:48, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:51, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 7 bid_ords and 6 asks, cancelling: 7
+2020-11-10 21:12:53, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:53, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 8 bid_ords and 6 asks, cancelling: 8
+2020-11-10 21:12:54, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 6 bid_ords and 6 asks, cancelling: 6
+2020-11-10 21:12:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 4 asks, cancelling: 3
+2020-11-10 21:12:56, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 6 bid_ords and 3 asks, cancelling: 3
+2020-11-10 21:12:56, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:12:56, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 3 asks, cancelling: 2
+2020-11-10 21:12:58, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 4 bid_ords and 3 asks, cancelling: 1
+2020-11-10 21:12:58, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:01, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:01, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:02, line: 672: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-10 21:13:02, line: 673: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 767527.7459440063, in BTC: 50.059
+2020-11-10 21:13:03, line: 674: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $41.25
+2020-11-10 21:13:03, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:03, line: 677: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 3.16x the balance now, bringing projected USD/month to: 2426188.92, and BTC: 158.24
+2020-11-10 21:13:03, line: 685: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.018% PnL so far, or 10297.144 % Annual Percentage Yield!
+2020-11-10 21:13:03, line: 691: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: For 3000 btc/month volumes, would make the equity minimum approx. $782.01
+2020-11-10 21:13:03, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:13:03, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:03, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):          13.09
+2020-11-10 21:13:03, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)               0.00
+2020-11-10 21:13:03, line: 696: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):       0.0009
+2020-11-10 21:13:03, line: 697: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)           0.0000
+2020-11-10 21:13:03, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:13:04, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:04, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:05, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:07, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:07, line: 672: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-10 21:13:07, line: 673: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 421817.0860396945, in BTC: 27.512
+2020-11-10 21:13:07, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:07, line: 674: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $79.84
+2020-11-10 21:13:08, line: 677: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 6.22x the balance now, bringing projected USD/month to: 2624508.93, and BTC: 171.18
+2020-11-10 21:13:08, line: 685: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.01% PnL so far, or 5114.096 % Annual Percentage Yield!
+2020-11-10 21:13:08, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:08, line: 691: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: For 3000 btc/month volumes, would make the equity minimum approx. $1399.23
+2020-11-10 21:13:08, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:13:09, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:09, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):          12.82
+2020-11-10 21:13:09, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)               0.00
+2020-11-10 21:13:09, line: 696: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):       0.0008
+2020-11-10 21:13:09, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:10, line: 697: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)           0.0000
+2020-11-10 21:13:10, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:13:10, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:12, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:13, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:13, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:14, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:14, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:15, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:16, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:17, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:17, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:18, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:19, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:19, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:20, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:20, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:21, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:23, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:28, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:30, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:32, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:33, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:35, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:36, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:38, line: 200: EXCEPTION IN (/mnt/d/alimm-bot-newest/strategies/mm.py, LINE 157 "if bat > 5:"): '>' not supported between instances of 'list' and 'int'
+2020-11-10 21:13:59, line: 236: argskey: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:13:59, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:13:59, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:13:59, line: 1185: 0
+2020-11-10 21:13:59, line: 711: 1
+2020-11-10 21:13:59, line: 340: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:13:59, line: 289: key 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:13:59, line: 1185: 0
+2020-11-10 21:13:59, line: 711: 1
+2020-11-10 21:13:59, line: 340: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:14:00, line: 728: 2
+2020-11-10 21:14:00, line: 728: 2
+2020-11-10 21:14:02, line: 738: 3
+2020-11-10 21:14:02, line: 738: 3
+2020-11-10 21:14:07, line: 878: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 13.11635273
+2020-11-10 21:14:07, line: 878: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U equity starting: 12.87805521
+2020-11-10 21:14:16, line: 226: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: start thread place_orders: 27
+2020-11-10 21:14:20, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ZEC/USDT: from 0 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:14:20, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel BAT/USDT: from 2 bid_ords and 10 asks, cancelling: 7
+2020-11-10 21:14:20, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 12
+2020-11-10 21:14:20, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 11
+2020-11-10 21:14:21, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 12
+2020-11-10 21:14:21, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOTA/USDT: from 1 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:14:21, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 11
+2020-11-10 21:14:21, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOTA/USDT: from 2 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:14:22, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 12
+2020-11-10 21:14:22, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel BAT/USDT: from 2 bid_ords and 9 asks, cancelling: 6
+2020-11-10 21:14:22, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 11
+2020-11-10 21:14:22, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ZIL/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:14:22, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel BAT/USDT: from 2 bid_ords and 8 asks, cancelling: 5
+2020-11-10 21:14:22, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 10
+2020-11-10 21:14:23, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel BAT/USDT: from 2 bid_ords and 7 asks, cancelling: 4
+2020-11-10 21:14:23, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 9
+2020-11-10 21:14:24, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel BAT/USDT: from 2 bid_ords and 6 asks, cancelling: 3
+2020-11-10 21:14:24, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 8
+2020-11-10 21:14:24, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel BAT/USDT: from 2 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:14:24, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 7
+2020-11-10 21:14:24, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel BAT/USDT: from 2 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:14:24, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:14:26, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel XLM/USDT: from 0 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:14:27, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ZIL/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:14:29, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOST/USDT: from 4 bid_ords and 5 asks, cancelling: 3
+2020-11-10 21:14:30, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOST/USDT: from 3 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:14:31, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOST/USDT: from 2 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:14:33, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ZIL/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:14:39, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:14:41, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:14:53, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:14:55, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:14:57, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:15:03, line: 672: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-10 21:15:03, line: 673: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 843794.8522552808, in BTC: 55.056
+2020-11-10 21:15:03, line: 674: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $34.9
+2020-11-10 21:15:03, line: 677: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 2.72x the balance now, bringing projected USD/month to: 2296304.76, and BTC: 149.83
+2020-11-10 21:15:03, line: 685: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.02% PnL so far, or 10002.614 % Annual Percentage Yield!
+2020-11-10 21:15:03, line: 691: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: For 3000 btc/month volumes, would make the equity minimum approx. $698.88
+2020-11-10 21:15:04, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:15:04, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):          12.88
+2020-11-10 21:15:04, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:15:04, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)               0.00
+2020-11-10 21:15:04, line: 696: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):       0.0008
+2020-11-10 21:15:04, line: 697: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)           0.0000
+2020-11-10 21:15:04, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:15:10, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:15:10, line: 236: argskey: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:15:10, line: 289: key 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:15:10, line: 1185: 0
+2020-11-10 21:15:10, line: 711: 1
+2020-11-10 21:15:10, line: 340: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-10 21:15:10, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:15:10, line: 1185: 0
+2020-11-10 21:15:10, line: 711: 1
+2020-11-10 21:15:10, line: 340: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-10 21:15:11, line: 728: 2
+2020-11-10 21:15:11, line: 728: 2
+2020-11-10 21:15:13, line: 738: 3
+2020-11-10 21:15:14, line: 738: 3
+2020-11-10 21:15:19, line: 878: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 13.12744366
+2020-11-10 21:15:19, line: 878: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U equity starting: 12.86916351
+2020-11-10 21:15:28, line: 226: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 27
+2020-11-10 21:15:28, line: 226: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: start thread place_orders: 27
+2020-11-10 21:15:32, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XLM/USDT: from 3 bid_ords and 6 asks, cancelling: 3
+2020-11-10 21:15:32, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel IOST/USDT: from 3 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:15:32, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 3
+2020-11-10 21:15:33, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 4
+2020-11-10 21:15:33, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 3
+2020-11-10 21:15:33, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel XMR/USDT: from 1 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:15:33, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XLM/USDT: from 3 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:15:33, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:15:33, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 24 bid_ords and 0 asks, cancelling: 21
+2020-11-10 21:15:33, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ZIL/USDT: from 6 bid_ords and 0 asks, cancelling: 3
+2020-11-10 21:15:34, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOST/USDT: from 2 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:15:34, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel IOST/USDT: from 5 bid_ords and 4 asks, cancelling: 3
+2020-11-10 21:15:34, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XLM/USDT: from 3 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:15:34, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 3
+2020-11-10 21:15:34, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:15:34, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel IOST/USDT: from 5 bid_ords and 3 asks, cancelling: 2
+2020-11-10 21:15:34, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 23 bid_ords and 0 asks, cancelling: 20
+2020-11-10 21:15:35, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:15:35, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ZIL/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:15:35, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 22 bid_ords and 0 asks, cancelling: 19
+2020-11-10 21:15:35, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel THETA/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:15:35, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:15:35, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel IOTA/USDT: from 4 bid_ords and 3 asks, cancelling: 1
+2020-11-10 21:15:35, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel IOST/USDT: from 4 bid_ords and 3 asks, cancelling: 1
+2020-11-10 21:15:35, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 21 bid_ords and 0 asks, cancelling: 18
+2020-11-10 21:15:35, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel OMG/USDT: from 4 bid_ords and 1 asks, cancelling: 1
+2020-11-10 21:15:35, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 19 bid_ords and 0 asks, cancelling: 16
+2020-11-10 21:15:36, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 18 bid_ords and 0 asks, cancelling: 15
+2020-11-10 21:15:36, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 16 bid_ords and 0 asks, cancelling: 13
+2020-11-10 21:15:36, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 15 bid_ords and 0 asks, cancelling: 12
+2020-11-10 21:15:36, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 13 bid_ords and 0 asks, cancelling: 10
+2020-11-10 21:15:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 12 bid_ords and 0 asks, cancelling: 9
+2020-11-10 21:15:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 11 bid_ords and 0 asks, cancelling: 8
+2020-11-10 21:15:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 11 bid_ords and 0 asks, cancelling: 8
+2020-11-10 21:15:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 9 bid_ords and 0 asks, cancelling: 6
+2020-11-10 21:15:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 7 bid_ords and 0 asks, cancelling: 4
+2020-11-10 21:15:37, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 6 bid_ords and 0 asks, cancelling: 3
+2020-11-10 21:15:38, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 6 bid_ords and 0 asks, cancelling: 3
+2020-11-10 21:15:38, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:15:38, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:15:38, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:15:38, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:15:39, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:15:39, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 5 bid_ords and 0 asks, cancelling: 2
+2020-11-10 21:15:39, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:15:39, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XTZ/USDT: from 3 bid_ords and 6 asks, cancelling: 3
+2020-11-10 21:15:39, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:15:40, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XTZ/USDT: from 3 bid_ords and 5 asks, cancelling: 2
+2020-11-10 21:15:40, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 6
+2020-11-10 21:15:42, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XTZ/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:15:44, line: 148: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: cancel ATOM/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:15:49, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 4
+2020-11-10 21:15:49, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:15:49, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 3
+2020-11-10 21:15:49, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZEC/USDT: from 4 bid_ords and 0 asks, cancelling: 1
+2020-11-10 21:15:51, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 4
+2020-11-10 21:15:51, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 24 bid_ords and 1 asks, cancelling: 21
+2020-11-10 21:15:52, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 23 bid_ords and 1 asks, cancelling: 20
+2020-11-10 21:15:52, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 22 bid_ords and 1 asks, cancelling: 19
+2020-11-10 21:15:53, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 20 bid_ords and 1 asks, cancelling: 17
+2020-11-10 21:15:53, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 20 bid_ords and 1 asks, cancelling: 17
+2020-11-10 21:15:53, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 18 bid_ords and 1 asks, cancelling: 15
+2020-11-10 21:15:54, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 18 bid_ords and 2 asks, cancelling: 15
+2020-11-10 21:15:54, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 16 bid_ords and 1 asks, cancelling: 13
+2020-11-10 21:15:54, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 14 bid_ords and 1 asks, cancelling: 11
+2020-11-10 21:15:54, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 13 bid_ords and 1 asks, cancelling: 10
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 11 bid_ords and 1 asks, cancelling: 8
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 9 bid_ords and 1 asks, cancelling: 6
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 9 bid_ords and 1 asks, cancelling: 6
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 8 bid_ords and 1 asks, cancelling: 5
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 7 bid_ords and 1 asks, cancelling: 4
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 6 bid_ords and 1 asks, cancelling: 3
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 1 asks, cancelling: 2
+2020-11-10 21:15:55, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 1 asks, cancelling: 2
+2020-11-10 21:15:56, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 1 asks, cancelling: 2
+2020-11-10 21:15:56, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 1 asks, cancelling: 2
+2020-11-10 21:15:56, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 1 asks, cancelling: 2
+2020-11-10 21:15:56, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 5 bid_ords and 1 asks, cancelling: 2
+2020-11-10 21:15:56, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel THETA/USDT: from 4 bid_ords and 1 asks, cancelling: 1
+2020-11-10 21:16:01, line: 148: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel XTZ/USDT: from 3 bid_ords and 4 asks, cancelling: 1
+2020-11-10 21:16:04, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 4
+2020-11-10 21:16:05, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 5
+2020-11-10 21:16:08, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 5
+2020-11-10 21:16:11, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 5
+2020-11-10 21:16:12, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 4
+2020-11-10 21:16:12, line: 672: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-10 21:16:12, line: 673: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 1269562.1484647088, in BTC: 82.78
+2020-11-10 21:16:12, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 4
+2020-11-10 21:16:12, line: 672: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-10 21:16:12, line: 674: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $24.43
+2020-11-10 21:16:12, line: 677: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 1.86x the balance now, bringing projected USD/month to: 2361749.38, and BTC: 153.99
+2020-11-10 21:16:12, line: 673: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 1252448.0201616911, in BTC: 81.653
+2020-11-10 21:16:12, line: 685: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.027% PnL so far, or 13946.577 % Annual Percentage Yield!
+2020-11-10 21:16:12, line: 674: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $27.96
+2020-11-10 21:16:13, line: 691: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: For 3000 btc/month volumes, would make the equity minimum approx. $476.02
+2020-11-10 21:16:13, line: 677: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 2.18x the balance now, bringing projected USD/month to: 2726175.7, and BTC: 177.73
+2020-11-10 21:16:13, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:16:13, line: 685: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.024% PnL so far, or 12365.676 % Annual Percentage Yield!
+2020-11-10 21:16:13, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):          13.13
+2020-11-10 21:16:13, line: 691: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: For 3000 btc/month volumes, would make the equity minimum approx. $471.86
+2020-11-10 21:16:13, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)               0.00
+2020-11-10 21:16:13, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 5
+2020-11-10 21:16:13, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 4
+2020-11-10 21:16:13, line: 696: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):       0.0009
+2020-11-10 21:16:13, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:16:13, line: 697: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)           0.0000
+2020-11-10 21:16:13, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-10 21:16:13, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:16:13, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):          12.87
+2020-11-10 21:16:13, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)               0.00
+2020-11-10 21:16:13, line: 696: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):       0.0008
+2020-11-10 21:16:13, line: 697: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)           0.0000
+2020-11-10 21:16:14, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 4
+2020-11-10 21:16:14, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-10 21:16:14, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:16:14, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 4
+2020-11-10 21:16:15, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 5
+2020-11-10 21:16:18, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 4
+2020-11-10 21:16:19, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:16:20, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 4
+2020-11-10 21:16:20, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:16:20, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 4
+2020-11-10 21:16:21, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:16:23, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 4
+2020-11-10 21:16:23, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 5
+2020-11-10 21:16:23, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5
+2020-11-10 21:16:24, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 4
+2020-11-10 21:16:25, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 6
+2020-11-10 21:16:25, line: 158: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: lenorders BAT 7
+2020-11-10 21:16:25, line: 158: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: lenorders BAT 5

@@ -1,0 +1,211 @@
+usage: market_maker.py [-h] [-p] [--no-output] [-m] [--no-restart]
+market_maker.py: error: unrecognized arguments: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+usage: market_maker.py [-h] [-p] [--no-output] [-m] [--no-restart]
+market_maker.py: error: unrecognized arguments: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+18
+18
+2
+7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+0
+1
+2
+1605040046736
+1605040046736
+0.0
+18
+18
+2
+dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+0
+1
+2
+1605040046736
+1605040046736
+0.0
+./run_bot.sh: 1: Syntax error: "(" unexpected
+usage: market_maker.py [-h] [-p] [--no-output] [-m] [--no-restart]
+market_maker.py: error: unrecognized arguments: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+usage: market_maker.py [-h] [-p] [--no-output] [-m] [--no-restart]
+market_maker.py: error: unrecognized arguments: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+18
+18
+2
+dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+0
+1
+2
+1605040244157
+1605040244157
+0.0
+18
+18
+2
+7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+0
+1
+2
+1605040244157
+1605040244157
+0.0
+Traceback (most recent call last):
+  File "market_maker.py", line 7, in <module>
+    pprint(len(pairs[key]))
+NameError: name 'pprint' is not defined
+Traceback (most recent call last):
+  File "market_maker.py", line 7, in <module>
+    pprint(len(pairs[key]))
+NameError: name 'pprint' is not defined
+Traceback (most recent call last):
+  File "market_maker.py", line 235, in <module>
+    pprint('argskey: ' + args.key)
+  File "market_maker.py", line 175, in pprint
+    myfile.write(datetime.datetime.utcnow().strftime( '%Y-%m-%d %H:%M:%S' ) + ', line: ' + str(inspect.currentframe().f_back.f_lineno)  + ': ' + str(string) + '\n')
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "market_maker.py", line 235, in <module>
+    pprint('argskey: ' + args.key)
+  File "market_maker.py", line 175, in pprint
+    myfile.write(datetime.datetime.utcnow().strftime( '%Y-%m-%d %H:%M:%S' ) + ', line: ' + str(inspect.currentframe().f_back.f_lineno)  + ': ' + str(string) + '\n')
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+Traceback (most recent call last):
+  File "market_maker.py", line 235, in <module>
+    pprint('argskey: ' + args.key)
+  File "market_maker.py", line 175, in pprint
+    myfile.write(datetime.utcnow().strftime( '%Y-%m-%d %H:%M:%S' ) + ', line: ' + str(inspect.currentframe().f_back.f_lineno)  + ': ' + str(string) + '\n')
+NameError: name 'inspect' is not defined
+Traceback (most recent call last):
+  File "market_maker.py", line 235, in <module>
+    pprint('argskey: ' + args.key)
+  File "market_maker.py", line 175, in pprint
+    myfile.write(datetime.utcnow().strftime( '%Y-%m-%d %H:%M:%S' ) + ', line: ' + str(inspect.currentframe().f_back.f_lineno)  + ': ' + str(string) + '\n')
+NameError: name 'inspect' is not defined
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
+    raise timeout("The read operation timed out")
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 703, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 423, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 330, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 562, in fetch
+    response = self.session.request(
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "market_maker.py", line 925, in run_first
+    client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': self.lev})
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 465, in inner
+    return entry(_self, **inner_kwargs)
+  File "/mnt/d/alimm-bot-newest/ccxt/binance.py", line 2390, in request
+    response = self.fetch2(path, api, method, params, headers, body)
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 486, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 591, in fetch
+    raise RequestTimeout(method + ' ' + url)
+ccxt.base.errors.RequestTimeout: POST https://fapi.binance.com/fapi/v1/leverage
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "market_maker.py", line 932, in run_first
+    self.creates[fut] = True
+AttributeError: 'MarketMaker' object has no attribute 'creates'
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 588, in fetch
+    response.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://fapi.binance.com/fapi/v1/leverage
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "market_maker.py", line 924, in run_first
+    client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': self.lev})
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 465, in inner
+    return entry(_self, **inner_kwargs)
+  File "/mnt/d/alimm-bot-newest/ccxt/binance.py", line 2390, in request
+    response = self.fetch2(path, api, method, params, headers, body)
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 486, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 601, in fetch
+    self.handle_rest_errors(http_status_code, http_status_text, http_response, url, method)
+  File "/mnt/d/alimm-bot-newest/ccxt/base/exchange.py", line 634, in handle_rest_errors
+    raise error(' '.join([method, url, string_code, http_status_text, body]))
+ccxt.base.errors.ExchangeNotAvailable: POST https://fapi.binance.com/fapi/v1/leverage 502 Bad Gateway <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>502 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+The origin closed the connection.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: a1GX8V7gbmVPf6gCl131rEoVifLE76K6BmYKDr3Sl38Ia8dGbwfIFA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "market_maker.py", line 931, in run_first
+    self.creates[fut] = True
+AttributeError: 'MarketMaker' object has no attribute 'creates'
