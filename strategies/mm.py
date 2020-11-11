@@ -61,6 +61,7 @@ class Place_Orders( object ):
         self.con_size = con_size
         self.get_spot = get_spot
         self.client = client
+        self.ordersTo = []
         print('placekey: ' + self.client.apiKey)
         self.get_ticksize = get_ticksize
         self.get_bbo = get_bbo
@@ -341,11 +342,11 @@ class Place_Orders( object ):
                         if self.positions[fut]['positionAmt'] < 0:
                             direction = 'buy'
                         qty = self.math.fabs(self.positions[fut]['positionAmt'])
-                        self.creates[fut] = True
+                        #self.creates[fut] = True
                         if self.client.apiKey == self.firstkey:
                             abc=123#self.pprint(str(qty) + ' ' + fut)
                         try:
-                            self.create_order(  fut, "Market", direction, qty, None, {"newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)})
+                            self.create_order(  fut, "Market", direction, qty, None, "GTC","x-" + self.brokerKey + "-" + self.randomword(20))
                         except Exception as e:
                             self.pprint(e)
                         if self.client.apiKey == self.firstkey:
@@ -357,7 +358,7 @@ class Place_Orders( object ):
                         if self.positions[fut]['positionAmt'] < 0:
                             direction = 'buy'
                         qty = self.math.fabs(self.positions[fut]['positionAmt'])
-                        self.creates[fut] = True
+                        #self.creates[fut] = True
                         if self.client.apiKey == self.firstkey:
                             abc=123#self.pprint(str(qty) + ' ' + fut)
                         if self.client.apiKey == self.firstkey:
@@ -367,7 +368,7 @@ class Place_Orders( object ):
                         t.daemon = True
                         t.start()
                         try:
-                            self.create_order(  fut, "Market", direction, qty, None, {"newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)})
+                            self.create_order(  fut, "Market", direction, qty, None, "GTC","x-" + self.brokerKey + "-" + self.randomword(20))
                         except Exception as e:
                             self.pprint(e)
                         self.positions[fut]['ROE'] = 0
@@ -496,8 +497,8 @@ class Place_Orders( object ):
                                 
                                 if self.positions[fut]['positionAmt'] <= qty * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
                                     
-                                    self.creates[fut] = True
-                                    self.create_order(  fut, "Limit", 'buy', qty, prc, {"timeInForce": "GTX", "newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)})
+                                    #self.creates[fut] = True
+                                    self.create_order(  fut, "Limit", 'buy', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20))
                                 #if self.lbo[fut] > 2 and i > 2:
                                 #    t = self.threading.Thread(target=self.cancel_them, args=(self.bid_ords[fut][ i - 1 ]['id'], fut,))
                                 #    t.daemon = True
@@ -541,8 +542,8 @@ class Place_Orders( object ):
                                 
                                 if self.positions[fut]['positionAmt'] >= qty * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:    
                                     
-                                    self.creates[fut] = True
-                                    self.create_order(  fut, "Limit", 'sell', qty, prc, {"timeInForce": "GTX", "newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)} )
+                                    #self.creates[fut] = True
+                                    self.create_order(  fut, "Limit", 'sell', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20) )
                                 #if self.lao[fut] > 2 and i > 2:
                                 #    t = self.threading.Thread(target=self.cancel_them, args=(self.ask_ords[fut][ i - 1 ]['id'], fut,))
                                 #    t.daemon = True
@@ -595,38 +596,58 @@ class Place_Orders( object ):
                 self.edits[fut] = False
                 done = True
                 self.sleep(self.orderRateLimit / 1000)
-    def create_order( self, fut, type, dir, qty, prc, params ):
+    def create_order( self, fut, type, dir, qty, prc, tif, brokerPhrase ):
         
-        done = False
-        while done == False:
-            try:
-                if self.goforit == True and self.goforit2 == True:
+        
+
+            
+        try:
+            order = {
+                "symbol" : fut.replace('/', ''),
+                "side" : dir.upper(),
+                "type" : type.upper(),
+                "quantity": float(qty),
+                "newClientOrderId": brokerPhrase,
+                "timeInForce": tif
+            }
+            if len(self.ordersTo) < 5:
+                self.ordersTo.append(order)
+                
+            if self.goforit == True and self.goforit2 == True and len(self.ordersTo) >= 5:
+                try:
                     #self.pprint('create ' + fut)
                     self.goforit = False
                     self.num_threads = self.num_threads + 1
-                    t = self.threading.Timer(self.orderRateLimit / 1000, self.resetGoforit)
+                    t = self.threading.Timer((self.orderRateLimit / 1000) * 5, self.resetGoforit)
                     t.daemon = True
                     t.start()
                     #await self.asyncio.sleep(self.orderRateLimit / 1000)
-
-                    self.client.createOrder(fut, type, dir, qty, prc, params )
+                    orders = [self.client.encode_uri_component(self.client.json(order), safe=",") for order in self.ordersTo]
+                    response = self.client.fapiPrivatePostBatchOrders({
+                        'batchOrders': '[' + ','.join(orders) + ']'
+                    })
+                    #self.pprint(response)
+                    self.ordersTo = []
+                    #self.client.createOrder(fut, type, dir, qty, prc, params )
                     if 'XLM' in fut and self.client.apiKey == self.firstkey:
                         abc=123#self.pprint(fut + ' ordered!')
                     done = True
                     
                     self.creates[fut] = False
-                else:
-                    #if 'XLM' in fut:
-                        #self.pprint(fut + ' order blocked!')
-                    self.sleep(self.orderRateLimit / 1000 * len(self.pairs) / 2)
-                            
-            except:
-                if 'XLM' in fut and self.client.apiKey == self.firstkey:
-                    abc=123#self.pprint(fut + ' order exception!')
-                done = True
-                self.PrintException(self.client.apiKey)
-                self.creates[fut] = False
-                self.sleep(self.orderRateLimit / 1000)
+                except:
+                    self.ordersTo = []
+            else:
+                #if 'XLM' in fut:
+                    #self.pprint(fut + ' order blocked!')
+                self.sleep(self.orderRateLimit / 1000 * len(self.pairs) / 2)
+                        
+        except:
+            if 'XLM' in fut and self.client.apiKey == self.firstkey:
+                abc=123#self.pprint(fut + ' order exception!')
+            #done = True
+            self.PrintException(self.client.apiKey)
+            self.creates[fut] = False
+            self.sleep(self.orderRateLimit / 1000)
     def cancel_them( self, oid, fut ):
         done = False
         
