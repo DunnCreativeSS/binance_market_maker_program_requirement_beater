@@ -17304,3 +17304,249 @@ Request ID: p1IH9x76_UsW2FoXrqLq2eLrQMMQ-bmdDukY-m_jMFK1QLw6AQrMWQ==
 2020-11-11 02:08:30, line: 168: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel DOGE/USDT: from 0 bid_ords and 28 asks, cancelling: 9
 2020-11-11 02:08:31, line: 168: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel DOGE/USDT: from 0 bid_ords and 20 asks, cancelling: 9
 2020-11-11 02:08:31, line: 168: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel DOGE/USDT: from 0 bid_ords and 11 asks, cancelling: 8
+2020-11-11 02:18:23, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:18:23, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:18:23, line: 1199: 0
+2020-11-11 02:18:23, line: 724: 1
+2020-11-11 02:18:23, line: 340: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:18:24, line: 741: 2
+2020-11-11 02:18:25, line: 751: 3
+2020-11-11 02:18:28, line: 892: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.09775252
+2020-11-11 02:18:34, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 27
+2020-11-11 02:18:35, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: COMP/USDT stoploss! -20.898346261401247 dir: buy qty 0.276
+2020-11-11 02:18:45, line: 168: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZIL/USDT: from 0 bid_ords and 31 asks, cancelling: 9
+2020-11-11 02:18:46, line: 168: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZIL/USDT: from 0 bid_ords and 23 asks, cancelling: 9
+2020-11-11 02:18:46, line: 168: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZIL/USDT: from 0 bid_ords and 14 asks, cancelling: 9
+2020-11-11 02:18:46, line: 168: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: cancel ZIL/USDT: from 0 bid_ords and 5 asks, cancelling: 2
+2020-11-11 02:19:45, line: 673: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:19:45, line: 674: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 14369.48941978138, in BTC: 0.931
+2020-11-11 02:19:45, line: 675: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $520.93
+2020-11-11 02:19:45, line: 678: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 57.04x the balance now, bringing projected USD/month to: 819564.44, and BTC: 53.12
+2020-11-11 02:19:45, line: 686: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.002% PnL so far, or 293.221 % Annual Percentage Yield!
+2020-11-11 02:19:45, line: 692: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: For 3000 btc/month volumes, would make the equity minimum approx. $29421.78
+2020-11-11 02:19:45, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:19:45, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):           9.10
+2020-11-11 02:19:45, line: 696: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)               0.00
+2020-11-11 02:19:45, line: 697: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):       0.0006
+2020-11-11 02:19:45, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)           0.0000
+2020-11-11 02:19:45, line: 699: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:19:45, line: 704: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:19:45, line: 705: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 4.3631076566948925
+2020-11-11 02:19:45, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.09363953084375728
+2020-11-11 02:19:45, line: 707: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 955.4150341858285
+2020-11-11 02:20:31, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:20:31, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:20:31, line: 1199: 0
+2020-11-11 02:20:31, line: 724: 1
+2020-11-11 02:20:31, line: 340: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:20:31, line: 236: argskey: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-11 02:20:31, line: 289: key 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-11 02:20:31, line: 1199: 0
+2020-11-11 02:20:31, line: 724: 1
+2020-11-11 02:20:31, line: 340: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-11 02:20:31, line: 741: 2
+2020-11-11 02:20:31, line: 741: 2
+2020-11-11 02:20:33, line: 751: 3
+2020-11-11 02:20:33, line: 751: 3
+2020-11-11 02:20:36, line: 892: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.2382964
+2020-11-11 02:20:37, line: 892: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U equity starting: 10.58300336
+2020-11-11 02:20:43, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 27
+2020-11-11 02:20:43, line: 256: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: start thread place_orders: 27
+2020-11-11 02:20:43, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: COMP/USDT stoploss! -23.750998818402593 dir: buy qty 0.276
+2020-11-11 02:20:44, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: RLC/USDT takeprofit! 47.09875529891161 dir: sell qty 3.8
+2020-11-11 02:20:44, line: 353: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: RLC/USDT takeprofit! 41.576736298465924 dir: sell qty 22.6
+2020-11-11 02:21:47, line: 673: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:21:47, line: 674: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 13649.908709876785, in BTC: 0.884
+2020-11-11 02:21:48, line: 675: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $435.14
+2020-11-11 02:21:48, line: 678: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 47.59x the balance now, bringing projected USD/month to: 649653.69, and BTC: 42.09
+2020-11-11 02:21:48, line: 686: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.002% PnL so far, or 317.395 % Annual Percentage Yield!
+2020-11-11 02:21:48, line: 692: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: For 3000 btc/month volumes, would make the equity minimum approx. $31016.39
+2020-11-11 02:21:48, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:21:48, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):           9.24
+2020-11-11 02:21:48, line: 696: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)               0.00
+2020-11-11 02:21:48, line: 697: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):       0.0006
+2020-11-11 02:21:48, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)           0.0000
+2020-11-11 02:21:48, line: 699: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:21:48, line: 704: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:21:48, line: 705: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 4.2233017748750585
+2020-11-11 02:21:48, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.09877868604110566
+2020-11-11 02:21:48, line: 707: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 923.8671245204912
+2020-11-11 02:21:55, line: 673: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-11 02:21:55, line: 674: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:21:55, line: 675: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.11
+2020-11-11 02:21:55, line: 678: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:21:55, line: 686: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:21:55, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:21:55, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):          10.58
+2020-11-11 02:21:55, line: 696: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)               0.00
+2020-11-11 02:21:55, line: 697: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):       0.0007
+2020-11-11 02:21:55, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)           0.0000
+2020-11-11 02:21:55, line: 699: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:21:55, line: 704: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:21:55, line: 705: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potentialday: 0.0
+2020-11-11 02:21:55, line: 706: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2k: 0.0
+2020-11-11 02:21:55, line: 707: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2kday: 0.0
+2020-11-11 02:22:46, line: 673: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:22:46, line: 674: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 10325.639247986877, in BTC: 0.669
+2020-11-11 02:22:46, line: 675: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $563.91
+2020-11-11 02:22:46, line: 678: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 61.64x the balance now, bringing projected USD/month to: 636519.71, and BTC: 41.22
+2020-11-11 02:22:46, line: 681: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: With 3392.490587906643x the balance now that we'd need for the 3000 btc/month minimum, though, projected USD/month to: 35029633.96, and BTC: 2268.24
+2020-11-11 02:22:46, line: 686: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.002% PnL so far, or 244.313 % Annual Percentage Yield!
+2020-11-11 02:22:46, line: 692: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: For 3000 btc/month volumes, would make the equity minimum approx. $41045.72
+2020-11-11 02:22:46, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:22:46, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):           9.14
+2020-11-11 02:22:46, line: 696: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)              -0.10
+2020-11-11 02:22:46, line: 697: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):       0.0006
+2020-11-11 02:22:46, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)          -0.0000
+2020-11-11 02:22:46, line: 699: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:22:46, line: 704: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $-0.095
+2020-11-11 02:22:46, line: 705: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: -111.29997912292995
+2020-11-11 02:22:46, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: -20.81030127563268
+2020-11-11 02:22:46, line: 707: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: -24333.70913972351
+2020-11-11 02:22:49, line: 191: EXCEPTION IN (market_maker.py, LINE 631 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:22:49, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:49, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:49, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:49, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:52, line: 191: EXCEPTION IN (market_maker.py, LINE 631 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:22:52, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:22:53, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:22:56, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:56, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:56, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:56, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:22:59, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:22:59, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:23:50, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:50, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:50, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:50, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:51, line: 191: EXCEPTION IN (market_maker.py, LINE 631 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:23:53, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:23:53, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:23:53, line: 191: EXCEPTION IN (market_maker.py, LINE 631 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:23:56, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:23:56, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:56, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:56, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:56, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:23:59, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:23:59, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:24:48, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:48, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:48, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:48, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:50, line: 191: EXCEPTION IN (market_maker.py, LINE 631 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:24:51, line: 191: EXCEPTION IN (market_maker.py, LINE 631 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:24:51, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:24:51, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:24:55, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:55, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:55, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:55, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:24:58, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:24:58, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:29:55, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:29:55, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:29:55, line: 1210: 0
+2020-11-11 02:29:55, line: 735: 1
+2020-11-11 02:29:55, line: 341: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:29:56, line: 752: 2
+2020-11-11 02:29:57, line: 762: 3
+2020-11-11 02:30:00, line: 903: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.27242009
+2020-11-11 02:30:06, line: 200: EXCEPTION IN (market_maker.py, LINE 642 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): 'MarketMaker' object has no attribute 'threading'
+2020-11-11 02:30:06, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 27
+2020-11-11 02:30:06, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: COMP/USDT stoploss! -29.133348755609468 dir: buy qty 0.276
+2020-11-11 02:30:06, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ZRX/USDT stoploss! -27.281618366191417 dir: sell qty 2.0
+2020-11-11 02:30:07, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: OMG/USDT takeprofit! 41.6516285174362 dir: buy qty 6.2
+2020-11-11 02:30:17, line: 200: EXCEPTION IN (market_maker.py, LINE 645 "volume = (gettrades[0] / (gettrades[2]))"): 'NoneType' object is not subscriptable
+2020-11-11 02:30:28, line: 200: EXCEPTION IN (market_maker.py, LINE 645 "volume = (gettrades[0] / (gettrades[2]))"): 'NoneType' object is not subscriptable
+2020-11-11 02:31:55, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:31:55, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:31:55, line: 1212: 0
+2020-11-11 02:31:55, line: 737: 1
+2020-11-11 02:31:55, line: 341: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:31:55, line: 754: 2
+2020-11-11 02:31:57, line: 764: 3
+2020-11-11 02:32:00, line: 905: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.5033887
+2020-11-11 02:32:05, line: 200: EXCEPTION IN (market_maker.py, LINE 644 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): 'MarketMaker' object has no attribute 'threading'
+2020-11-11 02:32:05, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 27
+2020-11-11 02:32:05, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ZRX/USDT stoploss! -51.11449271632262 dir: sell qty 2.0
+2020-11-11 02:32:06, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: OMG/USDT takeprofit! 53.35859361986217 dir: buy qty 6.2
+2020-11-11 02:32:17, line: 200: EXCEPTION IN (market_maker.py, LINE 644 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:32:29, line: 200: EXCEPTION IN (market_maker.py, LINE 644 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:32:41, line: 200: EXCEPTION IN (market_maker.py, LINE 644 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:32:53, line: 200: EXCEPTION IN (market_maker.py, LINE 644 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:33:06, line: 200: EXCEPTION IN (market_maker.py, LINE 644 "tradet = 0"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:33:15, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:33:15, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:33:15, line: 1217: 0
+2020-11-11 02:33:15, line: 742: 1
+2020-11-11 02:33:15, line: 341: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:33:15, line: 759: 2
+2020-11-11 02:33:17, line: 769: 3
+2020-11-11 02:33:18, line: 910: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.52520068
+2020-11-11 02:33:24, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 28
+2020-11-11 02:33:24, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ATOM/USDT stoploss! -20.8393925075373 dir: sell qty 3.1
+2020-11-11 02:33:24, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ZRX/USDT stoploss! -51.457057188449006 dir: sell qty 2.0
+2020-11-11 02:33:24, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: OMG/USDT takeprofit! 55.400747889007285 dir: buy qty 6.2
+2020-11-11 02:33:25, line: 200: EXCEPTION IN (market_maker.py, LINE 649 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): PrintException() missing 1 required positional argument: 'apiKey'
+2020-11-11 02:34:27, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:34:27, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:34:27, line: 1217: 0
+2020-11-11 02:34:27, line: 742: 1
+2020-11-11 02:34:27, line: 341: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:34:27, line: 759: 2
+2020-11-11 02:34:28, line: 769: 3
+2020-11-11 02:34:31, line: 910: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.38884488
+2020-11-11 02:34:39, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 28
+2020-11-11 02:34:39, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ZRX/USDT stoploss! -43.58811190611017 dir: sell qty 2.0
+2020-11-11 02:34:40, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: OMG/USDT takeprofit! 49.39741817725163 dir: buy qty 6.2
+2020-11-11 02:34:40, line: 200: EXCEPTION IN (market_maker.py, LINE 418 "return(self.getTrades(client, pair, oldTime, quoteTotal, commissionTotal, returnTrades))"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:34:42, line: 200: EXCEPTION IN (market_maker.py, LINE 649 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:34:55, line: 200: EXCEPTION IN (market_maker.py, LINE 418 "return(self.getTrades(client, pair, oldTime, quoteTotal, commissionTotal, returnTrades))"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:34:57, line: 200: EXCEPTION IN (market_maker.py, LINE 649 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:35:10, line: 200: EXCEPTION IN (market_maker.py, LINE 418 "return(self.getTrades(client, pair, oldTime, quoteTotal, commissionTotal, returnTrades))"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:35:12, line: 200: EXCEPTION IN (market_maker.py, LINE 649 "gettrades = self.getTrades(client, pair, 0, 0, 0, [])"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:35:24, line: 200: EXCEPTION IN (market_maker.py, LINE 418 "else:"): local variable 'oldTime' referenced before assignment
+2020-11-11 02:35:29, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:35:29, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:35:29, line: 1219: 0
+2020-11-11 02:35:29, line: 744: 1
+2020-11-11 02:35:29, line: 341: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:35:29, line: 761: 2
+2020-11-11 02:35:30, line: 771: 3
+2020-11-11 02:35:33, line: 912: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.42185568
+2020-11-11 02:35:39, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 28
+2020-11-11 02:35:39, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ZRX/USDT stoploss! -42.0806094610593 dir: sell qty 2.0
+2020-11-11 02:35:40, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: OMG/USDT takeprofit! 54.405216199054365 dir: buy qty 6.2
+2020-11-11 02:35:59, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:35:59, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:35:59, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:35:59, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:35:59, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:35:59, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:35:59, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:35:59, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:35:59, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:35:59, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:35:59, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:35:59, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:35:59, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:35:59, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:35:59, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:36:18, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:36:18, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:36:18, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:36:18, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:36:18, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:36:18, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:36:18, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:36:18, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:36:18, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:36:18, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:36:18, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:36:18, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:36:18, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:36:18, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:36:18, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
