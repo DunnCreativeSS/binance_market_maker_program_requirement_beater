@@ -1516,7 +1516,22 @@ class binance(Exchange):
             'fee': fee,
             'trades': trades,
         }
-
+    def batch_delete_orders(self, symbol, orderIdList, params={}):
+        try:
+            self.load_markets()
+            market = self.market(symbol)
+            method = 'fapiPrivateDeleteBatchOrders'
+            request = {
+                'symbol': market['id'],
+                'orderIdList': json.dumps(orderIdList).replace(', ', ','),
+            }
+            #print(request)
+            response = getattr(self, method)(self.extend(request, params))
+            #print(response)
+        except Exception as e:
+            print(e)
+        finally:
+            return(True)
     def create_order(self, symbol, type, side, amount, price=None, params={}):
         self.load_markets()
         market = self.market(symbol)

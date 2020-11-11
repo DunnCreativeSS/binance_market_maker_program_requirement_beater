@@ -354,7 +354,8 @@ class MarketMaker( object ):
     'enableRateLimit': True}))
         self.client[key] = (binance_futures)
         #pprint(self.client[key].options)
-        #pprint(dir(self.client))           
+        #pprint(dir(self.client)) 
+        #pprint(dir(binance_futures))
         m = binance_futures.fetchMarkets()
         #pprint(m)
     
@@ -370,8 +371,8 @@ class MarketMaker( object ):
         #pprint(d2)
         epoch = datetime(1970,1,1)
         st = int((d - epoch).total_seconds()) * 1000
-        st = start_time
-        days = ((d2 - start_time) / 1000 / 60 / 60 / 24)
+        st = start_time - 60 * 2 * 1000
+        days = ((d2 - st) / 1000 / 60 / 60 / 24)
         #pprint(days)
         #if start_time > st:
         #    st = start_time
@@ -696,6 +697,18 @@ class MarketMaker( object ):
                 pprint(client.apiKey + ': Equity (BTC):      %7.4f'   % equity_btc)
                 pprint(client.apiKey + ': P&L (BTC)          %7.4f'   % pnl_btc)
                 pprint(client.apiKey + ': ')
+                potential = pnl_usd+(((feest+feest)/0.016)*0.02)
+                potentialday = potential / days
+                potential2k = potential / (self.equity_usd[client.apiKey] / 2000)
+                potential2kday = potential2k / days
+                pprint(client.apiKey + ': Potential earned if we had fee rebate: $' + str(round(potential* 1000) / 1000))
+                pprint(client.apiKey + ': potentialday: ' + str(potentialday))
+                pprint(client.apiKey + ': potential2k: ' + str(potential2k))
+                pprint(client.apiKey + ': potential2kday: ' + str(potential2kday))
+                log = 'rebate.txt'
+                
+                with open(log, "a") as myfile:
+                    myfile.write(datetime.utcnow().strftime( '%Y-%m-%d %H:%M:%S' ) + ', ' + client.apiKey + ': Potential earned: $' + str(round(potential* 1000) / 1000) + ', that\'s $' + str(round(potentialday*1000)/1000) + '/day, with $2k it would be $' + str(round(potential2k*1000)/1000) + ' by now or $' + str(round(potential2kday*1000)/1000) + '/day!\n')
                 #sleep(240)
                     
             except Exception as e:
@@ -850,7 +863,8 @@ class MarketMaker( object ):
         #sleep(10)
         
         bin_client = Client(client.apiKey, client.secret)
-        bm = BinanceSocketManager(bin_client, client.apiKey)
+        bm = BinanceSocketManager(bin_client, n=client.apiKey, user_timeout=60)
+
         # start any sockets here, i.e a trade socket
         #
         
@@ -858,7 +872,7 @@ class MarketMaker( object ):
             conn_key = bm.start_multiplex_socket(['!bookTicker'], self.process_m_message)
             # then start the socket manager
             bm.start()
-        self.Place_Orders[client.apiKey] = Place_Orders(pprint, firstkey, self.lev, bm, client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
+        self.Place_Orders[client.apiKey] = Place_Orders(random, pprint, firstkey, self.lev, bm, client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
         alist = []
         for key in pairs.keys():
             for pair in pairs[key]:
