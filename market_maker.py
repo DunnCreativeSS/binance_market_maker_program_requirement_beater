@@ -377,7 +377,8 @@ class MarketMaker( object ):
 					for pair in pairs[key]:
 						if pair not in alist:
 							alist.append(pair)
-				t = threading.Timer((self.orderRateLimit / 1000) * len(alist) / 2, self.resetGoforit)
+				pprint((self.orderRateLimit / 1000) * len(alist))
+				t = threading.Timer((self.orderRateLimit / 1000) * len(alist), self.resetGoforit)
 				t.daemon = True
 				t.start()
 				d		 = datetime.now()  - timedelta(hours = 0)
@@ -450,7 +451,7 @@ class MarketMaker( object ):
 				gogo = True
 			if gogo == True:
 				self.futures_prv	= cp.deepcopy( self.futures )
-				sleep((self.orderRateLimit / 1.5 ) / 1000)
+				sleep((self.orderRateLimit / 1.1 ) / 1000)
 				insts			   = client.fetchMarkets()
 				#pprint(insts)
 				#pprint(insts[0])
@@ -458,7 +459,7 @@ class MarketMaker( object ):
 					i[ 'symbol' ]: i for i in insts if i['type'] == 'future' and i['active'] == True or i['type'] == 'delivery' and i['active'] == True
 				} )
 				#pprint(len(self.futures))
-				sleep((self.orderRateLimit / 1.5 ) / 1000)
+				sleep((self.orderRateLimit / 1.1 ) / 1000)
 				account = client.fapiPrivateGetAccount()
 				feeTier = account['feeTier']
 				if self.feeRate == None:
@@ -550,7 +551,7 @@ class MarketMaker( object ):
 						except:
 							gogo = True
 						if gogo == True:
-							sleep((self.orderRateLimit / 1.5 ) / 1000)
+							sleep((self.orderRateLimit / 1.1 ) / 1000)
 							client.cancelOrder( oid , pair )
 					except Exception as e:
 						PrintException(client.apiKey)
@@ -921,7 +922,7 @@ class MarketMaker( object ):
 				'indexPrice':   None,
 				'markPrice':	None
 			} for f in pairs[client.apiKey] } )
-			sleep((self.orderRateLimit / 1.5 ) / 1000)
+			sleep((self.orderRateLimit / 1.1 ) / 1000)
 			
 			positions	   = client.fapiPrivateGetPositionRisk()
 
@@ -953,11 +954,11 @@ class MarketMaker( object ):
 		except Exception as e:
 			PrintException(client.apiKey)	
 		for pair in pairs[client.apiKey]:
-			sleep((self.orderRateLimit / 1.5 ) / 1000)
+			sleep((self.orderRateLimit / 1.1 ) / 1000)
 			try:
 				client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': self.lev})
 			except:
-				sleep((self.orderRateLimit / 1.5 ) / 1000)
+				sleep((self.orderRateLimit / 1.1 ) / 1000)
 				direction = 'sell'
 				if self.positions[client.apiKey][fut]['positionAmt'] < 0:
 					direction = 'buy'
@@ -1053,7 +1054,7 @@ class MarketMaker( object ):
 						'indexPrice':   None,
 						'markPrice':	None
 					} for f in pairs[client.apiKey] } )
-					sleep((self.orderRateLimit / 1.5 ) / 1000)
+					sleep((self.orderRateLimit / 1.1 ) / 1000)
 					positions	   = client.fapiPrivateGetPositionRisk()
 
 					#pprint('lala')

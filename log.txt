@@ -17550,3 +17550,251 @@ Request ID: p1IH9x76_UsW2FoXrqLq2eLrQMMQ-bmdDukY-m_jMFK1QLw6AQrMWQ==
 2020-11-11 02:36:18, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
 2020-11-11 02:36:18, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
 2020-11-11 02:36:18, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:36:53, line: 236: argskey: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-11 02:36:53, line: 289: key 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-11 02:36:53, line: 1219: 0
+2020-11-11 02:36:53, line: 744: 1
+2020-11-11 02:36:53, line: 341: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
+2020-11-11 02:36:53, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:36:53, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:36:53, line: 1219: 0
+2020-11-11 02:36:53, line: 744: 1
+2020-11-11 02:36:53, line: 341: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:36:53, line: 761: 2
+2020-11-11 02:36:53, line: 761: 2
+2020-11-11 02:36:54, line: 771: 3
+2020-11-11 02:36:55, line: 771: 3
+2020-11-11 02:36:57, line: 912: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.42153474
+2020-11-11 02:36:57, line: 912: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U equity starting: 9.97912729
+2020-11-11 02:37:03, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 28
+2020-11-11 02:37:03, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ZRX/USDT stoploss! -44.654347042775434 dir: sell qty 2.0
+2020-11-11 02:37:04, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: OMG/USDT takeprofit! 57.692164722094596 dir: buy qty 6.2
+2020-11-11 02:37:04, line: 256: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: start thread place_orders: 27
+2020-11-11 02:37:05, line: 365: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: ADA/USDT stoploss! -28.2151119748289 dir: sell qty 61.0
+2020-11-11 02:37:05, line: 365: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: ZRX/USDT stoploss! -37.683254181292426 dir: sell qty 41.5
+2020-11-11 02:37:05, line: 365: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: RLC/USDT stoploss! -22.77109188314197 dir: sell qty 22.6
+2020-11-11 02:37:05, line: 353: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: OMG/USDT takeprofit! 62.63374217029438 dir: buy qty 12.6
+2020-11-11 02:37:24, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-11 02:37:24, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:37:24, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.1
+2020-11-11 02:37:24, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:37:24, line: 706: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:37:24, line: 714: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:37:24, line: 715: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):		   9.98
+2020-11-11 02:37:24, line: 716: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)			   0.00
+2020-11-11 02:37:24, line: 717: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):	   0.0006
+2020-11-11 02:37:24, line: 718: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)		   0.0000
+2020-11-11 02:37:24, line: 719: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:37:24, line: 724: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:37:24, line: 725: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potentialday: 0.0
+2020-11-11 02:37:24, line: 726: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2k: 0.0
+2020-11-11 02:37:24, line: 727: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2kday: 0.0
+2020-11-11 02:37:25, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:37:25, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:37:25, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:37:25, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:37:25, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:37:25, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:37:25, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:37:25, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:37:25, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:37:25, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:37:25, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:37:25, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:37:25, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:37:25, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:37:25, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:37:46, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-11 02:37:46, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:37:46, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.1
+2020-11-11 02:37:46, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:37:46, line: 706: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:37:46, line: 714: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:37:46, line: 715: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):		   9.98
+2020-11-11 02:37:46, line: 716: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)			   0.00
+2020-11-11 02:37:46, line: 717: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):	   0.0006
+2020-11-11 02:37:46, line: 718: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)		   0.0000
+2020-11-11 02:37:46, line: 719: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:37:46, line: 724: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:37:46, line: 725: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potentialday: 0.0
+2020-11-11 02:37:46, line: 726: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2k: 0.0
+2020-11-11 02:37:46, line: 727: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2kday: 0.0
+2020-11-11 02:37:47, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:37:47, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:37:47, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:37:47, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:37:47, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:37:47, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:37:47, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:37:47, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:37:47, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:37:47, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:37:47, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:37:47, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:37:47, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:37:47, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:37:47, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:38:10, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:38:10, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:38:10, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:38:10, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:38:10, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:38:10, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:38:10, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:38:10, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:38:10, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:38:10, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:38:10, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:38:10, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-11 02:38:10, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:38:10, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:38:10, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:38:10, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:38:10, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:38:10, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.1
+2020-11-11 02:38:10, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:38:10, line: 706: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:38:10, line: 714: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:38:10, line: 715: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):		   9.98
+2020-11-11 02:38:10, line: 716: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)			   0.00
+2020-11-11 02:38:10, line: 717: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):	   0.0006
+2020-11-11 02:38:10, line: 718: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)		   0.0000
+2020-11-11 02:38:10, line: 719: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:38:10, line: 724: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:38:10, line: 725: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potentialday: 0.0
+2020-11-11 02:38:10, line: 726: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2k: 0.0
+2020-11-11 02:38:10, line: 727: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2kday: 0.0
+2020-11-11 02:38:33, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:38:33, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:38:33, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:38:33, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:38:33, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:38:33, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:38:33, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:38:33, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:38:33, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:38:33, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:38:33, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:38:33, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:38:33, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:38:33, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:38:33, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:38:34, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-11 02:38:34, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:38:34, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.1
+2020-11-11 02:38:34, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:38:34, line: 706: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:38:34, line: 714: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:38:34, line: 715: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):		   9.98
+2020-11-11 02:38:34, line: 716: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)			   0.00
+2020-11-11 02:38:34, line: 717: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):	   0.0006
+2020-11-11 02:38:34, line: 718: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)		   0.0000
+2020-11-11 02:38:34, line: 719: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:38:34, line: 724: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:38:34, line: 725: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potentialday: 0.0
+2020-11-11 02:38:34, line: 726: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2k: 0.0
+2020-11-11 02:38:34, line: 727: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2kday: 0.0
+2020-11-11 02:38:52, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:52, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:52, line: 191: EXCEPTION IN (market_maker.py, LINE 399 "trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:38:52, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:52, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:52, line: 191: EXCEPTION IN (market_maker.py, LINE 399 "trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:38:54, line: 191: EXCEPTION IN (market_maker.py, LINE 399 "trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:38:55, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:38:55, line: 191: EXCEPTION IN (market_maker.py, LINE 399 "trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:38:55, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:38:56, line: 191: EXCEPTION IN (market_maker.py, LINE 399 "trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:38:57, line: 191: EXCEPTION IN (market_maker.py, LINE 399 "trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:38:58, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:58, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:58, line: 102: APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:58, line: 191: EXCEPTION IN (/home/jare/ali2/strategies/mm.py, LINE 99 "self.user_thread = self.bm.start_user_socket(self.process_message)"): APIError(code=-1003): Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API.
+2020-11-11 02:38:59, line: 191: EXCEPTION IN (market_maker.py, LINE 399 "trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})"): binance 429 Too Many Requests {"code":-1003,"msg":"Too many requests; current limit of IP(35.203.106.149) is 2400 requests per minute. Please use the websocket for live updates to avoid polling the API."}
+2020-11-11 02:38:59, line: 297: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: self.goforit2
+2020-11-11 02:39:01, line: 297: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: self.goforit2
+2020-11-11 02:39:05, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:39:05, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:39:05, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:39:05, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:39:05, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:39:05, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:39:05, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:39:05, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:39:05, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:39:05, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:39:05, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:39:05, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:39:05, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:39:05, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:39:05, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:39:06, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-11 02:39:06, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:39:06, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.1
+2020-11-11 02:39:06, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:39:06, line: 706: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:39:06, line: 714: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:39:06, line: 715: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):		   9.98
+2020-11-11 02:39:06, line: 716: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)			   0.00
+2020-11-11 02:39:06, line: 717: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):	   0.0006
+2020-11-11 02:39:06, line: 718: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)		   0.0000
+2020-11-11 02:39:06, line: 719: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:39:06, line: 724: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:39:06, line: 725: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potentialday: 0.0
+2020-11-11 02:39:06, line: 726: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2k: 0.0
+2020-11-11 02:39:06, line: 727: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2kday: 0.0
+2020-11-11 02:39:28, line: 693: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d:
+2020-11-11 02:39:28, line: 694: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:39:28, line: 695: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.09
+2020-11-11 02:39:28, line: 698: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:39:28, line: 706: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:39:28, line: 714: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:39:28, line: 715: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity ($):		   9.42
+2020-11-11 02:39:28, line: 716: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L ($)			   0.00
+2020-11-11 02:39:28, line: 717: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Equity (BTC):	   0.0006
+2020-11-11 02:39:28, line: 718: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: P&L (BTC)		   0.0000
+2020-11-11 02:39:28, line: 719: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: 
+2020-11-11 02:39:28, line: 724: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:39:28, line: 725: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 0.0
+2020-11-11 02:39:28, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 0.0
+2020-11-11 02:39:28, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 0.0
+2020-11-11 02:39:30, line: 693: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U:
+2020-11-11 02:39:30, line: 694: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. traded volumes over 30 days: 0.0, in BTC: 0.0
+2020-11-11 02:39:30, line: 695: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Approx. Min Equity at 25x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $0.1
+2020-11-11 02:39:30, line: 698: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: That's 0.01x the balance now, bringing projected USD/month to: 0.0, and BTC: 0.0
+2020-11-11 02:39:30, line: 706: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Now, if we were running in a trial mode of Binance Market Maker Program's Rebates, or if we had achieved these rates already, we would have earned $0.0 by now (on our actual equity), or rather earning 0.0% PnL so far, or 0.0 % Annual Percentage Yield!
+2020-11-11 02:39:30, line: 714: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:39:30, line: 715: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity ($):		   9.98
+2020-11-11 02:39:30, line: 716: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L ($)			   0.00
+2020-11-11 02:39:30, line: 717: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Equity (BTC):	   0.0006
+2020-11-11 02:39:30, line: 718: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: P&L (BTC)		   0.0000
+2020-11-11 02:39:30, line: 719: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: 
+2020-11-11 02:39:30, line: 724: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: Potential earned if we had fee rebate: $0.0
+2020-11-11 02:39:30, line: 725: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potentialday: 0.0
+2020-11-11 02:39:30, line: 726: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2k: 0.0
+2020-11-11 02:39:30, line: 727: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U: potential2kday: 0.0
+2020-11-11 02:41:37, line: 236: argskey: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:41:37, line: 289: key dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:41:37, line: 1220: 0
+2020-11-11 02:41:37, line: 745: 1
+2020-11-11 02:41:37, line: 341: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d
+2020-11-11 02:41:37, line: 762: 2
+2020-11-11 02:41:38, line: 772: 3
+2020-11-11 02:41:41, line: 913: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d equity starting: 9.27309696
+2020-11-11 02:41:47, line: 380: 0.909
+2020-11-11 02:41:47, line: 256: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: start thread place_orders: 28
+2020-11-11 02:41:47, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: ZRX/USDT stoploss! -38.83396818860352 dir: sell qty 2.0
+2020-11-11 02:41:47, line: 365: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: RLC/USDT stoploss! -25.41220463697008 dir: sell qty 3.8
+2020-11-11 02:41:48, line: 353: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: OMG/USDT takeprofit! 43.98530550004054 dir: buy qty 6.2
+2020-11-11 02:41:48, line: 380: 0.909
+2020-11-11 02:41:50, line: 380: 0.909
+2020-11-11 02:41:51, line: 380: 0.909
+2020-11-11 02:41:52, line: 380: 0.909
+2020-11-11 02:41:54, line: 380: 0.909
+2020-11-11 02:41:55, line: 380: 0.909
+2020-11-11 02:41:56, line: 380: 0.909
+2020-11-11 02:41:57, line: 380: 0.909
+2020-11-11 02:41:59, line: 380: 0.909
+2020-11-11 02:42:00, line: 380: 0.909
+2020-11-11 02:42:02, line: 380: 0.909
+2020-11-11 02:42:03, line: 380: 0.909
