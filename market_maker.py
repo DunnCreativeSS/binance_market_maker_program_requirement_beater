@@ -377,7 +377,7 @@ class MarketMaker( object ):
 					for pair in pairs[key]:
 						if pair not in alist:
 							alist.append(pair)
-				pprint((self.orderRateLimit / 1000) * len(alist))
+				#pprint((self.orderRateLimit / 1000) * len(alist))
 				t = threading.Timer((self.orderRateLimit / 1000) * len(alist), self.resetGoforit)
 				t.daemon = True
 				t.start()
@@ -893,7 +893,7 @@ class MarketMaker( object ):
 			conn_key = bm.start_multiplex_socket(['!bookTicker'], self.process_m_message)
 			# then start the socket manager
 			bm.start()
-		self.Place_Orders[client.apiKey] = Place_Orders(random, pprint, firstkey, self.lev, bm, client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
+		self.Place_Orders[client.apiKey] = Place_Orders(BinanceSocketManager, self.process_m_message, Client, random, pprint, firstkey, self.lev, bm, client, multiprocessing, self.brokerKey, self.qty_div, self.orderRateLimit, self.max_skew_mult, self.get_precision, math, self.TP, self.SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs[client.apiKey], fifteens, tens, fives, threes, self.con_size, self.get_spot, self.equity_btc[client.apiKey], self.positions[client.apiKey], self.get_ticksize, self.vols, self.get_bbo, self.openorders[client.apiKey], self.equity_usd[client.apiKey], self.randomword, self.logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP)
 		alist = []
 		for key in pairs.keys():
 			for pair in pairs[key]:

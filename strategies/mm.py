@@ -1,10 +1,13 @@
 
 
 class Place_Orders( object ):
-	def __init__( self, random, pprint, firstkey, lev, bm, client, multiprocessing, brokerKey, qty_div, orderRateLimit, max_skew_mult, get_precision, math, TP, SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs, fifteens, tens, fives, threes, con_size, get_spot, equity_btc, positions, get_ticksize, vols, get_bbo, openorders, equity_usd, randomword, logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP ):
+	def __init__( self, BinanceSocketManager, process_m_message, Client, random, pprint, firstkey, lev, bm, client, multiprocessing, brokerKey, qty_div, orderRateLimit, max_skew_mult, get_precision, math, TP, SL, asyncio, sleep, threading, PrintException, ticksize_floor, ticksize_ceil, pairs, fifteens, tens, fives, threes, con_size, get_spot, equity_btc, positions, get_ticksize, vols, get_bbo, openorders, equity_usd, randomword, logger, PCT_LIM_LONG, PCT_LIM_SHORT, DECAY_POS_LIM, MIN_ORDER_SIZE, CONTRACT_SIZE, MAX_LAYERS, BTC_SYMBOL, RISK_CHARGE_VOL, BP ):
 		self.BP = BP
 		self.TP = TP
 		self.SL = SL
+		self.BinanceSocketManager = BinanceSocketManager
+		self.process_m_message = process_m_message
+		self.Client = Client
 		self.pprint = pprint
 		self.lbo = {}
 		self.lao = {}
@@ -75,7 +78,7 @@ class Place_Orders( object ):
 		self.equity_btc = equity_btc
 		self.equity_usd = equity_usd
 		self.positions = positions
-		
+		self.new_thread = True
 		#conn_key = bm.start_multiplex_socket(['!ticker@arr'], self.process_m_message)
 		self.bm = bm
 
@@ -85,24 +88,39 @@ class Place_Orders( object ):
 	
 		
 	def start_user_thread(self):
+	
+		try:
+			#self.pprint(1)
+		
+			self.user_thread = self.bm.start_user_socket(self.process_message)
+			#self.sleep(5)
+		except Exception as e:
+			self.pprint(str(e))
+			self.PrintException(self.client.apiKey)
+			#self.sleep(5)
 		while True:
 			try:
-				#self.pprint(1)
-				try:
-					z = self.bm._timers['user'].is_alive()
-					#self.pprint(z)
-					if z == False:
-						self.user_thread = self.bm.start_user_socket(self.process_message)
-					else:
-						self.sleep(5)
-				except:
+				self.new_thread = False
+				self.pprint('test ws...')
+				sleep(60)
+				if self.new_thread == False:
+					self.pprint('new websockets then...')
+					self.bm.close()
+					self.sleep(4)
+					bin_client = self.Client(self.client.apiKey, self.client.secret)
+					#bm = self.BinanceSocketManager(bin_client, n=self.client.apiKey, user_timeout=60)
+					self.bm = self.BinanceSocketManager(bin_client, n=self.client.apiKey, user_timeout=60)
+					# start any sockets here, i.e a trade socket
+					#
+					
+					#if client.apiKey == firstkey:
+					#conn_key = bm.start_multiplex_socket(['!bookTicker'], self.process_m_message)
+					# then start the socket manager
+					#bm.start()
 					self.user_thread = self.bm.start_user_socket(self.process_message)
-					self.sleep(5)
-			except Exception as e:
-				self.pprint(str(e))
-				self.PrintException(self.client.apiKey)
-				self.sleep(5)
-
+					self.bm.start()
+			except:
+				self.PrintException()
 	def process_message(self, msg):
 		try: 
 			try:
@@ -112,6 +130,9 @@ class Place_Orders( object ):
 					data = msg
 			except:
 				data = msg
+			if self.new_thread == False:
+				self.new_thread = True
+				self.pprint('good websockets, go go')
 			if data['e'] == 'ORDER_TRADE_UPDATE':
 				fut = data['o']['s'].replace('USDT', '/USDT')
 				#if 'BAT' in fut:
