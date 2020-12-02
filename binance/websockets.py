@@ -103,9 +103,11 @@ class BinanceSocketManager(threading.Thread):
 
     def _start_socket(self, path, callback, prefix='ws/'):
         if path in self._conns:
+            print('return false')
             return False
 
         factory_url = self.STREAM_URL + prefix + path
+        print(factory_url)
         factory = BinanceClientFactory(factory_url)
         factory.protocol = BinanceClientProtocol
         factory.callback = callback
@@ -505,6 +507,7 @@ class BinanceSocketManager(threading.Thread):
         """
         # Get the user listen key
         user_listen_key = self._client.stream_get_listen_key()
+        print(user_listen_key)
         # and start the socket with this specific key
         return self._start_account_socket('user', user_listen_key, callback)
 
@@ -530,7 +533,7 @@ class BinanceSocketManager(threading.Thread):
         self._check_account_socket_open(listen_key)
         self._listen_keys[socket_type] = listen_key
         self._account_callbacks[socket_type] = callback
-        #print(self._account_callbacks)
+        print(self._account_callbacks)
         conn_key = self._start_socket(listen_key, callback)
         if conn_key:
             # start timer to keep socket alive

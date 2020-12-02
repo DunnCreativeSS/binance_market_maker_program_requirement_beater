@@ -7,8 +7,8 @@ pairs = {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d': ['X
 #		toreplace.append(p)
 #	pairs[key] = toreplace
 #pprint(pairs)
-binApi2 =  {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':'Xw4A5VcHB3ZDJZuLGhxh8Lq9ouLWIxMERj1p4jeorKvvhzkDxXj3Qx1eiVonMcPs',
-		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': '2Wqi6TL1L1JAQyuaEWAJisiAEmh4SsCSpopEZrQ04NIRv49gA1Yh3hBuXOsxlGOB'}
+binApi2 =  {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':'',
+		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': ''}
 		 #}	  'key': 'secret'}
 
 
@@ -198,6 +198,7 @@ def PrintException(apiKey):
 				t.start()
 	elif 'Quantity less than zero' not in string and 'Unknown order sent' not in string and 'Margin is insufficient' not in string:
 		pprint(string)
+	pprint(string)
 	sleep(1)
 # Use production platform/account
 parser.add_argument('key', metavar='K', type=str, nargs='+',
@@ -386,7 +387,7 @@ class MarketMaker( object ):
 				#pprint(d2)
 				epoch = datetime(1970,1,1)
 				st = int((d - epoch).total_seconds()) * 1000
-				st = start_time - 60 * 2 * 1000
+				st = start_time - 60 * 60 * 24 * 15 * 1000
 				days = ((d2 - st) / 1000 / 60 / 60 / 24)
 				#pprint(days)
 				#if start_time > st:

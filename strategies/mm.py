@@ -93,6 +93,7 @@ class Place_Orders( object ):
 			#self.pprint(1)
 		
 			self.user_thread = self.bm.start_user_socket(self.process_message)
+			#self.bm.start()
 			#self.sleep(5)
 		except Exception as e:
 			self.pprint(str(e))
@@ -102,7 +103,7 @@ class Place_Orders( object ):
 			try:
 				self.new_thread = False
 				self.pprint('test ws...')
-				sleep(60)
+				self.sleep(60)
 				if self.new_thread == False:
 					self.pprint('new websockets then...')
 					self.bm.close()
@@ -118,10 +119,13 @@ class Place_Orders( object ):
 					# then start the socket manager
 					#bm.start()
 					self.user_thread = self.bm.start_user_socket(self.process_message)
-					self.bm.start()
+					#self.bm.start()
 			except:
-				self.PrintException()
+				self.PrintException(self.client.apiKey)
 	def process_message(self, msg):
+		if self.new_thread == False:
+			self.new_thread = True
+			self.pprint('good websockets, go go')
 		try: 
 			try:
 				if 'data' in msg:
@@ -130,9 +134,7 @@ class Place_Orders( object ):
 					data = msg
 			except:
 				data = msg
-			if self.new_thread == False:
-				self.new_thread = True
-				self.pprint('good websockets, go go')
+			
 			if data['e'] == 'ORDER_TRADE_UPDATE':
 				fut = data['o']['s'].replace('USDT', '/USDT')
 				#if 'BAT' in fut:
