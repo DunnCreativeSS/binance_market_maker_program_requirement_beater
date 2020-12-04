@@ -1,5 +1,3 @@
-This is the README for the binance_market_maker_program_requirement_beater repo, which has been made private. If you'd like access, click the 'sponsors' button near the top and follow the directions :)
-
 # What is it
 
 This bot automates making markets on Binance.
