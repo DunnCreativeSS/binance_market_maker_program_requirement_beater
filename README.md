@@ -1,123 +1,68 @@
-# New, much more profitable bot available in return for referral link use:
+This is the README for the binance_market_maker_program_requirement_beater repo, which has been made private. If you'd like access, click the 'sponsors' button near the top and follow the directions :)
 
-https://hacks.substack.com/p/huobi-trader-live-now-we-watch
+# What is it
 
+This bot automates making markets on Binance.
 
+Where other market making bots fail (ie. BitMex, Deribit, other attempts I’ve made in the past) is by counting on the market to not be volatile. Where this bot wins is by finding markets where we can soak up profits in the volatility by taking those profits from the spread itself, where on BitMex and Deribit these spreads ar 0.25$ of a BTC, some smaller markets on Binance have 1%.. 2%… 5% spreads, and greater-than-average volumes.
 
-Binance Futures Market Maker, by Jarett Dunn
+You’ll want to have about $20 per market pair it’s looking to trade, in the base asset (BTC, BNB, ETH, etc…). It will look to trade more markets if the targetSpread, targetVolDiv, targetVolMult are higher. The more total funds in a particular base asset there are, the higher value the orders will have.
 
+If for whatever reason a market pair leaves the universe scope of considered pairs, it will continue selling that asset with the same sell logic (on the quoteAsset+BNB market, or BTC then ETH if BNB isn’t available), while pausing buying it.
 
-# Publicity
+I don’t have enough personal funds available to run the bot, but I can get a good amount of income if I share it and people use my ref link. targetOrderSizeMult exists so that people can compete using the same bot on the same markets without it just outbidding the other bot constantly, as you can set a % of your order size to ignore when there’s a bid or ask better than yours. When the volume that beats your price is higher than the -
 
+order size * this multiplier,
 
-I won the recent BNB giveaway for spot + futures using this market maker. I traded more than 2 BTC in <2 hours with a balance of about $40. I even turned a 1.5% returns on equity trading BTCUSD futures.
+it’ll re-enter the market.
 
+‘At the current time Binance rate limits are: 1200 requests per minute. 10 orders per second. 100,000 orders per 24hrs.’
 
-https://medium.com/@jarettdunn/binance-hacked-two-trading-competitions-my-share-of-40k-and-10k-bnb-prize-in-jare-cloud-c9dca20f0ac6
+There are no limits for unfilled orders, and at most it’ll make about 6x20 or so pairs x 2 orders, 1 cancel and 1 re-post a minute, along with checking balance and getting order books so a total of about ~500 a minute — not close to 1200 :)
 
+On that note I’ve only been trading one pair, averaging 42 orders an hour or ~1000 per day, again by about 20 pairs would be 20 000 orders per day — a bit shy of 100k.
 
+## To use:
 
-# Edits
+1. (please do) sign up for Binance using my ref link: https://www.binance.com/?ref=27039658
 
+2. Place your Binance API key and secret in binance.js
 
-At the top of the market_maker.py file is a pair setting. If you copy this file, you can run other pairs, like BCH/USDT. Save this file something different and run python market_maker.py for your BTC/USDT and for your other file for other coins.
+3. Optionally change the targetSpread, targetVolDiv, targetVolMult, targetOrderSizeMult
 
+4. Install NPM and Node
 
-To enter more orders more often, reduce RISK_CHARGE_VOL. When it's higher, it's anticipating more volatility in the market and the difference between order entries will be more distance, allowing you to profit from more of the higher differences in assets being considered.
+5. Clone this repo, cd into directory
 
+6. Run npm i binance-api-node
 
+7. Run node binance.js
 
-Support this open-source project organically, without subscription! Sign up to Binance here using this referral link: https://www.binance.com/en/register?ref=VZJQV7PR and for futures here: https://www.binance.com/en/futures/ref/neomenia
+## API Rate Limiting?
 
+The first FUD someone might say is that this will lock your API for too many unfilled orders or too many interactions.
 
-Support this open-source project! $1 or $5 a month from a crowd adds up! https://github.com/sponsors/dunncreativess
+‘At the current time Binance rate limits are: 1200 requests per minute. 10 orders per second. 100,000 orders per 24hrs.’
 
+There are no limits for unfilled orders, and at most it’ll make about 6x 20 or so pairs x 2 orders, 1 cancel and 1 re-post a minute, along with checking balance and getting order books so a total of about ~500 a minute — not close to 1200 :)
 
-https://imgur.com/FxgIqrY
+On that note I’ve only been trading three or so pairs at a time, averaging 42 orders an hour or ~1000 per day, again by about 20 pairs would be 20 000 orders per day — a bit shy of 100k.
 
+# Conclusion
 
-EDIT: GitHub repo has been made private. Subscribe to GitHub Sponsors $100 tier for access!
+I was originally trading GNTBNB almost exclusively for testing, the first trade is screenshotted. I’ve since opened it up to trade anything it noticed it could trade, made the required spread lower, and let it run overnight. It’s lost a bit of value but it’s also held eth for awhile while not doing anything with it (due to the required spread % not being enough), but over 45 orders (excluding cancelled) with 0.00568192 balance (or so) I have 0.03090300 in volume — meaning that while it lost ~3% BTC and ~4% USD it traded the original 0.00568192 back and forth for 22–23 round trips @ 0.2% fees, beating the 4.5% fees it endured… with more careful settings it should perform better or at least act on less orders and capitalize higher spreads.
 
+If you’re looking to start building your volume on Binance, the easiest way would be to put this bot to work and choose some safer settings to automate the spreads of a few pairs — after trading a few hours with 0.00568192 balance (or so) I have 0.03090300 in volume. While this strategy might not automate profits (at least out of the box), it does trade a whole heck of a lot. If you check Binance’s fee schedule, you’ll see that as you graduate levels of volume and hold BNB then you’ll be treated to lesser and lesser maker/taker fees, which might prove healthy should you have other strategies (especially high-frequency-trading) that would benefit from lesser fees — although the BNB requirements might be high, given the current value of a BNB has exploded. Again, should you use my invite code 27039658 or invite link I’ll get a tiny slice of the rewards, too!
 
-EDIT: Opensourced again!
+Join Telegram for interactive support and a community!
 
+Jarett Dunn, [21.03.19 15:35]
+ok going to start a new set of conditions for a strategy using the bot, mark @ benchmark 2 Estimated Value： 0.00569181 BTC / $22.57
 
-Binance WAS running a competition as we speak for 50k BNB — 40k for spot/margin, 10k for futures — if you trade more than 1 BTC in notional value in either bucket! Be prepared for the next competition with my private market making repository for Binance futures and margin! IOTX Binance trading competition just concluded with another $90 000 to be won!
+Jarett Dunn, [21.03.19 15:35]
+note it held Eth during a major Eth crash
 
+Jarett Dunn, [21.03.19 15:35]
 
-https://imgur.com/b97oLP9
+Note: I’m available to re-write the bot for other exchanges, to build your volumes elsewhere.
 
-
-https://drive.google.com/file/d/198dAxfEfmPxxe696t7wnsN3ijBLods4h/view?usp=sharing
-
-
-Lucky for me I already have a Binance futures market maker — and with a wee bit of edits to the code, it ran fine on margin 5x, too! I ran the futures on 100x and orders of 0.002 BTC and it won the futures contest in ~1hr.
-
-
-Check g543 for the total. Woo!
-
-
-I was +0.5% for most of my bot run on futures, ended at -1% on equity.
-
-
-I was down about 21% — of my whopping $46 — on margin.
-
-
-https://imgur.com/undefined
-
-
-Win Binance trading competitions! I won my share of 10k BNB for futures trading and 40k BNB for spot/margin trading 1+ BTC in <3 hours in this recent Binance giveaway: https://www.binance.com/en/support/articles/360040070651
-
-
-Setup:
-
-
-1. Clone or download repo
-2. cd into dir
-3. python3 setup.py install
-
-
-For our competition run, Coindex Labs is optimizing these input variables using our proprietary AI. Note that the defaults here will probably lose funds, they're not optimized or recommended.
-
-
-
-binApi is your api key (futures enabled...)
-
-
-binSecret is your api secret...
-
-
-5. python3 market_maker.py
-6. fun and profit!
-
-
-https://hackernoon.com/porting-a-bot-to-binance-futures-market-making-competition-6v6a31qh
-
-
-Track our bot's delta in real-time (after the test bot's run is complete) here: http://coindexbot.duckdns.org
-
-
-Original README.md as follows:
-
-
-Sample market maker bot
-===
-
-Strategy
----
-
-The bot layers bids and offers around the market mid, which it attempts to calculate from the order book. The spread between quoted bids and offers is determined by a user-set risk charge on volatility. Volatility is estimated by an EWMA (Exponentially Weighted Moving Average Process) with frequency and parameters that may also be set by the user.
-
-Set up
----
-
-This bot requires python3 and the [Deribit api wrapper](https://pypi.org/project/deribit_api/).
-
-To set up the bot, edit the `KEY` and `SECRET` variables in the code to your credentials. You can obtain those from the [Deribit account](https://www.deribit.com/main#/account?scrollTo=api).
-
-To start the bot, run `python3 market_maker.py`.
-
-Disclaimer
----
-
-Different market conditions will produce different results. This code is for sample purposes only. It comes as is, with no warranty or guarantee of performance.
