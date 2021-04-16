@@ -167,3 +167,14 @@
 2020-11-11 03:13:18, line: 726: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potentialday: 331.9498802477215
 2020-11-11 03:13:18, line: 727: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2k: 61.84867327069009
 2020-11-11 03:13:18, line: 728: dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d: potential2kday: 72185.36721178096
+2021-04-16 17:04:38, line: 272: argskey: MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST
+2021-04-16 17:04:38, line: 325: key MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST
+2021-04-16 17:04:38, line: 1256: 0
+2021-04-16 17:04:38, line: 781: 1
+2021-04-16 17:04:38, line: 377: MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST
+2021-04-16 17:04:38, line: 798: 2
+2021-04-16 17:04:39, line: 236: EXCEPTION IN (C:\Users\jaret\Desktop\bot\market_maker.py, LINE 499 "account = client.fapiPrivateGetAccount()"): binance {"code":-1021,"msg":"Timestamp for this request was 1000ms ahead of the server's time."}
+2021-04-16 17:04:40, line: 808: 3
+2021-04-16 17:04:41, line: 236: EXCEPTION IN (C:\Users\jaret\Desktop\bot\market_maker.py, LINE 499 "account = client.fapiPrivateGetAccount()"): binance {"code":-1021,"msg":"Timestamp for this request was 1000ms ahead of the server's time."}
+2021-04-16 17:04:42, line: 236: EXCEPTION IN (C:\Users\jaret\Desktop\bot\market_maker.py, LINE 499 "account = client.fapiPrivateGetAccount()"): binance {"code":-1021,"msg":"Timestamp for this request was 1000ms ahead of the server's time."}
+2021-04-16 17:04:45, line: 1259: Cancelling open orders

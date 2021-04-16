@@ -1,23 +1,59 @@
 # These vars load from database :
-pairs = {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d': ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
-		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
-		}#'key':['array', 'of', 'usdt-margin', 'to', 'trade']}#'BTC/USDT'
 
 #		p = p.replace('/','')
 #		toreplace.append(p)
 #	pairs[key] = toreplace
 #pprint(pairs)
-binApi2 =  {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':'Xw4A5VcHB3ZDJZuLGhxh8Lq9ouLWIxMERj1p4jeorKvvhzkDxXj3Qx1eiVonMcPs',
+binApi2 =  {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':'ILmL1paaimRSftFsDhZjBzZKbF8Kw6qz0RBho1RwnZrwJVYkgNIGmplYNVrSR7J6',
 		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': '2Wqi6TL1L1JAQyuaEWAJisiAEmh4SsCSpopEZrQ04NIRv49gA1Yh3hBuXOsxlGOB'}
 		 #}	  'key': 'secret'}
 
 
-settings = {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':{'TP': 40, 'SL': -20, 'max_skew_mult': 2, 'qty_div': 20, 'lev': 25},
+settings = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':{'TP': 40, 'SL': -20, 'max_skew_mult': 2, 'qty_div': 20, 'lev': 25},
 			'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U':{'TP': 40, 'SL': -20, 'max_skew_mult': 2, 'qty_div': 20, 'lev': 25}
 			}
 
+import requests
+
+usdtm = requests.get("https://fapi.binance.com/fapi/v1/ticker/bookTicker").json()
+coinm = requests.get("https://dapi.binance.com//dapi/v1/ticker/bookTicker").json()
+usdtv = requests.get("https://fapi.binance.com/fapi/v1/ticker/24hr").json()
+coinv = requests.get("https://dapi.binance.com/dapi/v1/ticker/24hr").json()
+vs = []
+vss = {}
+"""
+for inst in coinv:
+    vss[inst['symbol']] = float(inst['volume'])
+    vs.append(float(inst['volume']))
+"""
+for inst in usdtv:
+    vss[inst['symbol']] = float(inst['volume'])
+    vs.append(float(inst['volume']))
+
+from time import sleep
+avg = sum(vs) / len(vs)
+aboveavgs = []
+for inst in usdtv:
+    if float(inst['volume']) > avg:
+        aboveavgs.append(inst['symbol'].replace('USDT', '/USDT'))
+print(aboveavgs)
+print('Avg/total volume for all coin margined futures last 24hr has been: $' + str(round(avg, 4)) + '/$' + str(round(sum(vs), 4)))
+print('# instruments total: ' + str(len(vs)) + ', # instruments above avg vol: ' + str(len(aboveavgs)))
+print('Outliers of volume: ' + str(max(vs)) + ' and ' + str(min(vs)))
+vs.remove(max(vs))
+vs.remove(min(vs))
+#aboveavgs = []
+avg = sum(vs) / len(vs)
+for inst in usdtv:
+    if float(inst['volume']) > avg:
+        if inst['symbol'].replace('USDT', '/USDT') not in aboveavgs:
+            aboveavgs.append(inst['symbol'].replace('USDT', '/USDT'))
+print('# instruments total: ' + str(len(vs)) + ', # instruments above avg vol less outliers: ' + str(len(aboveavgs)))
 
 # These vars would be posted back to db for tracking users
+pairs = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST': aboveavgs,#['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
+		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT', 'IOST/USDT', 'THETA/USDT', 'XTZ/USDT', 'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'KNC/USDT', 'ZIL/USDT', 'DOGE/USDT', 'RLC/USDT', 'BAT/USDT', 'IOTA/USDT', 'XMR/USDT'],
+		}#'key':['array', 'of', 'usdt-margin', 'to', 'trade']}#'BTC/USDT'
 
 
 #self.Place_Orders[client.apiKey].positions
@@ -54,10 +90,10 @@ settings = {'dnB0rWq2T3XNlOHWObP6exuBVjMtI3S4BdDssUi5s4iuCgO9VK2xcpndNSfWPa3d':{
 
 
 #pprint(len(pairs))
-fifteens = ['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT']
-tens = ['OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'XMR/USDT', 'ZIL/USDT', 'KNC/USDT', 'XTZ/USDT', 'IOTA/USDT', 'BAT/USDT', 'IOST/USDT', 'THETA/USDT']
-fives = ['DOGE/USDT']
-threes = ['RLC/USDT']
+fifteens = aboveavgs#['XLM/USDT', 'ADA/USDT', 'DASH/USDT', 'ZEC/USDT', 'ATOM/USDT']
+tens = []#'OMG/USDT', 'COMP/USDT', 'ZRX/USDT', 'XMR/USDT', 'ZIL/USDT', 'KNC/USDT', 'XTZ/USDT', 'IOTA/USDT', 'BAT/USDT', 'IOST/USDT', 'THETA/USDT']
+fives = []#'DOGE/USDT']
+threes = []#'RLC/USDT']
 
 #jarettrsdunn+alimm@gmail.com
 #binApi = "8799eb6011f07a7dbba434907f71adc5f7e76af1fd12be26bb4e3294904e9852"
