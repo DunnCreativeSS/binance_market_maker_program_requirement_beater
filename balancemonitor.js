@@ -1,3 +1,4 @@
+/*
 with open('config.json') as json_file:
     data = json.load(json_file)
     RISK_CHARGE_VOL = data['RISK_CHARGE_VOL']['current']
@@ -5,7 +6,10 @@ with open('config.json') as json_file:
     VOL_PRIOR = data['VOL_PRIOR']['current']
     binApi = data['binApi']
     binSecret = data['binSecret']
-
+*/
+binApi = "MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST"
+binSecret = "ILmL1paaimRSftFsDhZjBzZKbF8Kw6qz0RBho1RwnZrwJVYkgNIGmplYNVrSR7J6"
+binSec = binSecret
 const binance = require('node-binance-api')().options({
   APIKEY: binApi,
   APISECRET: binSecret,
@@ -20,7 +24,7 @@ binance_futures = new ccxt.binance(
             'urls': {'api': {
                                      'public': 'https://fapi.binance.com/fapi/v1',
                                      'private': 'https://fapi.binance.com/fapi/v1',},}})
-var btcstart = 53.21020949
+var btcstart =557.64692680
 var btcs = []
 var ids = []
 var vol = 0
@@ -35,7 +39,7 @@ vol+=parseFloat(trades[t].qty)
 
 }
 bal = await binance_futures.fetchBalance()
-btc = (bal.info.totalMarginBalance)
+btc = (bal.info.totalWalletBalance)
 }, 5500)
 
 const express = require('express');

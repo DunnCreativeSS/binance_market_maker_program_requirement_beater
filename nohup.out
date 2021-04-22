@@ -419,4 +419,828 @@ placekey: 7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U
 connection lost... [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionAborted'>: Connection was aborted locally, using.
 ]
 [{"symbol": "XLMUSDT","type": "Limit","side": "buy","quantity": 6.178278833374354,"price": 0.08126,"newClientOrderId": "x-v0tiKJjj-eeruuhdavlltxhjhfceg"},{"symbol": "ADAUSDT","type": "Limit","side": "sell","quantity": 4.658503646654913,"price": 0.10777,"newClientOrderId": "x-v0tiKJjj-ezlosvvutvfznlvcoztt"},{"symbol": "DASHUSDT","type": "Limit","side": "sell","quantity": 0.007156763193157519,"price": 70.15,"newClientOrderId": "x-v0tiKJjj-fuvwotqladvlidwzdrtp"},{"symbol": "ZECUSDT","type": "Limit","side": "sell","quantity": 0.008279138159630607,"price": 60.64,"newClientOrderId": "x-v0tiKJjj-jhqvucwcxqnjhisoitms"},{"symbol": "ATOMUSDT","type": "Limit","side": "sell","quantity": 0.0962513301380368,"price": 5.216,"newClientOrderId": "x-v0tiKJjj-zyxudfdhxrhdxjyexjwc"}]
-[{"symbol": "XLMUSDT","type": "Limit","side": "buy","quantity": 6.178278833374354,"price": 0.08126,"newClientOrderId": "x-v0tiKJjj-eeruuhdavlltxhjhfceg"},{"symbol": "ADAUSDT","type": "Limit","side": "sell","quantity": 4.658503646654913,"price": 0.10777,"newClientOrderId": "x-v0tiKJjj-ezlosvvutvfznlvcoztt"},{"symbol": "DASHUSDT","type": "Limit","side": "sell","quantity": 0.007156763193157519,"price": 70.15,"newClientOrderId": "x-v0tiKJjj-fuvwotqladvlidwzdrtp"},{"symbol": "ZECUSDT","type": "Limit","side": "sell","quantity": 0.008279138159630607,"price": 60.64,"newClientOrderId": "x-v0tiKJjj-jhqvucwcxqnjhisoitms"},{"symbol": "ATOMUSDT","type": "Limit","side": "sell","quantity": 0.0962513301380368,"price": 5.216,"newClientOrderId": "x-v0tiKJjj-zyxudfdhxrhdxjyexjwc"}]
+[{"symbol": "XLMUSDT","type": "Limit","side": "buy","quantity": 6.178278833374354,"price": 0.08126,"newClientOrderId": "x-v0tiKJjj-eeruuhdavlltxhjhfceg"},{"symbol": "ADAUSDT","type": "Limit","side": "sell","quantity": 4.658503646654913,"price": 0.10777,"newClientOrderId": "x-v0tiKJjj-ezlosvvutvfznlvcoztt"},{"symbol": "DASHUSDT","type": "Limit","side": "sell","quantity": 0.007156763193157519,"price": 70.15,"newClientOrderId": "x-v0tiKJjj-fuvwotqladvlidwzdrtp"},{"symbol": "ZECUSDT","type": "Limit","side": "sell","quantity": 0.008279138159630607,"price": 60.64,"newClientOrderId": "x-v0tiKJjj-jhqvucwcxqnjhisoitms"},{"symbol": "ATOMUSDT","type": "Limit","side": "sell","quantity": 0.0962513301380368,"price": 5.216,"newClientOrderId": "x-v0tiKJjj-zyxudfdhxrhdxjyexjwc"}]['XRP/USDT', 'TRX/USDT', 'VET/USDT', 'IOST/USDT', 'DOGE/USDT', 'RSR/USDT', 'AKRO/USDT', 'CHZ/USDT', 'REEF/USDT', 'STMX/USDT', 'DENT/USDT', 'HOT/USDT', 'BTT/USDT', 'SC/USDT']
+Avg/total volume for all coin margined futures last 24hr has been: $838953082.4265/$94801698314.196
+# instruments total: 113, # instruments above avg vol: 14
+Outliers of volume: 21797220791.0 and 1501.519
+# instruments total: 111, # instruments above avg vol less outliers: 16
+50.5
+[OrderedDict([('ADAUSDT', None), ('AKROUSDT', None), ('BTTUSDT', None), ('CHZUSDT', None), ('DENTUSDT', None), ('DGBUSDT', None), ('DOGEUSDT', None), ('HOTUSDT', None), ('IOSTUSDT', None), ('REEFUSDT', None), ('RSRUSDT', None), ('SCUSDT', None), ('STMXUSDT', None), ('TRXUSDT', None), ('VETUSDT', None), ('XRPUSDT', None), ('btc', None), ('timestamp', None)]), OrderedDict([('ADAUSDT', None), ('AKROUSDT', None), ('BTTUSDT', None), ('CHZUSDT', None), ('DENTUSDT', None), ('DGBUSDT', None), ('DOGEUSDT', None), ('HOTUSDT', None), ('IOSTUSDT', None), ('REEFUSDT', None), ('RSRUSDT', None), ('SCUSDT', None), ('STMXUSDT', None), ('TRXUSDT', None), ('VETUSDT', None), ('XRPUSDT', None), ('btc', None), ('timestamp', None)]), OrderedDict([('ADAUSDT', None), ('AKROUSDT', None), ('BTTUSDT', None), ('CHZUSDT', None), ('DENTUSDT', None), ('DGBUSDT', None), ('DOGEUSDT', None), ('HOTUSDT', None), ('IOSTUSDT', None), ('REEFUSDT', None), ('RSRUSDT', None), ('SCUSDT', None), ('STMXUSDT', None), ('TRXUSDT', None), ('VETUSDT', None), ('XRPUSDT', None), ('btc', None), ('timestamp', None)])]
+placekey: MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST
+18.7960004
+18.272510964912282
+True
+18.7960004
+18.276013011350326
+True
+18.7960004
+18.27990574879124
+True
+18.7960004
+18.284189675742468
+True
+18.7960004
+18.275234662805307
+True
+18.7960004
+18.279127068646037
+True
+18.7960004
+18.282631651825657
+True
+18.7960004
+18.286916856661907
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7960004
+18.273678164590653
+True
+18.7960004
+18.277569907358107
+True
+18.7960004
+18.281463308126533
+True
+18.7960004
+18.285747965227767
+True
+18.7929644
+18.2705659634258
+True
+18.7929644
+18.274456380554906
+True
+18.7929644
+18.277959172807428
+True
+18.7929644
+18.282242187333573
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7926372
+18.27095493059695
+True
+18.7926372
+18.274845513393807
+True
+18.7926372
+18.278348454837815
+True
+18.7926372
+18.282631651825657
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7926372
+18.269010260340167
+True
+18.7926372
+18.27290001490408
+True
+18.7926372
+18.276791426198436
+True
+18.7926372
+18.280684495281914
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7963684
+18.273678164590653
+True
+18.7963684
+18.277569907358107
+True
+18.7963684
+18.281463308126533
+True
+18.7963684
+18.285747965227767
+True
+18.7963684
+18.268621375963217
+True
+18.7963684
+18.272510964912282
+True
+18.7963684
+18.276013011350326
+True
+18.7963684
+18.280295113742863
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.8002716
+18.264733442581083
+True
+18.8002716
+18.268621375963217
+True
+18.8002716
+18.272510964912282
+True
+18.8002716
+18.276791426198436
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7980776
+18.26434474025836
+True
+18.7980776
+18.268232508141935
+True
+18.7980776
+18.271732914626355
+True
+18.7980776
+18.276013011350326
+True
+18.7980776
+18.26434474025836
+True
+18.7980776
+18.268232508141935
+True
+18.7980776
+18.271732914626355
+True
+18.7980776
+18.276013011350326
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7980776
+18.26434474025836
+True
+18.7980776
+18.268232508141935
+True
+18.7980776
+18.271732914626355
+True
+18.7980776
+18.276013011350326
+True
+{'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST': OrderedDict([('XRP/USDT', {'symbol': 'XRPUSDT', 'positionAmt': 23.6, 'entryPrice': 1.30926, 'markPrice': '1.19370496', 'unRealizedProfit': -2.72709894, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '28.17143705', 'isolatedWallet': '0', 'updateTime': 1619048241918, 'ROE': 0}), ('TRX/USDT', {'symbol': 'TRXUSDT', 'positionAmt': 191.0, 'entryPrice': 0.12349, 'markPrice': '0.11429000', 'unRealizedProfit': -1.7572, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '21.82939000', 'isolatedWallet': '0', 'updateTime': 1619049695492, 'ROE': 0}), ('VET/USDT', {'symbol': 'VETUSDT', 'positionAmt': -89.0, 'entryPrice': 0.229456, 'markPrice': '0.19545080', 'unRealizedProfit': 3.0264628, 'liquidationPrice': '4.69933949', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '-17.39512120', 'isolatedWallet': '0', 'updateTime': 1619126260340, 'ROE': 74.11443239767124}), ('IOST/USDT', {'symbol': 'IOSTUSDT', 'positionAmt': 4034.0, 'entryPrice': 0.06387, 'markPrice': '0.05282190', 'unRealizedProfit': -44.5680354, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '213.08354460', 'isolatedWallet': '0', 'updateTime': 1619049968045, 'ROE': 0}), ('DOGE/USDT', {'symbol': 'DOGEUSDT', 'positionAmt': 39.0, 'entryPrice': 0.309487, 'markPrice': '0.26775500', 'unRealizedProfit': -1.627548, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '10.44244500', 'isolatedWallet': '0', 'updateTime': 1619048258336, 'ROE': 0}), ('RSR/USDT', {'symbol': 'RSRUSDT', 'positionAmt': -1026.0, 'entryPrice': 0.093702, 'markPrice': '0.08809419', 'unRealizedProfit': 5.75361306, 'liquidationPrice': '0.47878239', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '-90.38463894', 'isolatedWallet': '0', 'updateTime': 1619126266203, 'ROE': 29.929626829508837}), ('AKRO/USDT', {'symbol': 'AKROUSDT', 'positionAmt': 10352.0, 'entryPrice': 0.04989, 'markPrice': '0.04550780', 'unRealizedProfit': -45.3645344, 'liquidationPrice': '0.00592397', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '471.09674560', 'isolatedWallet': '0', 'updateTime': 1619053284157, 'ROE': 0}), ('CHZ/USDT', {'symbol': 'CHZUSDT', 'positionAmt': 40.0, 'entryPrice': 0.52443, 'markPrice': '0.46995194', 'unRealizedProfit': -2.1791224, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '18.79807760', 'isolatedWallet': '0', 'updateTime': 1619048357600, 'ROE': 0}), ('REEF/USDT', {'symbol': 'REEFUSDT', 'positionAmt': 14219.0, 'entryPrice': 0.03412, 'markPrice': '0.03417929', 'unRealizedProfit': 0.84304451, 'liquidationPrice': '0.00541890', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '485.99532451', 'isolatedWallet': '0', 'updateTime': 1619126264774, 'ROE': 0.8690190558627853}), ('STMX/USDT', {'symbol': 'STMXUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '0', 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0}), ('DENT/USDT', {'symbol': 'DENTUSDT', 'positionAmt': 25575.0, 'entryPrice': 0.008962, 'markPrice': '0.00725936', 'unRealizedProfit': -43.545018, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '185.65813200', 'isolatedWallet': '0', 'updateTime': 1619044218053, 'ROE': 0}), ('HOT/USDT', {'symbol': 'HOTUSDT', 'positionAmt': 21366.0, 'entryPrice': 0.015824, 'markPrice': '0.01282305', 'unRealizedProfit': -64.1182977, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '273.97728630', 'isolatedWallet': '0', 'updateTime': 1619053284019, 'ROE': 0}), ('BTT/USDT', {'symbol': 'BTTUSDT', 'positionAmt': 8394.0, 'entryPrice': 0.007824, 'markPrice': '0.00667266', 'unRealizedProfit': -9.66434796, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '56.01030804', 'isolatedWallet': '0', 'updateTime': 1619043667555, 'ROE': 0}), ('SC/USDT', {'symbol': 'SCUSDT', 'positionAmt': 8353.0, 'entryPrice': 0.043928, 'markPrice': '0.03592527', 'unRealizedProfit': -66.84680369, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '300.08378031', 'isolatedWallet': '0', 'updateTime': 1619045136468, 'ROE': 0}), ('ADA/USDT', {'symbol': 'ADAUSDT', 'positionAmt': 3.0, 'entryPrice': 1.27168, 'markPrice': '1.16396040', 'unRealizedProfit': -0.3231588, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '3.49188120', 'isolatedWallet': '0', 'updateTime': 1618973357682, 'ROE': 0}), ('DGB/USDT', {'symbol': 'DGBUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '0', 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0})])}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7963156
+18.263956054479678
+True
+18.7963156
+18.26745482216215
+True
+18.7963156
+18.271343914330117
+True
+18.7963156
+18.275623828790458
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7963156
+18.263956054479678
+True
+18.7963156
+18.26745482216215
+True
+18.7963156
+18.271343914330117
+True
+18.7963156
+18.275623828790458
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.8018416
+18.2771806584888
+True
+18.8018416
+18.28107389340945
+True
+18.8018416
+18.284579223214095
+True
+18.8018416
+18.288865341175466
+True
+18.8018416
+18.26745482216215
+True
+18.8018416
+18.271343914330117
+True
+18.8018416
+18.275234662805307
+True
+18.8018416
+18.279516400425987
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7864716
+18.264733442581083
+True
+18.7864716
+18.268621375963217
+True
+18.7864716
+18.272510964912282
+True
+18.7864716
+18.276791426198436
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7923928
+18.274456380554906
+True
+18.7923928
+18.277959172807428
+True
+18.7923928
+18.281852739434218
+True
+18.7923928
+18.286137579102125
+True
+binance does not have market symbol REEF/USDT
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7923928
+18.2701770128156
+True
+18.7923928
+18.273678164590653
+True
+18.7923928
+18.277569907358107
+True
+18.7923928
+18.281852739434218
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7985476
+18.268232508141935
+True
+18.7985476
+18.271732914626355
+True
+18.7985476
+18.275623828790458
+True
+18.7985476
+18.27990574879124
+True
+18.8008584
+18.263956054479678
+True
+18.8008584
+18.26745482216215
+True
+18.8008584
+18.271343914330117
+True
+18.8008584
+18.275623828790458
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7989892
+18.26317873255022
+True
+18.7989892
+18.26706600400153
+True
+18.7989892
+18.27095493059695
+True
+18.7989892
+18.275234662805307
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7989892
+18.26434474025836
+True
+18.7989892
+18.268232508141935
+True
+18.7989892
+18.271732914626355
+True
+18.7989892
+18.276013011350326
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7924452
+18.260458626779293
+True
+18.7924452
+18.26434474025836
+True
+18.7924452
+18.268232508141935
+True
+18.7924452
+18.272510964912282
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.791092
+18.260458626779293
+True
+18.791092
+18.26434474025836
+True
+18.791092
+18.268232508141935
+True
+18.791092
+18.272510964912282
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7984604
+18.25385602773524
+True
+18.7984604
+18.257739331149217
+True
+18.7984604
+18.261624287173376
+True
+18.7984604
+18.265899648824092
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7984604
+18.252303168864312
+True
+18.7984604
+18.25618581152946
+True
+18.7984604
+18.26007010638298
+True
+18.7984604
+18.26434474025836
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7994152
+18.246482300414584
+True
+18.7994152
+18.249974375877173
+True
+18.7994152
+18.25385602773524
+True
+18.7994152
+18.258127752366768
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7994152
+18.246482300414584
+True
+18.7994152
+18.249974375877173
+True
+18.7994152
+18.25385602773524
+True
+18.7994152
+18.258127752366768
+True
+18.7952448
+18.25657416664894
+True
+18.7952448
+18.260458626779293
+True
+18.7952448
+18.26434474025836
+True
+18.7952448
+18.268621375963217
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7996344
+18.251138698083917
+True
+18.7996344
+18.254632556259835
+True
+18.7996344
+18.25851619011148
+True
+18.7996344
+18.262790096397335
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.8000816
+18.25618581152946
+True
+18.8000816
+18.26007010638298
+True
+18.8000816
+18.263956054479678
+True
+18.8000816
+18.267843656875264
+True
+18.8000816
+18.25618581152946
+True
+18.8000816
+18.26007010638298
+True
+18.8000816
+18.263956054479678
+True
+18.8000816
+18.267843656875264
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.802856
+18.25851619011148
+True
+18.802856
+18.26240147678427
+True
+18.802856
+18.26628841733356
+True
+18.802856
+18.2705659634258
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.802856
+18.258127752366768
+True
+18.802856
+18.26201287370997
+True
+18.802856
+18.265899648824092
+True
+18.802856
+18.2701770128156
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+{'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST': OrderedDict([('XRP/USDT', {'symbol': 'XRPUSDT', 'positionAmt': 23.6, 'entryPrice': 1.30926, 'markPrice': '1.19400000', 'unRealizedProfit': -2.720136, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 28.1784, 'isolatedWallet': '0', 'updateTime': 1619048241918, 'ROE': 0}), ('TRX/USDT', {'symbol': 'TRXUSDT', 'positionAmt': 191.0, 'entryPrice': 0.12349, 'markPrice': '0.11443000', 'unRealizedProfit': -1.73046, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 21.85613, 'isolatedWallet': '0', 'updateTime': 1619049695492, 'ROE': 0}), ('VET/USDT', {'symbol': 'VETUSDT', 'positionAmt': -2.0, 'entryPrice': 0.229456, 'markPrice': '0.19598573', 'unRealizedProfit': 0.06694054, 'liquidationPrice': '204.12866557', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': -0.39197146, 'isolatedWallet': '0', 'updateTime': 1619126271004, 'ROE': 72.9339611951747}), ('IOST/USDT', {'symbol': 'IOSTUSDT', 'positionAmt': 4034.0, 'entryPrice': 0.06387, 'markPrice': '0.05288361', 'unRealizedProfit': -44.31909726, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 213.33248274, 'isolatedWallet': '0', 'updateTime': 1619049968045, 'ROE': 0}), ('DOGE/USDT', {'symbol': 'DOGEUSDT', 'positionAmt': 39.0, 'entryPrice': 0.309487, 'markPrice': '0.26875500', 'unRealizedProfit': -1.588548, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 10.481445, 'isolatedWallet': '0', 'updateTime': 1619048258336, 'ROE': 0}), ('RSR/USDT', {'symbol': 'RSRUSDT', 'positionAmt': -1026.0, 'entryPrice': 0.093702, 'markPrice': '0.08836500', 'unRealizedProfit': 5.475762, 'liquidationPrice': '0.48589459', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': -90.66249, 'isolatedWallet': '0', 'updateTime': 1619126266203, 'ROE': 28.478581033489213}), ('AKRO/USDT', {'symbol': 'AKROUSDT', 'positionAmt': 10352.0, 'entryPrice': 0.04989, 'markPrice': '0.04573610', 'unRealizedProfit': -43.0011728, 'liquidationPrice': '0.00545911', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 473.4601072, 'isolatedWallet': '0', 'updateTime': 1619053284157, 'ROE': 0}), ('CHZ/USDT', {'symbol': 'CHZUSDT', 'positionAmt': 40.0, 'entryPrice': 0.52443, 'markPrice': '0.47007140', 'unRealizedProfit': -2.174344, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 18.802856, 'isolatedWallet': '0', 'updateTime': 1619048357600, 'ROE': 0}), ('REEF/USDT', {'symbol': 'REEFUSDT', 'positionAmt': 14219.0, 'entryPrice': 0.03412, 'markPrice': '0.03420188', 'unRealizedProfit': 1.16425172, 'liquidationPrice': '0.00493786', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 486.31653172, 'isolatedWallet': '0', 'updateTime': 1619126264774, 'ROE': 1.1998827667056844}), ('STMX/USDT', {'symbol': 'STMXUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 0.0, 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0}), ('DENT/USDT', {'symbol': 'DENTUSDT', 'positionAmt': 25575.0, 'entryPrice': 0.008962, 'markPrice': '0.00726730', 'unRealizedProfit': -43.3419525, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 185.8611975, 'isolatedWallet': '0', 'updateTime': 1619044218053, 'ROE': 0}), ('HOT/USDT', {'symbol': 'HOTUSDT', 'positionAmt': 21366.0, 'entryPrice': 0.015824, 'markPrice': '0.01290857', 'unRealizedProfit': -62.29107738, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 275.80450662, 'isolatedWallet': '0', 'updateTime': 1619053284019, 'ROE': 0}), ('BTT/USDT', {'symbol': 'BTTUSDT', 'positionAmt': 8394.0, 'entryPrice': 0.007824, 'markPrice': '0.00672864', 'unRealizedProfit': -9.19445184, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 56.48020416, 'isolatedWallet': '0', 'updateTime': 1619043667555, 'ROE': 0}), ('SC/USDT', {'symbol': 'SCUSDT', 'positionAmt': 8353.0, 'entryPrice': 0.043928, 'markPrice': '0.03608561', 'unRealizedProfit': -65.50748367, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 301.42310033, 'isolatedWallet': '0', 'updateTime': 1619045136468, 'ROE': 0}), ('ADA/USDT', {'symbol': 'ADAUSDT', 'positionAmt': 3.0, 'entryPrice': 1.27168, 'markPrice': '1.16483677', 'unRealizedProfit': -0.32052969, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 3.49451031, 'isolatedWallet': '0', 'updateTime': 1618973357682, 'ROE': 0}), ('DGB/USDT', {'symbol': 'DGBUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 0.0, 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0})])}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.8081108
+18.2457064651232
+True
+18.8081108
+18.249586301486378
+True
+18.8081108
+18.253467788246805
+True
+18.8081108
+18.257739331149217
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.8081108
+18.25075057417489
+True
+18.8081108
+18.254244283739233
+True
+18.8081108
+18.258127752366768
+True
+18.8081108
+18.26240147678427
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}['XRP/USDT', 'TRX/USDT', 'VET/USDT', 'IOST/USDT', 'DOGE/USDT', 'RSR/USDT', 'AKRO/USDT', 'CHZ/USDT', 'REEF/USDT', 'STMX/USDT', 'DENT/USDT', 'HOT/USDT', 'BTT/USDT', 'SC/USDT']
+Avg/total volume for all coin margined futures last 24hr has been: $841789147.6345/$95122173682.695
+# instruments total: 113, # instruments above avg vol: 14
+Outliers of volume: 21895242030.0 and 1502.221
+# instruments total: 111, # instruments above avg vol less outliers: 16
+50.5
+[OrderedDict([('ADAUSDT', None), ('AKROUSDT', None), ('BTTUSDT', None), ('CHZUSDT', None), ('DENTUSDT', None), ('DGBUSDT', None), ('DOGEUSDT', None), ('HOTUSDT', None), ('IOSTUSDT', None), ('REEFUSDT', None), ('RSRUSDT', None), ('SCUSDT', None), ('STMXUSDT', None), ('TRXUSDT', None), ('VETUSDT', None), ('XRPUSDT', None), ('btc', None), ('timestamp', None)]), OrderedDict([('ADAUSDT', None), ('AKROUSDT', None), ('BTTUSDT', None), ('CHZUSDT', None), ('DENTUSDT', None), ('DGBUSDT', None), ('DOGEUSDT', None), ('HOTUSDT', None), ('IOSTUSDT', None), ('REEFUSDT', None), ('RSRUSDT', None), ('SCUSDT', None), ('STMXUSDT', None), ('TRXUSDT', None), ('VETUSDT', None), ('XRPUSDT', None), ('btc', None), ('timestamp', None)]), OrderedDict([('ADAUSDT', None), ('AKROUSDT', None), ('BTTUSDT', None), ('CHZUSDT', None), ('DENTUSDT', None), ('DGBUSDT', None), ('DOGEUSDT', None), ('HOTUSDT', None), ('IOSTUSDT', None), ('REEFUSDT', None), ('RSRUSDT', None), ('SCUSDT', None), ('STMXUSDT', None), ('TRXUSDT', None), ('VETUSDT', None), ('XRPUSDT', None), ('btc', None), ('timestamp', None)])]
+placekey: MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST
+connection lost... [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+]
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7857556
+17.806383402099165
+True
+18.7857556
+17.81017514064862
+True
+18.7857556
+17.813968494387765
+True
+18.7857556
+17.818143050276948
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+connection lost... [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+]
+18.7820936
+17.808279069539665
+True
+18.7820936
+17.812071615554988
+True
+18.7820936
+17.81586577727602
+True
+18.7820936
+17.820041222541814
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+18.7820936
+17.81700434100931
+True
+18.7820936
+17.820800604691794
+True
+18.7820936
+17.824598486456534
+True
+18.7820936
+17.828778026517735
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7576332
+17.816245282351687
+True
+18.7576332
+17.820041222541814
+True
+18.7576332
+17.823458951966924
+True
+18.7576332
+17.827637957582862
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7789048
+17.8124509590033
+True
+18.7789048
+17.816245282351687
+True
+18.7789048
+17.820041222541814
+True
+18.7789048
+17.824218625436878
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+18.7801688
+17.81700434100931
+True
+18.7801688
+17.820800604691794
+True
+18.7801688
+17.824598486456534
+True
+18.7801688
+17.828778026517735
+True
+connection lost... [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+]
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+18.7801688
+17.81472735904918
+True
+18.7801688
+17.81852265237862
+True
+18.7801688
+17.822319563169895
+True
+18.7801688
+17.82611809245721
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+{'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST': OrderedDict([('XRP/USDT', {'symbol': 'XRPUSDT', 'positionAmt': 23.6, 'entryPrice': 1.30926, 'markPrice': '1.19290000', 'unRealizedProfit': -2.746096, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 28.15244, 'isolatedWallet': '0', 'updateTime': 1619048241918, 'ROE': 0}), ('TRX/USDT', {'symbol': 'TRXUSDT', 'positionAmt': 191.0, 'entryPrice': 0.12349, 'markPrice': '0.11376404', 'unRealizedProfit': -1.85765836, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 21.72893164, 'isolatedWallet': '0', 'updateTime': 1619049695492, 'ROE': -39.37954490242124}), ('VET/USDT', {'symbol': 'VETUSDT', 'positionAmt': -2.0, 'entryPrice': 0.229456, 'markPrice': '0.19552083', 'unRealizedProfit': 0.06787034, 'liquidationPrice': '199.90800950', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': -0.39104166, 'isolatedWallet': '0', 'updateTime': 1619126271004, 'ROE': 73.94700944843457}), ('IOST/USDT', {'symbol': 'IOSTUSDT', 'positionAmt': 4034.0, 'entryPrice': 0.06387, 'markPrice': '0.05286653', 'unRealizedProfit': -44.38799798, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 213.26358202, 'isolatedWallet': '0', 'updateTime': 1619049968045, 'ROE': -86.13958039768278}), ('DOGE/USDT', {'symbol': 'DOGEUSDT', 'positionAmt': 39.0, 'entryPrice': 0.309487, 'markPrice': '0.26776300', 'unRealizedProfit': -1.627236, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 10.442757, 'isolatedWallet': '0', 'updateTime': 1619048258336, 'ROE': -67.4083240976196}), ('RSR/USDT', {'symbol': 'RSRUSDT', 'positionAmt': -929.0, 'entryPrice': 0.093702, 'markPrice': '0.08870635', 'unRealizedProfit': 4.64095885, 'liquidationPrice': '0.51865789', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': -82.40819915, 'isolatedWallet': '0', 'updateTime': 1619126314556, 'ROE': 26.65711510960278}), ('AKRO/USDT', {'symbol': 'AKROUSDT', 'positionAmt': 10352.0, 'entryPrice': 0.04989, 'markPrice': '0.04564574', 'unRealizedProfit': -43.93657952, 'liquidationPrice': '0.00620225', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 472.52470048, 'isolatedWallet': '0', 'updateTime': 1619053284157, 'ROE': -42.536179595109246}), ('CHZ/USDT', {'symbol': 'CHZUSDT', 'positionAmt': 40.0, 'entryPrice': 0.52443, 'markPrice': '0.46950422', 'unRealizedProfit': -2.1970312, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 18.7801688, 'isolatedWallet': '0', 'updateTime': 1619048357600, 'ROE': -52.36712239955765}), ('REEF/USDT', {'symbol': 'REEFUSDT', 'positionAmt': 14219.0, 'entryPrice': 0.03412, 'markPrice': '0.03411406', 'unRealizedProfit': -0.08446086, 'liquidationPrice': '0.00545563', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 485.06781914, 'isolatedWallet': '0', 'updateTime': 1619126264774, 'ROE': -0.08704572098472418}), ('STMX/USDT', {'symbol': 'STMXUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 0.0, 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0}), ('DENT/USDT', {'symbol': 'DENTUSDT', 'positionAmt': 25575.0, 'entryPrice': 0.008962, 'markPrice': '0.00722906', 'unRealizedProfit': -44.3199405, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 184.8832095, 'isolatedWallet': '0', 'updateTime': 1619044218053, 'ROE': -96.6826601205088}), ('HOT/USDT', {'symbol': 'HOTUSDT', 'positionAmt': 21366.0, 'entryPrice': 0.015824, 'markPrice': '0.01277922', 'unRealizedProfit': -65.05476948, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 273.04081452, 'isolatedWallet': '0', 'updateTime': 1619053284019, 'ROE': 0}), ('BTT/USDT', {'symbol': 'BTTUSDT', 'positionAmt': 8394.0, 'entryPrice': 0.007824, 'markPrice': '0.00660575', 'unRealizedProfit': -10.2259905, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 55.4486655, 'isolatedWallet': '0', 'updateTime': 1619043667555, 'ROE': -77.85339979550105}), ('SC/USDT', {'symbol': 'SCUSDT', 'positionAmt': 8353.0, 'entryPrice': 0.043928, 'markPrice': '0.03599517', 'unRealizedProfit': -66.26292899, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 300.66765501, 'isolatedWallet': '0', 'updateTime': 1619045136468, 'ROE': -90.29354853396471}), ('ADA/USDT', {'symbol': 'ADAUSDT', 'positionAmt': 3.0, 'entryPrice': 1.27168, 'markPrice': '1.16518199', 'unRealizedProfit': -0.31949403, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 3.49554597, 'isolatedWallet': '0', 'updateTime': 1618973357682, 'ROE': -41.87295939229996}), ('DGB/USDT', {'symbol': 'DGBUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': 0.0, 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0})])}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.8114672
+17.801835446438073
+True
+18.8114672
+17.80562524812126
+True
+18.8114672
+17.809416663756572
+True
+18.8114672
+17.813209694375225
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+18.780648
+17.825738166666664
+True
+18.780648
+17.829538153485395
+True
+18.780648
+17.83333976076759
+True
+18.780648
+17.837523401650706
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+18.7705512
+17.829158081899767
+True
+18.7705512
+17.832959527088974
+True
+18.7705512
+17.83638221402371
+True
+18.7705512
+17.84056728269448
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.775654
+17.828778026517735
+True
+18.775654
+17.8321991083726
+True
+18.775654
+17.836001850596038
+True
+18.775654
+17.840186740753378
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.767446
+17.828397987338263
+True
+18.767446
+17.83181892333276
+True
+18.767446
+17.835621503390623
+True
+18.767446
+17.839806215045964
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.767446
+17.824218625436878
+True
+18.767446
+17.827637957582862
+True
+18.767446
+17.831438754503782
+True
+18.767446
+17.835621503390623
+True
+18.7610716
+17.827257967004858
+True
+18.7610716
+17.83105860188462
+True
+18.7610716
+17.834860857642443
+True
+18.7610716
+17.838664735315444
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7613072
+17.829158081899767
+True
+18.7613072
+17.832959527088974
+True
+18.7613072
+17.836762593674692
+True
+18.7613072
+17.84056728269448
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+18.7613072
+17.829158081899767
+True
+18.7613072
+17.832959527088974
+True
+18.7613072
+17.836762593674692
+True
+18.7613072
+17.84056728269448
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.75436
+17.829158081899767
+True
+18.75436
+17.832959527088974
+True
+18.75436
+17.836762593674692
+True
+18.75436
+17.84056728269448
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7561736
+17.829158081899767
+True
+18.7561736
+17.832959527088974
+True
+18.7561736
+17.836762593674692
+True
+18.7561736
+17.84056728269448
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+18.7561736
+17.829158081899767
+True
+18.7561736
+17.832959527088974
+True
+18.7561736
+17.83638221402371
+True
+18.7561736
+17.84056728269448
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.75264
+17.829158081899767
+True
+18.75264
+17.832959527088974
+True
+18.75264
+17.83638221402371
+True
+18.75264
+17.84056728269448
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7547744
+17.825738166666664
+True
+18.7547744
+17.829538153485395
+True
+18.7547744
+17.83333976076759
+True
+18.7547744
+17.837523401650706
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-2019,"msg":"Margin is insufficient."}
+18.7609492
+17.824218625436878
+True
+18.7609492
+17.827637957582862
+True
+18.7609492
+17.831438754503782
+True
+18.7609492
+17.835621503390623
+True
+EXCEPTION IN (/home/ubuntu/Desktop/bot/strategies/mm.py, LINE 848 "o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )"): binance {"code":-1106,"msg":"Parameter 'timeInForce' sent when not required."}
+{'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST': OrderedDict([('XRP/USDT', {'symbol': 'XRPUSDT', 'positionAmt': 23.6, 'entryPrice': 1.30926, 'markPrice': '1.19330000', 'unRealizedProfit': -2.736656, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '28.16188000', 'isolatedWallet': '0', 'updateTime': 1619048241918, 'ROE': 0}), ('TRX/USDT', {'symbol': 'TRXUSDT', 'positionAmt': 191.0, 'entryPrice': 0.12349, 'markPrice': '0.11406729', 'unRealizedProfit': -1.79973761, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '21.78685239', 'isolatedWallet': '0', 'updateTime': 1619049695492, 'ROE': 0}), ('VET/USDT', {'symbol': 'VETUSDT', 'positionAmt': -2.0, 'entryPrice': 0.229456, 'markPrice': '0.19461814', 'unRealizedProfit': 0.06967572, 'liquidationPrice': '201.29645884', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '-0.38923628', 'isolatedWallet': '0', 'updateTime': 1619126271004, 'ROE': 75.9292172917535}), ('IOST/USDT', {'symbol': 'IOSTUSDT', 'positionAmt': 4034.0, 'entryPrice': 0.06387, 'markPrice': '0.05277100', 'unRealizedProfit': -44.773366, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '212.87821400', 'isolatedWallet': '0', 'updateTime': 1619049968045, 'ROE': 0}), ('DOGE/USDT', {'symbol': 'DOGEUSDT', 'positionAmt': 39.0, 'entryPrice': 0.309487, 'markPrice': '0.26680600', 'unRealizedProfit': -1.664559, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '10.40543400', 'isolatedWallet': '0', 'updateTime': 1619048258336, 'ROE': 0}), ('RSR/USDT', {'symbol': 'RSRUSDT', 'positionAmt': -835.0, 'entryPrice': 0.093702, 'markPrice': '0.08836112', 'unRealizedProfit': 4.4596348, 'liquidationPrice': '0.57004218', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '-73.78153520', 'isolatedWallet': '0', 'updateTime': 1619126346646, 'ROE': 28.50498596442952}), ('AKRO/USDT', {'symbol': 'AKROUSDT', 'positionAmt': 10352.0, 'entryPrice': 0.04989, 'markPrice': '0.04563390', 'unRealizedProfit': -44.0591472, 'liquidationPrice': '0.00591601', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '472.40213280', 'isolatedWallet': '0', 'updateTime': 1619053284157, 'ROE': 0}), ('CHZ/USDT', {'symbol': 'CHZUSDT', 'positionAmt': 40.0, 'entryPrice': 0.52443, 'markPrice': '0.46902373', 'unRealizedProfit': -2.2162508, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '18.76094920', 'isolatedWallet': '0', 'updateTime': 1619048357600, 'ROE': -52.83579645586084}), ('REEF/USDT', {'symbol': 'REEFUSDT', 'positionAmt': 14219.0, 'entryPrice': 0.03412, 'markPrice': '0.03415879', 'unRealizedProfit': 0.55155501, 'liquidationPrice': '0.00530099', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '485.70383501', 'isolatedWallet': '0', 'updateTime': 1619126264774, 'ROE': 0.5685486452507993}), ('STMX/USDT', {'symbol': 'STMXUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '0', 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0}), ('DENT/USDT', {'symbol': 'DENTUSDT', 'positionAmt': 25575.0, 'entryPrice': 0.008962, 'markPrice': '0.00719209', 'unRealizedProfit': -45.26544825, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '183.93770175', 'isolatedWallet': '0', 'updateTime': 1619044218053, 'ROE': 0}), ('HOT/USDT', {'symbol': 'HOTUSDT', 'positionAmt': 21366.0, 'entryPrice': 0.015824, 'markPrice': '0.01293538', 'unRealizedProfit': -61.71825492, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '276.37732908', 'isolatedWallet': '0', 'updateTime': 1619053284019, 'ROE': 0}), ('BTT/USDT', {'symbol': 'BTTUSDT', 'positionAmt': 8394.0, 'entryPrice': 0.007824, 'markPrice': '0.00664106', 'unRealizedProfit': -9.92959836, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '55.74505764', 'isolatedWallet': '0', 'updateTime': 1619043667555, 'ROE': 0}), ('SC/USDT', {'symbol': 'SCUSDT', 'positionAmt': 8353.0, 'entryPrice': 0.043928, 'markPrice': '0.03595418', 'unRealizedProfit': -66.60531846, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '300.32526554', 'isolatedWallet': '0', 'updateTime': 1619045136468, 'ROE': 0}), ('ADA/USDT', {'symbol': 'ADAUSDT', 'positionAmt': 3.0, 'entryPrice': 1.27168, 'markPrice': '1.16315666', 'unRealizedProfit': -0.32557002, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '2000000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '3.48946998', 'isolatedWallet': '0', 'updateTime': 1618973357682, 'ROE': 0}), ('DGB/USDT', {'symbol': 'DGBUSDT', 'positionAmt': 0.0, 'entryPrice': 0.0, 'markPrice': '0.00000000', 'unRealizedProfit': 0.0, 'liquidationPrice': '0', 'leverage': 5.0, 'maxNotionalValue': '250000', 'marginType': 'cross', 'isolatedMargin': '0.00000000', 'isAutoAddMargin': 'false', 'positionSide': 'BOTH', 'notional': '0', 'isolatedWallet': '0', 'updateTime': 0, 'ROE': 0})])}

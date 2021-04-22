@@ -9,7 +9,7 @@ binApi2 =  {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':'
 		 #}	  'key': 'secret'}
 
 
-settings = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':{'TP': 40, 'SL': -20, 'max_skew_mult': 2, 'qty_div': 20, 'lev': 25},
+settings = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':{'TP': 40, 'SL': -20, 'max_skew_mult': 1.75, 'qty_div': 50, 'lev': 5},
 			'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U':{'TP': 40, 'SL': -20, 'max_skew_mult': 2, 'qty_div': 20, 'lev': 25}
 			}
 
@@ -213,6 +213,7 @@ def PrintException(apiKey):
 	linecache.checkcache(filename)
 	line = linecache.getline(filename, lineno, f.f_globals)
 	string = 'EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj)
+	print(string)
 	if 'https://fapi.binance.com/fapi/' in string or 'Timestamp for this request is outside of the recvWindow' in string or 'Read timed out' in string:
 		
 		if mmbot.connecting == False:
@@ -429,11 +430,12 @@ class MarketMaker( object ):
 				#	st = start_time
 				#	days	= ( datetime.now() - self.start_time ).total_seconds() / SECONDS_IN_DAY
 				
-				
 				if endTime == 0:
 					trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st })
-				else:
+				elif endTime != 9999999999999999999999999999999999999:
 					trades = client.fapiPrivateGetUserTrades({"symbol": pair.replace('/', ''), "limit": 1000, 'startTime': st , 'endTime': endTime})
+				else:
+					return False
 				#pprint(len(trades))
 				for t in trades:
 					returnTrades.append(t)
@@ -489,6 +491,7 @@ class MarketMaker( object ):
 				self.futures_prv	= cp.deepcopy( self.futures )
 				sleep((self.orderRateLimit / 1.1 ) / 1000)
 				insts			   = client.fetchMarkets()
+
 				#pprint(insts)
 				#pprint(insts[0])
 				self.futures		= sort_by_key( { 
@@ -548,7 +551,7 @@ class MarketMaker( object ):
 	
 	def get_ticksize( self, contract ):
 		
-		return self.futures[ contract ] ['info'] ['filters'] [ 0 ] [ 'tickSize' ]
+		return self.futures[ contract.replace('/','') ] ['info'] ['filters'] [ 0 ] [ 'tickSize' ]
 		
 	
 	
@@ -688,80 +691,83 @@ class MarketMaker( object ):
 						gettrades = self.getTrades(client, pair, 0, 0, 0, [])
 
 						#pprint(gettrades)
-						volume = (gettrades[0] / (gettrades[2]))
-						feest = feest + gettrades[1]
-						tradet = tradet + volume * 30
-						printprint = True
-						if pair in fifteens:
-							volume = (volume / 15000)
-						elif pair in tens:
-							volume = (volume / 10000)
-						elif pair in fives:
-							volume = (volume / 5000)
-						elif pair in threes:
-							volume = (volume / 3000)
-						else:
-							printprint = False
-							volume = (volume / 25000)
-						volumes.append(volume)
-						#pprint(volume)
-						if printprint == True:
-							if volume > 0:
-								#if self.threethousandmin == None:
-								abc=123#pprint(' ' + pair + ': ' + str(round(volume*1000)/10) + '%' + ', (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
-								#else:
-								#	abc=123#pprint(' ' + pair + ': ' + str(round(volume*1000)/10) + '%' + ', w/ ' + str(self.threethousandmin * self.equity_usd[client.apiKey]) + '$ minimum for sustainable strategy: ' + str(round(volume*self.threethousandmin*1000)/10)  + '%, ' + str(round((volume * self.threethousandmin)*1000)/10) + '%'  + ' (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
-						else:
-							if gettrades[0] > 0:
-								abc=123#pprint(' (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
+						if gettrades != False:
+							volume = (gettrades[0] / (gettrades[2]))
+							feest = feest + gettrades[1]
+							tradet = tradet + volume * 30
+							printprint = True
+							if pair in fifteens:
+								volume = (volume / 15000)
+							elif pair in tens:
+								volume = (volume / 10000)
+							elif pair in fives:
+								volume = (volume / 5000)
+							elif pair in threes:
+								volume = (volume / 3000)
+							else:
+								printprint = False
+								volume = (volume / 25000)
+							volumes.append(volume)
+							#pprint(volume)
+							if printprint == True:
+								if volume > 0:
+									#if self.threethousandmin == None:
+									abc=123#pprint(' ' + pair + ': ' + str(round(volume*1000)/10) + '%' + ', (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
+									#else:
+									#	abc=123#pprint(' ' + pair + ': ' + str(round(volume*1000)/10) + '%' + ', w/ ' + str(self.threethousandmin * self.equity_usd[client.apiKey]) + '$ minimum for sustainable strategy: ' + str(round(volume*self.threethousandmin*1000)/10)  + '%, ' + str(round((volume * self.threethousandmin)*1000)/10) + '%'  + ' (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
+							else:
+								if gettrades[0] > 0:
+									abc=123#pprint(' (Real) USD traded: $' + str(round(gettrades[0]*100)/100) + ', fees paid: $' + str(round(gettrades[1] * 10000)/10000))
 					volumes.sort()
 					h = 100
-					for i in range(0,5):
-						if volumes[-i] < h and volumes[-i] > 0:
-							h = volumes[-i]
-							if h > 1:
-								h = 1
 					try:
-						h = 1 / h
+						for i in range(0,5):
+							if volumes[-i] < h and volumes[-i] > 0:
+								h = volumes[-i]
+								if h > 1:
+									h = 1
+						try:
+							h = 1 / h
+						except:
+							h = 1
+						mult = h
+						h = h * self.equity_usd[client.apiKey]
+						print('')
+						print(' Approx. traded volumes over 30 days: ' + str(tradet) + ', in BTC: ' + str(round(tradet/btc*1000)/1000))
+						print(' Approx. Min Equity at ' + str(self.lev) + 'x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $' + str(round(h * 100)/100))
+						diff = h / self.equity_usd[client.apiKey]
+						btcneed = (((tradet * diff / btc) / 3000) )
+						print(' That\'s ' + str(round(diff*100)/100) + 'x the balance now, bringing projected USD/month to: ' + str(round(tradet * diff * 100)/100) + ', and BTC: ' + str(round((tradet * diff / btc)* 100)/100))
+						if self.threethousandmin is not None:
+							diff = self.threethousandmin
+							print(' With ' + str(self.threethousandmin) + 'x the balance now that we\'d need for the 3000 btc/month minimum, though, projected USD/month to: ' + str(round(tradet * diff * 100)/100) + ', and BTC: ' + str(round((tradet * diff / btc)* 100)/100))
+
+						apy = 365 / (gettrades[2])
+						pnl = (((self.equity_usd[client.apiKey] + feest) / self.equity_usd[client.apiKey]) -1) * 100
+						pnl2 = pnl * apy
+						print(' Now, if we were running in a trial mode of Binance Market Maker Program\'s Rebates, or if we had achieved these rates already, we would have earned $' + str(round(feest * 100)/100) + ' by now (on our actual equity), or rather earning ' + str(round(pnl*1000)/1000) + '% PnL so far, or ' + str(round(pnl2*1000)/1000) + ' % Annual Percentage Yield!')
+						
+						if btcneed < 1 and btcneed != 0:
+							h = h / btcneed
+							self.threethousandmin = (round(h * 100)/100) / self.equity_usd[client.apiKey]
+
+							print(' For 3000 btc/month volumes, would make the equity minimum approx. $' + str(round(h * 100)/100))
 					except:
-						h = 1
-					mult = h
-					h = h * self.equity_usd[client.apiKey]
-					pprint(client.apiKey + ':')
-					pprint(client.apiKey + ': Approx. traded volumes over 30 days: ' + str(tradet) + ', in BTC: ' + str(round(tradet/btc*1000)/1000))
-					pprint(client.apiKey + ': Approx. Min Equity at ' + str(self.lev) + 'x in USD to Achieve 100% Daily Requirements Across 6 Highest %s Above: $' + str(round(h * 100)/100))
-					diff = h / self.equity_usd[client.apiKey]
-					btcneed = (((tradet * diff / btc) / 3000) )
-					pprint(client.apiKey + ': That\'s ' + str(round(diff*100)/100) + 'x the balance now, bringing projected USD/month to: ' + str(round(tradet * diff * 100)/100) + ', and BTC: ' + str(round((tradet * diff / btc)* 100)/100))
-					if self.threethousandmin is not None:
-						diff = self.threethousandmin
-						pprint(client.apiKey + ': With ' + str(self.threethousandmin) + 'x the balance now that we\'d need for the 3000 btc/month minimum, though, projected USD/month to: ' + str(round(tradet * diff * 100)/100) + ', and BTC: ' + str(round((tradet * diff / btc)* 100)/100))
-
-					apy = 365 / (gettrades[2])
-					pnl = (((self.equity_usd[client.apiKey] + feest) / self.equity_usd[client.apiKey]) -1) * 100
-					pnl2 = pnl * apy
-					pprint(client.apiKey + ': Now, if we were running in a trial mode of Binance Market Maker Program\'s Rebates, or if we had achieved these rates already, we would have earned $' + str(round(feest * 100)/100) + ' by now (on our actual equity), or rather earning ' + str(round(pnl*1000)/1000) + '% PnL so far, or ' + str(round(pnl2*1000)/1000) + ' % Annual Percentage Yield!')
-					
-					if btcneed < 1 and btcneed != 0:
-						h = h / btcneed
-						self.threethousandmin = (round(h * 100)/100) / self.equity_usd[client.apiKey]
-
-						pprint(client.apiKey + ': For 3000 btc/month volumes, would make the equity minimum approx. $' + str(round(h * 100)/100))
-					
-				pprint(client.apiKey + ': ')
-				pprint(client.apiKey + ': Equity ($):		%7.2f'   % equity_usd)
-				pprint(client.apiKey + ': P&L ($)			%7.2f'   % pnl_usd)
-				pprint(client.apiKey + ': Equity (BTC):	  %7.4f'   % equity_btc)
-				pprint(client.apiKey + ': P&L (BTC)		  %7.4f'   % pnl_btc)
-				pprint(client.apiKey + ': ')
+						abc=123
+				print(' ')
+				print(' Equity ($):		%7.2f'   % equity_usd)
+				print(' P&L ($)			%7.2f'   % pnl_usd)
+				print(' Equity (BTC):	  %7.4f'   % equity_btc)
+				print(' P&L (BTC)		  %7.4f'   % pnl_btc)
+				print(' ')
 				potential = pnl_usd+(((feest+feest)/0.016)*0.02)
 				potentialday = potential / days
 				potential2k = potential / (self.equity_usd[client.apiKey] / 2000)
 				potential2kday = potential2k / days
-				pprint(client.apiKey + ': Potential earned if we had fee rebate: $' + str(round(potential* 1000) / 1000))
-				pprint(client.apiKey + ': potentialday: ' + str(potentialday))
-				pprint(client.apiKey + ': potential2k: ' + str(potential2k))
-				pprint(client.apiKey + ': potential2kday: ' + str(potential2kday))
+				print(' Potential earned if we had fee rebate: $' + str(round(potential* 1000) / 1000))
+				print(' potentialday: ' + str(potentialday))
+				print(' potential2k: ' + str(potential2k))
+				print(' potential2kday: ' + str(potential2kday))
 				log = 'rebate.txt'
 				
 				with open(log, "a") as myfile:
@@ -815,6 +821,7 @@ class MarketMaker( object ):
 					self.equity_btc[client.apiKey] = self.Place_Orders[client.apiKey].equity_btc
 					self.equity_usd[client.apiKey] = self.Place_Orders[client.apiKey].equity_usd
 					self.positions[client.apiKey] = self.Place_Orders[client.apiKey].positions
+					print(self.positions)
 					self.openorders[client.apiKey] = self.Place_Orders[client.apiKey].openorders
 					self.trades[client.apiKey] = self.Place_Orders[client.apiKey].trades
 					if self.equity_usd_init[client.apiKey] == None and self.equity_usd[client.apiKey] > 0:
@@ -876,17 +883,26 @@ class MarketMaker( object ):
 				#pprint(mids[symbol] )
 		except Exception as e:
 			pprint('m_message ' + str(e))#PrintException()
+	def dorestart( self ):
+		sleep(40)
+		#self.restart()
 	def run_first( self, client ):
 		
 		  
-		
+		t = threading.Thread(target=self.dorestart, args=())
+		t.daemon = True
+		t.start()
 		t = threading.Thread(target=self.updateBids, args=())
 		t.daemon = True
 		t.start()	
 		
-		#t = threading.Thread(target=self.updatePositions, args=(client,))
-		#t.daemon = True
-		#t.start()	
+		t = threading.Thread(target=self.updatePositions, args=(client,))
+		t.daemon = True
+		t.start()	
+		for pair in aboveavgs:
+			t = threading.Thread(target=self.updateOrders, args=(client,pair,len(aboveavgs)))
+			t.daemon = True
+			t.start()	
 		
 		#self.cancelall()
 		self.logger = get_logger( 'root', LOG_LEVEL )
@@ -907,6 +923,10 @@ class MarketMaker( object ):
 		#t.start()
 		self.this_mtime = getmtime( __file__ )
 		self.symbols	= [ BTC_SYMBOL ] + list( pairs[client.apiKey]); self.symbols.sort()
+		stemp = []
+		for s in self.symbols:
+			stemp.append(s.replace('/',''))
+		self.symbols = stemp
 		self.deltas	 = OrderedDict( { s: None for s in self.symbols } )
 		
 		# Create historical time series data for estimating vol
@@ -915,7 +935,7 @@ class MarketMaker( object ):
 		self.ts = [
 			OrderedDict( { f: None for f in ts_keys } ) for i in range( NLAGS + 1 )
 		]
-		
+		print(self.ts)
 		self.vols   = OrderedDict( { s: VOL_PRIOR for s in self.symbols } )
 		#sleep(10)
 		
@@ -1021,7 +1041,7 @@ class MarketMaker( object ):
 		self.update_status()
 		#sleep(3)
 	def updateOrders(self, client, pair, length):
-		sleep(random.randint(1, length))
+		sleep(1)
 		#while True:
 		try:
 			#for pair in pairs[client.apiKey]:
@@ -1053,14 +1073,14 @@ class MarketMaker( object ):
 							#if 'does not have market symbol' in str(e):
 								
 							PrintException(client.apiKey)
-							sleep((self.orderRateLimit / random.randint(1,18) ) / 1000)
+							sleep((self.orderRateLimit* 5))#/ random.randint(1,18) ) / 1000)
 							return (self.updateOrders(client, pair, length))
 					else:
-						sleep((self.orderRateLimit / random.randint(1,18) ) / 1000)
+						sleep((self.orderRateLimit * 5))#/ random.randint(1,18) ) / 1000)
 						return (self.updateOrders(client, pair, length))
 					#PrintException()
 			except:
-				sleep((self.orderRateLimit / random.randint(1,18) ) / 1000)
+				sleep((self.orderRateLimit * 5))# / random.randint(1,18) ) / 1000)
 				return (self.updateOrders(client, pair, length))
 			if self.Place_Orders[client.apiKey] is not None:
 				self.Place_Orders[client.apiKey].openorders = self.openorders[client.apiKey]
@@ -1071,7 +1091,7 @@ class MarketMaker( object ):
 					self.lbo[pair] = len(bid_ords)
 					self.lao[pair] = len(ask_ords)
 		except:
-			sleep((self.orderRateLimit / random.randint(1,18) ) / 1000)
+			sleep((self.orderRateLimit * 5))#/ random.randint(1,18) ) / 1000)
 			return (self.updateOrders(client, pair, length))
 	def updatePositions( self, client ):
 		while True:
@@ -1083,7 +1103,8 @@ class MarketMaker( object ):
 						gogo = False
 				except:
 					gogo = True
-				if gogo == True:
+				if True:# gogo == True:
+					sleep(1)
 					self.positions[client.apiKey]  = OrderedDict( { f: {
 						'size':		 0,
 						'positionAmt':	  0,
@@ -1222,7 +1243,9 @@ class MarketMaker( object ):
 		t   = [ ts[ i ][ 'timestamp' ] for i in range( NLAGS + 1 ) ]
 		p   = { c: None for c in self.vols.keys() }
 		for c in ts[ 0 ].keys():
-			p[ c ] = [ ts[ i ][ c ] for i in range( NLAGS + 1 ) ]
+			for i in range( NLAGS + 1 ):
+				if c.replace('/','') in ts[i]:
+					p[ c.replace('/','') ] = [ ts[ i ][ c.replace('/','') ]  ]
 		
 		if any( x is None for x in t ):
 			return None
@@ -1256,11 +1279,11 @@ try:
 	pprint(0)
 	mmbot.run()
 except( KeyboardInterrupt, SystemExit ):
-	pprint( "Cancelling open orders" )
+	print( "Cancelling open orders" )
 	mmbot.cancelall(None)
 	sys.exit()
 except:
-	pprint( traceback.format_exc())
+	print( traceback.format_exc())
 	if mmbot.connecting == False:
 		mmbot.cancelall(None)
 		mmbot.connecting = True

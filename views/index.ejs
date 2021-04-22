@@ -67,7 +67,7 @@
         var quoinexBids = []
         setInterval(function() {
             //chart = Highcharts.stockChart('container', options);
-            $.getJSON('http://coindexbot.duckdns.org/update?name=test', function(jsondata) {
+            $.getJSON('http://34.95.50.247:8088/update?name=test', function(jsondata) {
                 console.log(jsondata);
                 if (first == true){
                 first = false;
@@ -144,7 +144,7 @@
 
 
         title: {
-            text: 'BTC Balance'
+            text: '% USDT Balance'
         },
 
 
@@ -154,7 +154,7 @@
                 x: -3
             },
             title: {
-                text: 'Price'
+                text: '%'
             },
             height: '100%',
             lineWidth: 2,
@@ -167,7 +167,7 @@
             split: true
         },
         series: [{
-                name: 'BTC %',
+                name: 'USDT %',
                 data: asks,
                 color: '#00FF00'
             }
