@@ -49,6 +49,7 @@
     var rois = [];
     var lasks = []; 
         var asks = []
+        var asks2 = []
         var pos = []
         var tar = []
         var avail = []
@@ -75,6 +76,7 @@
                 }
                 $('#vol').html('                                          ' +jsondata.qty + ' BTC notional traded in recent memory')
                 asks= jsondata.btc; 
+                asks2 = jsondata.margin;
                 equity.push([jsondata.time, jsondata.btcNow]);
                 avail.push([jsondata.time, jsondata.avail]);
                 tar.push([jsondata.time, jsondata.tar]);
@@ -95,6 +97,8 @@
                 }
 
                 chart.series[0].setData(asks);
+
+                chart.series[1].setData(asks2);
                // chart = Highcharts.stockChart('container', options);
             });
         }, 2000);
@@ -167,9 +171,14 @@
             split: true
         },
         series: [{
-                name: 'USDT %',
+                name: 'USDT Equity %',
                 data: asks,
                 color: '#00FF00'
+            },
+            {
+                name: 'USDT Margin %',
+                data: asks2,
+                color: '#000000'
             }
         ]
     }

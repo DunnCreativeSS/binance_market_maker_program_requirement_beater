@@ -15,6 +15,7 @@ const binance = require('node-binance-api')().options({
   APISECRET: binSecret,
   useServerTime: true // If you get timestamp errors, synchronize to server time at startup
 });
+var margin = 0;
 var btc = 0;
 const ccxt = require('ccxt')
 binance_futures = new ccxt.binance(
@@ -24,8 +25,10 @@ binance_futures = new ccxt.binance(
             'urls': {'api': {
                                      'public': 'https://fapi.binance.com/fapi/v1',
                                      'private': 'https://fapi.binance.com/fapi/v1',},}})
-var btcstart = 431.8978
+var btcstart = 0
 var btcs = []
+var margins = []
+var marginstart = 0
 var ids = []
 var vol = 0
 setInterval(async function(){
@@ -40,6 +43,15 @@ vol+=parseFloat(trades[t].qty)
 }
 bal = await binance_futures.fetchBalance()
 btc = (bal.info.totalWalletBalance)
+margin = (bal.info.totalMarginBalance)
+if (btcstart == 0){
+  btcstart = btc
+  marginstart = margin
+}
+if (btc != 0){
+btcs.push( [new Date().getTime(), -1 * (1-(btc / btcstart)) * 100])
+margins.push( [new Date().getTime(), -1 * (1-(margin / marginstart)) * 100])
+}
 }, 5500)
 
 const express = require('express');
@@ -52,17 +64,15 @@ app.set('view engine', 'ejs');
 app.listen(process.env.PORT || 80, function() {});
 app.get('/update', cors(), (req, res) => {
 console.log(btc)
-if (btc != 0){
-btcs.push( [new Date().getTime(), -1 * (1-(btc / btcstart)) * 100])
-}
+
 console.log('start: ' + btcstart)
-    res.json({btc: btcs, qty: vol})
+    res.json({btc: btcs, qty: vol, margin: margins})
 
 })
 
 app.get('/', (req, res) => {
         res.render('index.ejs', {
-            btc: btc
+            btc: btc, margin: margin
         })
 
 });
