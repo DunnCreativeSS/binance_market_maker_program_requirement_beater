@@ -9,7 +9,7 @@ binApi2 =  {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':'
 		 #}	  'key': 'secret'}
 
 
-settings = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':{'TP': 40, 'SL': -20, 'max_skew_mult': 1.75, 'qty_div': 50, 'lev': 10},
+settings = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':{'TP': 40 * 4, 'SL': -20 * 4, 'max_skew_mult': 1.75, 'qty_div': 50, 'lev': 10},
 			'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U':{'TP': 40, 'SL': -20, 'max_skew_mult': 2, 'qty_div': 20, 'lev': 25}
 			}
 

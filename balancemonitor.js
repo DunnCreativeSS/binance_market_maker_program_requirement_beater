@@ -24,7 +24,7 @@ binance_futures = new ccxt.binance(
             'urls': {'api': {
                                      'public': 'https://fapi.binance.com/fapi/v1',
                                      'private': 'https://fapi.binance.com/fapi/v1',},}})
-var btcstart =557.64692680
+var btcstart = 431.8978
 var btcs = []
 var ids = []
 var vol = 0

@@ -474,6 +474,9 @@ class Place_Orders( object ):
 						#self.creates[fut] = True
 						if qty > 5:
 							if self.client.apiKey == self.firstkey:
+								self.pprint(self.client.apiKey + ': ' + fut + ' takeprofit! ' + str(self.positions[fut]['ROE']) + ' dir: ' + direction + ' qty ' + str(qty))
+						
+							if self.client.apiKey == self.firstkey:
 								abc=123#self.pprint(str(qty) + ' ' + fut)
 							try:
 								o = self.client.createOrder(fut.replace('/',''), "Market", direction, qty, None, {"newClientOrderId":"x-" + self.brokerKey + "-" + self.randomword(20)})
@@ -481,8 +484,6 @@ class Place_Orders( object ):
 								#self.create_order(  fut.replace('/',''), "Market", direction, qty, None, "GTC","x-" + self.brokerKey + "-" + self.randomword(20))
 							except Exception as e:
 								self.pprint(e)
-						if self.client.apiKey == self.firstkey:
-							self.pprint(self.client.apiKey + ': ' + fut + ' takeprofit! ' + str(self.positions[fut]['ROE']) + ' dir: ' + direction + ' qty ' + str(qty))
 						self.positions[fut]['ROE'] = 0
 					if self.positions[fut]['ROE'] < self.SL and self.positions[fut]['ROE'] != 0:
 						
@@ -493,13 +494,14 @@ class Place_Orders( object ):
 						#self.creates[fut] = True
 						if self.client.apiKey == self.firstkey:
 							abc=123#self.pprint(str(qty) + ' ' + fut)
-						if self.client.apiKey == self.firstkey:
-							self.pprint(self.client.apiKey + ': ' + fut + ' stoploss! ' + str(self.positions[fut]['ROE']) + ' dir: ' + direction + ' qty ' + str(qty))
 						self.slBlock[fut] = True
 						t = self.threading.Thread(target=self.slUnblock, args=(fut,))
 						t.daemon = True
 						t.start()
 						if qty > 5:
+							if self.client.apiKey == self.firstkey:
+								self.pprint(self.client.apiKey + ': ' + fut + ' stoploss! ' + str(self.positions[fut]['ROE']) + ' dir: ' + direction + ' qty ' + str(qty))
+						
 							try:
 								o = self.client.createOrder(fut.replace('/',''), "Market", direction, qty, None, {"newClientOrderId":"x-" + self.brokerKey + "-" + self.randomword(20)})
 								print(o)
