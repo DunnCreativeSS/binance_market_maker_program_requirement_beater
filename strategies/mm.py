@@ -690,7 +690,7 @@ class Place_Orders( object ):
 						else:
 							prc = bids[ 0 ]
 
-						qty = (self.equity_usd / self.qty_div) / prc#round( prc * qtybtc )   / spot					 
+						qty = ((self.equity_usd * float(self.lev)) / self.qty_div / 6) / prc#round( prc * qtybtc )   / spot					 
 						
 						max_skew = qty * self.max_skew_mult
 						if i < len_bid_ords:	
@@ -742,7 +742,7 @@ class Place_Orders( object ):
 						else:
 							prc = asks[ 0 ]
 							
-						qty = (self.equity_usd / self.qty_div) / prc#round( prc * qtybtc ) / spot
+						qty = ((self.equity_usd * float(self.lev)) / self.qty_div / 6) / prc#round( prc * qtybtc ) / spot
 						
 						if i < len_ask_ords:
 							oid = ask_ords[ i ]['id']
