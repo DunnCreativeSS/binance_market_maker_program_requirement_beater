@@ -480,6 +480,7 @@ class Place_Orders( object ):
 								abc=123#self.pprint(str(qty) + ' ' + fut)
 							try:
 								o = self.client.createOrder(fut.replace('/',''), "Market", direction, qty, None, {"newClientOrderId":"x-" + self.brokerKey + "-" + self.randomword(20)})
+								self.sleep(1)
 								print(o)
 								#self.create_order(  fut.replace('/',''), "Market", direction, qty, None, "GTC","x-" + self.brokerKey + "-" + self.randomword(20))
 							except Exception as e:
@@ -504,6 +505,7 @@ class Place_Orders( object ):
 						
 							try:
 								o = self.client.createOrder(fut.replace('/',''), "Market", direction, qty, None, {"newClientOrderId":"x-" + self.brokerKey + "-" + self.randomword(20)})
+								self.sleep(1)
 								print(o)
 								#self.create_order(  fut.replace('/',''), "Market", direction, qty, None, "GTC","x-" + self.brokerKey + "-" + self.randomword(20))
 							except Exception as e:
@@ -768,6 +770,7 @@ class Place_Orders( object ):
 									
 									#self.creates[fut] = True
 									o = self.create_order(  fut.replace('/',''), "Limit", 'sell', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20) )
+									
 									#print(o)
 								if self.lao[fut] > 2 and i > 2:
 									t = self.threading.Thread(target=self.cancel_them, args=(self.ask_ords[fut][ i - 1 ]['id'], fut,))
@@ -854,6 +857,7 @@ class Place_Orders( object ):
 					#self.pprint(response)
 					self.ordersTo = []
 					o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )
+					self.sleep(1)
 					#print(o)
 					if 'XLM' in fut and self.client.apiKey == self.firstkey:
 						abc=123#self.pprint(fut + ' ordered!')
