@@ -20,7 +20,7 @@ class Place_Orders( object ):
 		self.get_precision = get_precision
 		self.math = math
 		self.pairs = pairs
-		self.qty_div = len(self.pairs) + 1
+		self.qty_div = qty_div
 		self.max_skew_mult = max_skew_mult
 		self.creates = {}
 		self.edits = {}
@@ -204,7 +204,7 @@ class Place_Orders( object ):
 							t.start()
 				if 'BAT' in fut:# and self.firstkey == self.client.apiKey:
 					bat = len(self.bid_ords['BAT/USDT']) + len(self.ask_ords['BAT/USDT'])
-					#if len(self.bid_ords['BAT/USDT']) > 2 or len(self.ask_ords['BAT/USDT']) > 2:
+					#if len(self.bid_ords['BAT/USDT']) > self.MAX_LAYERS or len(self.ask_ords['BAT/USDT']) > self.MAX_LAYERS:
 					ran = self.random.randint(0, 50)
 					#print(ran)
 					if ran < 2:
@@ -344,7 +344,7 @@ class Place_Orders( object ):
 								t.start()
 						if 'BAT' in fut:# and self.firstkey == self.client.apiKey:
 							bat = len(self.bid_ords['BAT/USDT']) + len(self.ask_ords['BAT/USDT'])
-							#if len(self.bid_ords['BAT/USDT']) > 2 or len(self.ask_ords['BAT/USDT']) > 2:
+							#if len(self.bid_ords['BAT/USDT']) > self.MAX_LAYERS or len(self.ask_ords['BAT/USDT']) > self.MAX_LAYERS:
 							ran = self.random.randint(0, 50)
 							#print(ran)
 							if ran < 2:
@@ -606,19 +606,24 @@ class Place_Orders( object ):
 							t.start()
 				except:
 					self.PrintException(self.client.apiKey)
-				for i in range( max( nbids - 1, nasks - 1)):
+				for i in range( max( nbids, nasks)):
 
 					# BIDS
 					tsz = float(self.get_ticksize( fut ))			
 					# Perform pricing
 					vol = max( self.vols[ self.BTC_SYMBOL ], self.vols[ fut.replace('/','') ] )
-
+					if 'HOT' in fut:
+						print('vol: ' + str(vol))
 					eps		 = self.BP * vol * self.RISK_CHARGE_VOL
 					riskfac	 = self.math.exp( eps )
-
+					if 'HOT' in fut:
+						print('vol riskfac: ' + str(riskfac))
 					bbo	 = self.get_bbo( fut )
 					bid_mkt = bbo[ 'bid' ]
 					ask_mkt = bbo[ 'ask' ]
+
+					MKT_IMPACT		  =  0.01
+					MKT_IMPACT		  *= self.BP
 					if 'XLM' in fut and self.client.apiKey == self.firstkey:
 						abc=123#self.pprint(bbo)
 					if bid_mkt is None and ask_mkt is None:
@@ -640,11 +645,17 @@ class Place_Orders( object ):
 						bid_ords		= [ o for o in ords if o['side'].upper() == 'BUY'  ]
 						#self.pprint(len(bid_ords))
 						len_bid_ords	= ( len( bid_ords ))
-						bid0			= bid_mkt#mid_mkt * math.exp( -MKT_IMPACT )
+						bid0			= bid_mkt#mid_mkt * self.math.exp( -MKT_IMPACT )
 						
-						bids	= [ bid0 * 1 + (.0001 * -i) for i in range( 0, nbids + 0 ) ]
-
+						bids	= [ bid0 * 1 + (0.0001 * -i) for i in range( 0, nbids + 1 ) ]
+						#bids    = [ bid0 * riskfac ** -i for i in range( 1, nbids + 1 ) ]
+						bidsn2 = []
+						bidsn2.append(bid0)
+						for p in bids:
+							bidsn2.append(p)
+						bids = bidsn2
 						bids[ 0 ]   = self.ticksize_floor( bids[ 0 ], tsz )
+						
 						"""
 						nbids2 = []
 						c = 0
@@ -661,15 +672,20 @@ class Place_Orders( object ):
 						ask_ords		= [ o for o in ords if o['side'].upper() == 'SELL' ]	
 						#self.pprint(len(ask_ords))
 						len_ask_ords	= ( len( ask_ords ) )
-						ask0			= ask_mkt#mid_mkt * math.exp(  MKT_IMPACT )
+						ask0			= ask_mkt#mid_mkt * self.math.exp(  MKT_IMPACT )
 						
-						asks	= [ ask0 * 1 + (.0001 * i) for i in range( 0, nasks + 0 ) ]
-						
+						asks	= [ ask0 * 1 + (0.0001 * i) for i in range( 0, nasks + 1 ) ]
+						#asks    = [ ask0 * riskfac ** i for i in range( 1, nasks + 1 ) ]
+						asksn2 = []
+						asksn2.append(ask0)
+						for p in asks:
+							asksn2.append(p)
+						asks = asksn2
 						asks[ 0 ]   = self.ticksize_ceil( asks[ 0 ], tsz  )
 						"""
-						nasks2 = []
+						nasks2 = []+++
 						c = 0
-						for b in asks:
+						for b in asks:+++++++
 							if c > 0:
 								nasks2.append(b)
 							c = c + 1
@@ -693,18 +709,20 @@ class Place_Orders( object ):
 						qty = ((self.equity_usd * float(self.lev)) / self.qty_div / 6) / prc#round( prc * qtybtc )   / spot					 
 						if qty * prc < 6:
 							qty = 6 / prc
-						max_skew = qty * self.max_skew_mult
+						max_skew = qty * prc * self.max_skew_mult
 						if i < len_bid_ords:	
 
 							oid = bid_ords[ i ]['id']
 							#self.pprint(oid)
 							try:
-								if float(self.positions[fut]['notional']) <= qty * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
+								if float(self.positions[fut]['notional']) <= qty * prc * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
 									
 									if prc not in bprices and self.edits[fut] == False and self.slBlock[fut] == False:
 										#print('qtye: ' + str(qty))
 										
 										self.edits[fut] = True
+										if 'HOT' in fut:
+											print('vol edit buy: ' + str(prc))
 										self.edit_order( oid, fut.replace('/',''), "Limit", "buy", qty, prc, {"timeInForce": "GTX", "newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)} )
 									#else:
 										#self.pprint(str(prc) + ' in bprices!')
@@ -718,20 +736,23 @@ class Place_Orders( object ):
 									print(float(self.positions[fut]['notional']))
 									print(qty)
 
-									print(float(self.positions[fut]['notional']) <= qty * self.max_skew_mult)
+									print(float(self.positions[fut]['notional']) <= qty * prc * self.max_skew_mult)
 								if qty > 5:
-									if float(self.positions[fut]['notional']) <= qty * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
+									if float(self.positions[fut]['notional']) <= qty *prc * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
 										#print('qty1: ' + str(qty))
 										#self.creates[fut] = True
+										if 'HOT' in fut:
+											print('vol new buy: ' + str(prc))
 										o = self.create_order(  fut.replace('/',''), "Limit", 'buy', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20))
 										#print(o)
-									if self.lbo[fut] > 2 and i > 2:
+									elif float(self.positions[fut]['notional']) > qty *prc * self.max_skew_mult :
+										self.pprint(fut + ' not buying maxskew, pos: ' + str(float(self.positions[fut]['notional'])) + ' mod: ' + str(qty * prc *  self.max_skew_mult))
+							
+									if self.lbo[fut] > self.MAX_LAYERS and i > self.MAX_LAYERS:
 										t = self.threading.Thread(target=self.cancel_them, args=(self.bid_ords[fut][ i - 1 ]['id'], fut,))
 										t.daemon = True
 										t.start()
-								#else:
-									#self.pprint('not buyi	ng maxskew, pos: ' + str(float(self.positions[fut]['notional'])) + ' mod: ' + str(qty * 2.1))
-							
+									
 							except Exception as e:
 								self.PrintException(self.client.apiKey)
 								#self.logger.warn( 'Bid order failed: %s bid for %s'
@@ -753,11 +774,13 @@ class Place_Orders( object ):
 							oid = ask_ords[ i ]['id']
 							#self.pprint(oid)
 							try:
-								if float(self.positions[fut]['notional']) >= qty * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:	
+								if float(self.positions[fut]['notional']) >= qty * prc * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:	
 									
 									if prc not in aprices and self.edits[fut] == False and self.slBlock[fut] == False:
 										#print('qtye2: ' + str(qty))
 										self.edits[fut] = True
+										if 'HOT' in fut:
+											print('vol edit sell: ' + str(prc))
 										self.edit_order( oid, fut.replace('/',''), "Limit", "sell", qty, prc, {"timeInForce": "GTX", "newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)} )
 										
 									#else:
@@ -769,19 +792,22 @@ class Place_Orders( object ):
 						else:
 							try: #1000 > -60 
 								if qty > 5:
-									if float(self.positions[fut]['notional']) >= qty * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:	
+									if float(self.positions[fut]['notional']) >= qty * prc * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:	
 										#print('qty2: ' + str(qty))
 										#self.creates[fut] = True
 										o = self.create_order(  fut.replace('/',''), "Limit", 'sell', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20) )
 										
+										if 'HOT' in fut:
+											print('vol new buy: ' + str(prc))
 										#print(o)
-									if self.lao[fut] > 2 and i > 2:
+									elif float(self.positions[fut]['notional']) < qty * prc * self.max_skew_mult * -1:
+										self.pprint(fut + ' not selling maxskew, pos: ' + str(float(self.positions[fut]['notional'])) + ' mod: ' + str(qty * prc *  self.max_skew_mult * -1))
+
+									if self.lao[fut] > self.MAX_LAYERS and i > self.MAX_LAYERS:
 										t = self.threading.Thread(target=self.cancel_them, args=(self.ask_ords[fut][ i - 1 ]['id'], fut,))
 										t.daemon = True
 										t.start()
-								#else:
-									#self.pprint('not selling maxskew, pos: ' + str(float(self.positions[fut]['notional'])) + ' mod: ' + str(qty * 2.1 * -1))
-
+									
 							
 							except Exception as e:
 								self.PrintException(self.client.apiKey)

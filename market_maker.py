@@ -8,8 +8,8 @@ binApi2 =  {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':'
 		'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U': '2Wqi6TL1L1JAQyuaEWAJisiAEmh4SsCSpopEZrQ04NIRv49gA1Yh3hBuXOsxlGOB'}
 		 #}	  'key': 'secret'}
 
-
-settings = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':{'TP': 400, 'SL': -200, 'max_skew_mult': 1.75, 'qty_div': 50, 'lev': 3},
+lev = 3
+settings = {'MQsPcSHk1AZ96FQSUlScuZHZFSITb10TrUeuNXQuq2zF5IgsZefp7p3noI4ZOVST':{'TP': 10 * lev, 'SL': -20 * lev, 'max_skew_mult': 1.75, 'qty_div': 16, 'lev': lev},
 			'7hMrKo1CbbhS58I85uaZtfz2cKUFbDIXlZEIGzCqXEMu7V8QcqjYBonrU93GfH1U':{'TP': 40, 'SL': -20, 'max_skew_mult': 2, 'qty_div': 20, 'lev': 25}
 			}
 
@@ -214,6 +214,7 @@ def PrintException(apiKey):
 	line = linecache.getline(filename, lineno, f.f_globals)
 	string = 'EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj)
 	print(string)
+	pprint(string)
 	if 'https://fapi.binance.com/fapi/' in string or 'Timestamp for this request is outside of the recvWindow' in string or 'Read timed out' in string:
 		
 		if mmbot.connecting == False:
@@ -299,7 +300,7 @@ PCT_LIM_LONG		= 200	# % position limit long
 PCT_LIM_SHORT	   = 100	   # % position limit short
 PCT_QTY_BASE		= 0.05	   # pct order qty in bps as pct of acct on each order
 MIN_LOOP_TIME	   =   14.6	 # Minimum time between loops
-RISK_CHARGE_VOL	 =   1.5	# vol risk charge in bps per 100 vol
+RISK_CHARGE_VOL	 =   0.75	# vol risk charge in bps per 100 vol
 SECONDS_IN_DAY	  = 3600 * 24
 SECONDS_IN_YEAR	 = 365 * SECONDS_IN_DAY
 WAVELEN_MTIME_CHK   = 15		# time in seconds between check for file change
@@ -312,6 +313,7 @@ VOL_PRIOR		   = 100	   # vol estimation starting level in percentage pts
 	#DECAY_POS_LIM = data['RISK_CHARGE_VOL']['current']
 	
 EWMA_WGT_COV		*= PCT
+
 MKT_IMPACT		  *= BP
 PCT_LIM_LONG		*= PCT
 PCT_LIM_SHORT	   *= PCT
@@ -840,10 +842,10 @@ class MarketMaker( object ):
 			# Update time series and vols
 			if ( t_now - t_ts ).total_seconds() >= WAVELEN_TS:
 				t_ts = t_now
-				
-				self.update_timeseries()
-				self.update_vols()
+			self.update_timeseries()
+			self.update_vols()
 			
+			sleep(1)
 			# ()
 			
 			# Display status to terminal
@@ -932,10 +934,16 @@ class MarketMaker( object ):
 		# Create historical time series data for estimating vol
 		ts_keys = self.symbols + [ 'timestamp' ]; ts_keys.sort()
 		
+		
+		alist = ['btc', 'timestamp']
+		for key in pairs.keys():
+			for pair in pairs[key]:
+				if pair not in alist:
+					alist.append(pair.replace('/',''))
 		self.ts = [
-			OrderedDict( { f: None for f in ts_keys } ) for i in range( NLAGS + 1 )
+			OrderedDict( { f: None for f in alist } ) for i in range( NLAGS + 1 )
 		]
-		print(self.ts)
+		pprint(self.ts)
 		self.vols   = OrderedDict( { s: VOL_PRIOR for s in self.symbols } )
 		#sleep(10)
 		
@@ -1008,21 +1016,7 @@ class MarketMaker( object ):
 				self.Place_Orders[client.apiKey].positions = self.positions[client.apiKey]
 			
 		except Exception as e:
-			PrintException(client.apiKey)	
-		for pair in pairs[client.apiKey]:
-			sleep((self.orderRateLimit / 1.1 ) / 1000)
-			try:
-				client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': self.lev})
-			except:
-				sleep((self.orderRateLimit / 1.1 ) / 1000)
-				direction = 'sell'
-				if self.positions[client.apiKey][fut]['positionAmt'] < 0:
-					direction = 'buy'
-				qty = math.fabs(self.positions[client.apiKey][fut]['positionAmt'])
-				self.creates[fut] = True
-				abc=123#pprint(str(qty) + ' ' + fut)
-				self.Place_Orders[client.apiKey].create_order(  fut, "Market", direction, qty, None, {"newClientOrderId": "x-v0tiKJjj-" + self.randomword(20)})
-				self.positions[client.apiKey][fut]['ROE'] = 0
+			PrintException(client.apiKey)
 		try:
 			t = threading.Thread(target=self.output_status, args=(client,))
 			t.daemon = True
@@ -1036,7 +1030,24 @@ class MarketMaker( object ):
 
 			
 		except Exception as e:
-			PrintException(client.apiKey)
+			PrintException(client.apiKey)	
+		for pair in pairs[client.apiKey]:
+			sleep((self.orderRateLimit / 1.1 ) / 1000)
+			try:
+				client.fapiPrivatePostLeverage({'symbol': pair.replace('/USDT', 'USDT'), 'leverage': self.lev})
+			except:
+				sleep((self.orderRateLimit / 1.1 ) / 1000)
+				while fut not in self.positions[client.apiKey]:
+					sleep(1)
+				direction = 'sell'
+				if self.positions[client.apiKey][fut]['positionAmt'] < 0:
+					direction = 'buy'
+				qty = math.fabs(self.positions[client.apiKey][fut]['positionAmt'])
+				self.creates[fut] = True
+				abc=123#pprint(str(qty) + ' ' + fut)
+				self.Place_Orders[client.apiKey].create_order(  fut, "Market", direction, qty, None, {"newClientOrderId": "x-v0tiKJjj-" + self.randomword(20)})
+				self.positions[client.apiKey][fut]['ROE'] = 0
+		
 		  
 		self.update_status()
 		#sleep(3)
@@ -1207,8 +1218,7 @@ class MarketMaker( object ):
 			#return None
 		
 		for t in range( NLAGS, 0, -1 ):
-			self.ts[ t ]	= cp.deepcopy( self.ts[ t - 1 ] )
-		
+			self.ts[ t ]	= cp.deepcopy( self.ts[ t - 1 ] )	
 		spot					= self.get_spot('BTC/USDT')
 		self.ts[ 0 ][ BTC_SYMBOL ]	= spot
 		alist = []
@@ -1222,33 +1232,32 @@ class MarketMaker( object ):
 			bbo = self.get_bbo( c )
 			bid = bbo[ 'bid' ]
 			ask = bbo[ 'ask' ]
-
+			c = c.replace('/','')
 			if not bid is None and not ask is None:
 				mid = 0.5 * ( bbo[ 'bid' ] + bbo[ 'ask' ] )
 			else:
 				continue
 			self.ts[ 0 ][ c ]			   = mid
-				
 		self.ts[ 0 ][ 'timestamp' ]  = datetime.now()
-
+		pprint(self.ts)
 		
 	def update_vols( self ):
 		
 		#if self.monitor:
 		   # return None
-		
 		w   = EWMA_WGT_COV
 		ts  = self.ts
 		
 		t   = [ ts[ i ][ 'timestamp' ] for i in range( NLAGS + 1 ) ]
 		p   = { c: None for c in self.vols.keys() }
 		for c in ts[ 0 ].keys():
-			for i in range( NLAGS + 1 ):
-				if c.replace('/','') in ts[i]:
-					p[ c.replace('/','') ] = [ ts[ i ][ c.replace('/','') ]  ]
-		
+			p[ c ] = [ ts[ i ][ c ] for i in range( NLAGS + 1 ) ]
+		pprint('vols!')
+		pprint(t)
 		if any( x is None for x in t ):
 			return None
+		pprint('vols!')
+		pprint(p)
 		for c in self.vols.keys():
 			if any( x is None for x in p[ c ] ):
 				return None
@@ -1258,15 +1267,19 @@ class MarketMaker( object ):
 		
 		for s in self.vols.keys():
 			
-			x   = p[ s ]			
-			dx  = x[ 0 ] / x[ 1 ] - 1
-			dt  = ( t[ 0 ] - t[ 1 ] ).total_seconds()
-			v   = min( dx ** 2 / dt, cov_cap ) * NSECS
-			v   = w * v + ( 1 - w ) * self.vols[ s ] ** 2
-			
-			self.vols[ s ] = math.sqrt( v )
+			x   = p[ s ]
+			if len(x) > 1:			
+				dx  = x[ 0 ] / x[ 1 ] - 1
+				dt  = ( t[ 0 ] - t[ 1 ] ).total_seconds()
+				v   = min( dx ** 2 / dt, cov_cap ) * NSECS
+				v   = w * v + ( 1 - w ) * self.vols[ s ] ** 2
+				
+				self.vols[ s ] = math.sqrt( v )
+		
+		pprint('vols!')
 		for key in self.Place_Orders.keys():
 			if self.Place_Orders[key] is not None:
+				pprint(self.vols)
 				self.Place_Orders[key].vols = self.vols					
 try:
 	
@@ -1283,6 +1296,7 @@ except( KeyboardInterrupt, SystemExit ):
 	mmbot.cancelall(None)
 	sys.exit()
 except:
+	pprint( traceback.format_exc())
 	print( traceback.format_exc())
 	if mmbot.connecting == False:
 		mmbot.cancelall(None)
