@@ -17,10 +17,10 @@ class Place_Orders( object ):
 		self.firstkey = firstkey
 		self.multiprocessing = multiprocessing
 		self.brokerKey = brokerKey
-		self.qty_div = qty_div
 		self.get_precision = get_precision
 		self.math = math
 		self.pairs = pairs
+		self.qty_div = len(self.pairs) + 1
 		self.max_skew_mult = max_skew_mult
 		self.creates = {}
 		self.edits = {}
