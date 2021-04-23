@@ -691,7 +691,8 @@ class Place_Orders( object ):
 							prc = bids[ 0 ]
 
 						qty = ((self.equity_usd * float(self.lev)) / self.qty_div / 6) / prc#round( prc * qtybtc )   / spot					 
-						
+						if qty * prc < 6:
+							qty = 6 / prc
 						max_skew = qty * self.max_skew_mult
 						if i < len_bid_ords:	
 
@@ -701,6 +702,8 @@ class Place_Orders( object ):
 								if float(self.positions[fut]['notional']) <= qty * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
 									
 									if prc not in bprices and self.edits[fut] == False and self.slBlock[fut] == False:
+										#print('qtye: ' + str(qty))
+										
 										self.edits[fut] = True
 										self.edit_order( oid, fut.replace('/',''), "Limit", "buy", qty, prc, {"timeInForce": "GTX", "newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)} )
 									#else:
@@ -716,15 +719,16 @@ class Place_Orders( object ):
 									print(qty)
 
 									print(float(self.positions[fut]['notional']) <= qty * self.max_skew_mult)
-								if float(self.positions[fut]['notional']) <= qty * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
-									
-									#self.creates[fut] = True
-									o = self.create_order(  fut.replace('/',''), "Limit", 'buy', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20))
-									#print(o)
-								if self.lbo[fut] > 2 and i > 2:
-									t = self.threading.Thread(target=self.cancel_them, args=(self.bid_ords[fut][ i - 1 ]['id'], fut,))
-									t.daemon = True
-									t.start()
+								if qty > 5:
+									if float(self.positions[fut]['notional']) <= qty * self.max_skew_mult and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lbo[fut] <= 2:
+										#print('qty1: ' + str(qty))
+										#self.creates[fut] = True
+										o = self.create_order(  fut.replace('/',''), "Limit", 'buy', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20))
+										#print(o)
+									if self.lbo[fut] > 2 and i > 2:
+										t = self.threading.Thread(target=self.cancel_them, args=(self.bid_ords[fut][ i - 1 ]['id'], fut,))
+										t.daemon = True
+										t.start()
 								#else:
 									#self.pprint('not buyi	ng maxskew, pos: ' + str(float(self.positions[fut]['notional'])) + ' mod: ' + str(qty * 2.1))
 							
@@ -743,7 +747,8 @@ class Place_Orders( object ):
 							prc = asks[ 0 ]
 							
 						qty = ((self.equity_usd * float(self.lev)) / self.qty_div / 6) / prc#round( prc * qtybtc ) / spot
-						
+						if qty * prc < 6:
+							qty = 6 / prc
 						if i < len_ask_ords:
 							oid = ask_ords[ i ]['id']
 							#self.pprint(oid)
@@ -751,7 +756,7 @@ class Place_Orders( object ):
 								if float(self.positions[fut]['notional']) >= qty * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:	
 									
 									if prc not in aprices and self.edits[fut] == False and self.slBlock[fut] == False:
-										
+										#print('qtye2: ' + str(qty))
 										self.edits[fut] = True
 										self.edit_order( oid, fut.replace('/',''), "Limit", "sell", qty, prc, {"timeInForce": "GTX", "newClientOrderId": "x-" + self.brokerKey + "-" + self.randomword(20)} )
 										
@@ -763,17 +768,17 @@ class Place_Orders( object ):
 
 						else:
 							try: #1000 > -60 
-								
-								if float(self.positions[fut]['notional']) >= qty * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:	
-									
-									#self.creates[fut] = True
-									o = self.create_order(  fut.replace('/',''), "Limit", 'sell', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20) )
-									
-									#print(o)
-								if self.lao[fut] > 2 and i > 2:
-									t = self.threading.Thread(target=self.cancel_them, args=(self.ask_ords[fut][ i - 1 ]['id'], fut,))
-									t.daemon = True
-									t.start()
+								if qty > 5:
+									if float(self.positions[fut]['notional']) >= qty * self.max_skew_mult * -1 and self.creates[fut] == False and self.slBlock[fut] == False and self.tradeBlock[fut] == False and self.lao[fut] <= 2:	
+										#print('qty2: ' + str(qty))
+										#self.creates[fut] = True
+										o = self.create_order(  fut.replace('/',''), "Limit", 'sell', qty, prc, "GTX", "x-" + self.brokerKey + "-" + self.randomword(20) )
+										
+										#print(o)
+									if self.lao[fut] > 2 and i > 2:
+										t = self.threading.Thread(target=self.cancel_them, args=(self.ask_ords[fut][ i - 1 ]['id'], fut,))
+										t.daemon = True
+										t.start()
 								#else:
 									#self.pprint('not selling maxskew, pos: ' + str(float(self.positions[fut]['notional'])) + ' mod: ' + str(qty * 2.1 * -1))
 
@@ -854,9 +859,12 @@ class Place_Orders( object ):
 					#})
 					#self.pprint(response)
 					self.ordersTo = []
+					print('qty: ' + str(qty))
+					print('prc: ' + str(prc))
+					print('qty * prc: ' + str(qty * prc))
 					o = self.client.createOrder(fut.replace('/',''), type, dir, qty, prc, {"timeInForce": 'GTX', "newClientOrderId": brokerPhrase} )
 					
-					#print(o)
+					print(o)
 					if 'XLM' in fut and self.client.apiKey == self.firstkey:
 						abc=123#self.pprint(fut + ' ordered!')
 					done = True
